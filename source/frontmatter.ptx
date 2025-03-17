@@ -7,21 +7,21 @@
   <bibinfo>
   
     <author>
-      <personname>You</personname>
-      <department>Your department</department>
-      <institution>Your institution</institution>
+      <personname>Douglas A. Lapp, PhD</personname>
+      <department>Department of Mathematics</department>
+      <institution>Central Michigan University</institution>
     </author>
     <date>
       <today />
     </date>
 
     <website>
-      <url href="https://pretextbook.org">My Website</url>
+      <url href="https://pretextbook.org">http://people.se.cmich.edu/lapp1da/</url>
     </website>
 
     <copyright>
-      <year>2020<ndash />2024</year>
-      <holder>You</holder>
+      <year>2024<ndash />2025</year>
+      <holder>Dr. Douglas A. Lapp</holder>
       <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
       </shortlicense>
     </copyright>
@@ -35,5 +35,21 @@
   <colophon xml:id="front-colophon">
     <colophon-items/>
   </colophon>
+  <acknowledgement>
+  <p>
+    This book is an application of research I have conducted on the teaching and learning of linear 
+    algebra with my colleagues and friends, the late Dr. Melvin Nyman from Alma College, and 
+    Dr. John Berry of the University of Plymouth in the UK.  As we conducted research together on students in 
+    linear algebra classes, I so valued our stimulating conversations and genuine friendship.  I could 
+    not have created this text without the insights they shared as we analyzed our data and crafted our 
+    journal articles.  As Mel was only a few miles away from Central Michigan University, I truly miss 
+    my frequent visits to his campus.  While Mel is no longer with us, his influence on my thinking and 
+    teaching are still an ever present reminder of a great friend and mathematician.  While John is still 
+    active in working to inspire the mathematically talented youth of the UK, I do miss the opportunity 
+    to engage with him for the sake of my own professional development.  His ideas always prompted deeper 
+    understanding for me and I cherish our work together.
+  </p>
+  </acknowledgement>
 </frontmatter>
+
 
