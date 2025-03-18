@@ -798,13 +798,13 @@ we get the total revenue for each company organized as an ordered triple (since 
         multiplication and vector addition) work when the thing we are multiplying the vectors by is a matrix?  
         Suppose we have a matrix transformation given by <m>T\left(\mathbf{x}\right)=
         \begin{bmatrix}
-        -1 \amp 3 \amp 2\\
-        1 \amp 1 \amp 5\\
-        2 \amp 0 \amp -4
+        -1 \amp 3 \amp 1\\
+        2 \amp 5 \amp 2\\
+        1 \amp 0 \amp -1
         \end{bmatrix}\mathbf{x}</m>.  
         Define this transformation in your CAS and then define 
-        <m>\mathbf{v}=\begin{bmatrix} 1\\3\\-1\end{bmatrix}</m> and 
-        <m>\mathbf{w}=\begin{bmatrix} 2\\0\\-3\end{bmatrix}</m>.
+        <m>\mathbf{v}=\begin{bmatrix} -2\\1\\0\end{bmatrix}</m> and 
+        <m>\mathbf{w}=\begin{bmatrix} 3\\2\\-2\end{bmatrix}</m>.
       </p>
       <p>
         <image source="images/lineartransformation-act-1-1-3.png" width="60%">
