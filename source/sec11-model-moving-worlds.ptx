@@ -927,6 +927,7 @@ we get the total revenue for each company organized as an ordered triple (since 
    We can represent this mapping as <m>R:\mathbb{R}^4 \rightarrow \mathbb{R}^3</m>.
 
   </p>
+  <p>
   <activity>
     <title>Price to Revenue: Linear Transformation?</title>
     <introduction>
@@ -970,6 +971,29 @@ we get the total revenue for each company organized as an ordered triple (since 
       </statement>
     </task>
   </activity>
+  </p>
+  <p>
+    <lemma xml:id="lem-">
+      <statement>
+        <p>
+          If <m>T</m> is a linear transformation, then it must map the zero vector from the domain to the 
+          zero vector in the codomain.  In other words, <m>T\left(\mathbf{0}_D\right)=\mathbf{0}_R</m>.
+        </p>
+      </statement>
+      <proof>
+        <p>
+          Suppose <m>T:\mathbb{R}^n \rightarrow \mathbb{R}^m</m> is a linear transformation and 
+          <m>\mathbf{v} \in \mathbb{R}^n</m>.  Well since <m>-\mathbf{v} \in \mathbb{R}^n</m>, we know that 
+          <m>T\left(\mathbf{0}\right)=T\left(\mathbf{v}+\mathbf{-v}\right)</m>.  Since vector addition is 
+          preserved, we get that this is equal to <m>T\left(\mathbf{v}\right)+T\left(\mathbf{-v}\right)</m>.  
+          Again, as a linear transformation, we know that scalar multiplication is also preserved and so 
+          <m>T\left(\mathbf{-v}\right)=-T\left(\mathbf{v}\right)</m> and thus 
+          <m>T\left(\mathbf{v}\right)+T\left(\mathbf{-v}\right)=T\left(\mathbf{v}\right)+ 
+          -T\left(\mathbf{v}\right)=\mathbf{0}</m> where <m>\mathbf{0}</m> here is in <m>\mathbb{R}^m</m>.
+        </p>
+      </proof>
+    </lemma>
+  </p>
   <p>
     We began this section looking at how we can represent practical data and relationships using matrices 
     and vectors along with operations allowing us to transform one type of vector into another.  In the next few 
