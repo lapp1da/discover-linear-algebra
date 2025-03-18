@@ -977,7 +977,7 @@ we get the total revenue for each company organized as an ordered triple (since 
       <statement>
         <p>
           If <m>T</m> is a linear transformation, then it must map the zero vector from the domain to the 
-          zero vector in the codomain.  In other words, <m>T\left(\mathbf{0}_D\right)=\mathbf{0}_R</m>.
+          zero vector in the range.  In other words, <m>T\left(\mathbf{0}_D\right)=\mathbf{0}_R</m>.
         </p>
       </statement>
       <proof>
