@@ -15,9 +15,12 @@
   </p>
 
   <p>
-   <image source="images/descarte-fly-2-1.png" width="50%">
+   <figure xml:id="">
+    <caption>Descartes' Fly</caption>
+    <image source="images/descarte-fly-2-1.png" width="60%">
     <shortdescription>Descartes Fly</shortdescription>
    </image>
+   </figure>
   </p>
 
 </section>
