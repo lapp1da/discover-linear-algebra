@@ -27,8 +27,28 @@
   <introduction>
     <p>
       Suppose you are Descartes staring at the fly on the ceiling.  At first, all you see is the fly sitting 
-      arbitrarily in space (see Figure XXX(a)).  As your imagination wanders, you begin to see two sets of 
-      parallel lines crisscrossing the ceiling (Figure XXX(b)).
+      arbitrarily in space (see Figure 2.1.2).  Next, you imagine two vectors defining different directions and 
+      acting as units of measure (Figure 2.1.3).  As your imagination wanders, you begin to see two sets of 
+      parallel lines crisscrossing the ceiling (Figure 2.1.4).
+    </p>
+    <p>
+     <sidebyside width="30%">
+      <figure>
+       <image source="images/fly-grids-0.png">
+      <caption>Fly on Ceiling</caption>
+    </image>
+  </figure>
+  <figure>
+    <image source="images/fly-grids-1.png">
+      <caption>Fly and Vectors</caption>
+    </image>
+  </figure>
+  <figure>
+    <image source="images/fly-grids-2.png">
+      <caption>Fly and Grid</caption>
+    </image>
+  </figure>
+</sidebyside>
     </p>
   </introduction>
 
@@ -39,6 +59,14 @@
         respective directions, and where these two vectors both begin is the origin of your grid system, 
         what would be the coordinates of the fly in the <m>\left\{\mathbf{v_1}, \mathbf{v_2}\right\}</m> 
         coordinate system?
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        
       </p>
     </statement>
   </task>
