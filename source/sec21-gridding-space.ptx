@@ -22,6 +22,9 @@
    </image>
    </figure>
   </p>
+  <subsection xml:id="linear-comb-span">
+    <title>Linear Combinations and Spanning</title>
+    
   <p>
     <activity>
   <introduction>
@@ -136,5 +139,72 @@
   </task>
 </activity>
   </p>
+  <p>
+    As we have just seen, there are several (in fact, infinitely many) ways we could grid the space to 
+    describe a way to get to a location in <m>\mathbb{R}^2</m>.  We happened to be using two vectors in each 
+    case in the previous activity, one with <m>\mathbf{v}_1</m> and <m>\mathbf{v}_2</m>, and the other with 
+    vectors from our more familiar "standard" two vectors, <m>\mathbf{e}_1</m> and <m>\mathbf{e}_2</m>.  
+    However, could we go with fewer vectors?  What about using more than two?  Let's consider what might 
+    happen in either of these cases.
+  </p>
+  <p>
+  <project>
+  <title>Linear Combinations and Spanning</title>
+  <introduction>
+    <p>
+      As we have seen by the operations we have defined for vectors, we can create new vectors using 
+      combinations of scalar multiplication and addition of existing vectors.  In this lab you will explore 
+      both the algebraic and geometric combination of such vectors and develop an intuition for how 
+      algebraic operations relate to geometric representations of the same ideas.
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        Consider the two vectors <m>\mathbf{v}=\begin{bmatrix}1\\1\end{bmatrix}</m> and 
+        <m>\mathbf{w}=\begin{bmatrix}3\\1\end{bmatrix}</m>.  On page 1.1 of the document LinearComb.tns, 
+        these vectors have been defined for you.  On page 1.2, you will see two sliders representing scalars 
+        (<m>a</m> and <m>b</m>) along with the geometric representation of the linear combination of these 
+        vectors using the scalar values (i.e. <m>a\mathbf{v}+b\mathbf{w}</m>).
+      </p>
+      <p>
+        On page 1.2, adjust the sliders to find scalars <m>a</m> and <m>b</m> so that the linear combination 
+        of the vectors <m>a\mathbf{v}</m> and <m>b\mathbf{w}</m> will be the same as the vector 
+        <m>\begin{bmatrix}9.4\\6.4\end{bmatrix}</m>.  Record the values of the scalars you find giving 
+        a rough sketch of your linear combination.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        Don't worry if your decimal answers are a little off here.  It should, however, be in the ballpark.
+      </p>
+    </hint>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        On page 1.1, perform the computation 
+        <m>a\begin{bmatrix}1\\1\end{bmatrix}+b\begin{bmatrix}3\\1\end{bmatrix}</m> for the values of <m>a</m> and 
+        <m>b</m> that you found and discuss what you notice relative to your experience on the graphing page.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        Again, don't worry if your decimal answers are a little off here.  It should, however, be in the ballpark.
+      </p>
+    </hint>
+  </task>
+
+  <conclusion>
+    <p>
+      A little wrap up.
+    </p>
+  </conclusion>
+
+</project>
+  </p>
+</subsection>
 
 </section>
