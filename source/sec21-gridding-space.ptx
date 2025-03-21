@@ -66,7 +66,42 @@
   <task>
     <statement>
       <p>
-        
+        Draw a vector from the origin (where <m>\mathbf{v}_1</m> and <m>\mathbf{v}_2</m> meet) to the fly.  
+        Describe this new resultant vector as a linear combination of the vectors 
+        <m>\mathbf{v}_1</m> and <m>\mathbf{v}_2</m>.
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+       <sidebyside width="30%">
+      <figure>
+       <image source="images/fly-grids-0.png">
+        <caption>Fly on Ceiling</caption>
+       </image>
+       </figure>
+  
+       <figure>
+         <image source="images/fly-grids-3.png">
+         <caption>Fly and Grid</caption>
+        </image>
+        </figure>
+
+        <figure>
+         <image source="images/fly-grids-5.png">
+         <caption>Fly and Both Grids</caption>
+        </image>
+        </figure>
+        </sidebyside>
+      </p>
+      <p>
+        At this point you blink your eyes and imagine a new pair of vectors acting as your measuring 
+        devices.  This time they are the standard unit vectors you are used to seeing, namely, 
+        <m>\mathbf{e}_1=\begin{bmatrix}1\\0\end{bmatrix}</m> and 
+        <m>\mathbf{e}_2=\begin{bmatrix}0\\1\end{bmatrix}</m>.  Based on the grid system you see in 
+        Figure XXX, what are the coordinates of the fly's location?
       </p>
     </statement>
   </task>
