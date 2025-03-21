@@ -22,5 +22,27 @@
    </image>
    </figure>
   </p>
+  <p>
+    <activity>
+  <introduction>
+    <p>
+      Suppose you are Descartes staring at the fly on the ceiling.  At first, all you see is the fly sitting 
+      arbitrarily in space (see Figure XXX(a)).  As your imagination wanders, you begin to see two sets of 
+      parallel lines crisscrossing the ceiling (Figure XXX(b)).
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        If the vectors, <m>\mathbf{v_1}</m> and <m>\mathbf{v_2}</m>, represent the units of measure in their 
+        respective directions, and where these two vectors both begin is the origin of your grid system, 
+        what would be the coordinates of the fly in the <m>\left\{\mathbf{v_1}, \mathbf{v_2}\right\}</m> 
+        coordinate system?
+      </p>
+    </statement>
+  </task>
+</activity>
+  </p>
 
 </section>
