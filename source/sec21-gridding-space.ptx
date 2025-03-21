@@ -75,6 +75,14 @@
 
   <task>
     <statement>
+      
+      <p>
+        At this point you blink your eyes and imagine a new pair of vectors acting as your measuring 
+        devices.  This time they are the standard unit vectors you are used to seeing from the Cartesian 
+        plane, namely, <m>\mathbf{e}_1=\begin{bmatrix}1\\0\end{bmatrix}</m> and 
+        <m>\mathbf{e}_2=\begin{bmatrix}0\\1\end{bmatrix}</m>.  Based on the grid system you see in 
+        Figure 2.1.6, what are the coordinates of the fly's location?
+      </p>
       <p>
        <sidebyside width="30%">
       <figure>
@@ -96,12 +104,33 @@
         </figure>
         </sidebyside>
       </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
       <p>
-        At this point you blink your eyes and imagine a new pair of vectors acting as your measuring 
-        devices.  This time they are the standard unit vectors you are used to seeing, namely, 
-        <m>\mathbf{e}_1=\begin{bmatrix}1\\0\end{bmatrix}</m> and 
-        <m>\mathbf{e}_2=\begin{bmatrix}0\\1\end{bmatrix}</m>.  Based on the grid system you see in 
-        Figure XXX, what are the coordinates of the fly's location?
+        Draw a vector from the origin (where <m>\mathbf{e}_1</m> and <m>\mathbf{e}_2</m> meet) to the fly.  
+        Describe this new resultant vector as a linear combination of the vectors 
+        <m>\mathbf{e}_1</m> and <m>\mathbf{e}_2</m>.
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Looking at both grids superimposed on each other (Figure 2.1.7), explain why your responses to parts 
+        (a) and (c) make sense.
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Looking at the scalars from the linear combination of vectors you found in parts (b) and (d), 
+        what connections do you see to the grid systems being used in each case?
       </p>
     </statement>
   </task>
