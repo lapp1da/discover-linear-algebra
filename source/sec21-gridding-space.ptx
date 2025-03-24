@@ -157,6 +157,14 @@
       both the algebraic and geometric combination of such vectors and develop an intuition for how 
       algebraic operations relate to geometric representations of the same ideas.
     </p>
+    <p>
+      <sidebyside width="45%">
+        <image source="images/project-2-1-2-vector-define-1.png">
+        </image>
+        <image source="images/project-2-1-2-linearcomb-2.png">
+        </image>
+      </sidebyside>
+    </p>
   </introduction>
 
   <task>
@@ -195,6 +203,40 @@
         Again, don't worry if your decimal answers are a little off here.  It should, however, be in the ballpark.
       </p>
     </hint>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Is it possible to find a different pair of values <m>a</m> and <m>b</m> that will also result 
+        in the linear combination <m>a\mathbf{v}+b\mathbf{w}</m> being equal to the vector 
+        <m>\begin{bmatrix}9.4\\6.4\end{bmatrix}</m>?  If so, what values for <m>a</m> and <m>b</m> did you 
+        find?  If not, explain why it was not possible.
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Now grab the point <m>(9.4, 6.4)</m> on page 1.2 representing the vector 
+        <m>\begin{bmatrix}9.4\\6.4\end{bmatrix}</m> and move it to another location in the plane.  Find a 
+        new set of scalars <m>a</m> and <m>b</m> so that the linear combination of the vectors, 
+        <m>a\mathbf{v}+b\mathbf{w}</m>, will be the same as your new vector.  Record the new vector you 
+        choose along with the scalars <m>a</m> and <m>b</m> that work for the linear combination giving a 
+        rough sketch of your linear combination.
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Repeat part (d) for at least two more vectors recording your new vectors and the scalars 
+        <m>a</m> and <m>b</m> that work for the linear combination giving a rough sketch of your linear 
+        combinations.
+      </p>
+    </statement>
   </task>
 
   <conclusion>
