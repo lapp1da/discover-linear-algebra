@@ -167,9 +167,9 @@
     </p>
     <p>
     1. Using Two Vectors
-  </p>
+    </p>
   </introduction>
-  
+  <exercise>
   <task>
     <statement>
       <p>
@@ -241,10 +241,13 @@
       </p>
     </statement>
   </task>
+  </exercise>
 <introduction>
   <p>
     2. Using Two Different Vectors
   </p>
+  </introduction>
+<exercise>
   <p>
     Choose two new vectors to use for vectors  <m>\mathbf{v}</m> and <m>\mathbf{w}</m> redefining them on 
     page 1.1 (be careful to choose entries that will allow the vectors to fit into the graphing window).  
@@ -252,16 +255,37 @@
     to redefine the vectors.  To enter the desired new vectors, use the math palette and select the 
     <m>2\times1</m> vector option (see below).
   </p>
-
-</introduction> 
+  <p>
+      <sidebyside width="45%">
+        <image source="images/project-2-1-2-vector-define-2.png">
+        </image>
+        <image source="images/project-2-1-2-vector-define-pal-2.png">
+        </image>
+      </sidebyside>
+    </p>
 
 <task>
   <statement>
     <p>
-      
+      Repeat what you did in question 1(d) recording the third vector and the scalars <m>a</m> and <m>b</m> 
+      that work for the linear combination giving a rough sketch of your linear combination.
+    </p>
+  </statement>
+ </task>
+
+ <task>
+  <statement>
+    <p>
+      Now place your target vector back to <m>\begin{bmatrix}9.4\\6.4\end{bmatrix}</m> and redefine the 
+      vector <m>\mathbf{v}=\begin{bmatrix}1\\1\end{bmatrix}</m>.  Now try to define another vector for 
+      <m>\mathbf{w}</m> so that it is not possible to reach the vector <m>\begin{bmatrix}9.4\\6.4\end{bmatrix}</m> 
+      with any linear combination of vectors <m>\mathbf{v}</m> and <m>\mathbf{w}</m>.  What do you notice about 
+      the geometric relationship between <m>\mathbf{v}</m> and <m>\mathbf{w}</m>?
     </p>
   </statement>
  </task> 
+ </exercise>
+
   <conclusion>
     <p>
       A little wrap up.
