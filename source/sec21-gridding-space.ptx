@@ -254,6 +254,14 @@
   <p>
     <m>\mathbf{2.}</m> <m>\mathbf{Using}</m> <m>\mathbf{Two}</m> <m>\mathbf{Different}</m> <m>\mathbf{Vectors}</m>
   </p>
+  <p>
+      <sidebyside width="45%">
+        <image source="images/project-2-1-2-vector-define-2.png">
+        </image>
+        <image source="images/project-2-1-2-vector-define-pal-2.png">
+        </image>
+      </sidebyside>
+    </p>
   </introduction>
 <exercise>
   <p>
@@ -263,14 +271,6 @@
     to redefine the vectors.  To enter the desired new vectors, use the math palette and select the 
     <m>2\times1</m> vector option (see below).
   </p>
-  <p>
-      <sidebyside width="45%">
-        <image source="images/project-2-1-2-vector-define-2.png">
-        </image>
-        <image source="images/project-2-1-2-vector-define-pal-2.png">
-        </image>
-      </sidebyside>
-    </p>
 
 <task>
   <statement>
@@ -317,9 +317,7 @@
     On page 2.1 of the <m>\mathbf{LinearComb.tns}</m> document, you can see three vectors <m>\mathbf{v}</m>, 
     <m>\mathbf{w}</m>, and <m>\mathbf{u}</m> defined.
   </p>
- </introduction>
- <exercise>
- <p>
+  <p>
       <sidebyside width="45%">
         <image source="images/project-2-1-2-vector-define-3.png">
         </image>
@@ -327,6 +325,9 @@
         </image>
       </sidebyside>
     </p>
+ </introduction>
+ <exercise>
+ 
   <task>
     <statement>
       <p>
