@@ -166,7 +166,7 @@
       </sidebyside>
     </p>
     <p>
-    1. Using Two Vectors
+    <m>\mathbf{1.}</m> <m>\mathbf{Using}</m> <m>\mathbf{Two}</m> <m>\mathbf{Vectors}</m>
     </p>
   </introduction>
   <exercise>
@@ -244,7 +244,15 @@
   </exercise>
 <introduction>
   <p>
-    2. Using Two Different Vectors
+    If we start with a certain set of fixed vectors and look at all of the vectors we can get (or reach) 
+    with just linear combinations of these vectors (<m>a\mathbf{v}+b\mathbf{w}</m>), it is like asking what 
+    objects can we grab with our arms?  Thus we call the set of all vectors that we can reach with linear 
+    combinations of a certain set of vectors the <m>\mathbf{Span}</m> of those vectors (analogous to our 
+    “arm span”).  In this case we would denote the set of all vectors that we can obtain from linear 
+    combinations of <m>\mathbf{v}</m> and <m>\mathbf{w}</m> by <m>Span\left\{\mathbf{v},\mathbf{w}\right\}</m>.
+  </p>
+  <p>
+    <m>\mathbf{2.}</m> <m>\mathbf{Using}</m> <m>\mathbf{Two}</m> <m>\mathbf{Different}</m> <m>\mathbf{Vectors}</m>
   </p>
   </introduction>
 <exercise>
@@ -284,11 +292,96 @@
     </p>
   </statement>
  </task> 
+
+ <task>
+  <statement>
+    <p>
+      Based on your experiences, given any two vectors in <m>\mathbb{R}^2</m>, can you always find a linear 
+      combination of them that will give you any vector in <m>\mathbb{R}^2</m> you might desire?  Explain 
+      your observations.
+    </p>
+  </statement>
+ </task>
  </exercise>
+ <introduction>
+  <p>
+    At this point we have examined linear combinations of two vectors to get another vector in 
+    <m>\mathbb{R}^2</m>.  What if we used linear combinations of three vectors?  For the next part of the lab, 
+    consider three original vectors <m>\mathbf{v}</m>, <m>\mathbf{w}</m>, and <m>\mathbf{u}</m> using linear 
+    combination to obtain a fourth vector as you did in the first two questions.
+  </p>
+  <p>
+    <m>\mathbf{3.}</m> <m>\mathbf{Using}</m> <m>\mathbf{Three}</m> <m>\mathbf{Vectors}</m>
+  </p>
+  <p>
+    On page 2.1 of the <m>\mathbf{LinearComb.tns}</m> document, you can see three vectors <m>\mathbf{v}</m>, 
+    <m>\mathbf{w}</m>, and <m>\mathbf{u}</m> defined.
+  </p>
+ </introduction>
+ <exercise>
+ <p>
+      <sidebyside width="45%">
+        <image source="images/project-2-1-2-vector-define-3.png">
+        </image>
+        <image source="images/project-2-1-2-linearcomb-4.png">
+        </image>
+      </sidebyside>
+    </p>
+  <task>
+    <statement>
+      <p>
+        Go to page 2.2 and adjust the scalars <m>a</m>, <m>b</m>, and <m>c</m> so that you get vector 
+        <m>\begin{bmatrix}7.9\\8.7\end{bmatrix}</m> as a linear combination of vectors <m>\mathbf{v}</m>, 
+        <m>\mathbf{w}</m>, and <m>\mathbf{u}</m>.  Record your values for <m>a</m>, <m>b</m>, and <m>c</m> giving 
+        a rough sketch of your linear combination.
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Can you find a different set of scalars <m>a</m>, <m>b</m>, and <m>c</m> so that you also get vector 
+        <m>\begin{bmatrix}7.9\\8.7\end{bmatrix}</m> as a linear combination of vectors <m>\mathbf{v}</m>, 
+        <m>\mathbf{w}</m>, and <m>\mathbf{u}</m>?  If so, record your different set of values for <m>a</m>, 
+        <m>b</m>, and <m>c</m> that work giving a rough sketch of your linear combination.  If not, explain 
+        why it can't happen.
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Compare/contrast the “uniqueness” of the linear combination in the case of three vectors to 
+        what you found in question 1(c) for two vectors.
+      </p>
+    </statement>
+  </task>
+  </exercise>
+
+  <introduction>
+    <p>
+      <m>\mathbf{4.}</m> <m>\mathbf{Do}</m> <m>\mathbf{We}</m> <m>\mathbf{Need}</m> <m>\mathbf{Three?}</m>
+    </p>
+    <p>
+      Based on what you found in question 3, is it possible to replace the three-vector situation with a 
+      unique linear combination of two vectors?  To help answer this question, try leaving <m>a\mathbf{v}</m> 
+      alone and finding a unique second vector that could be used instead of <m>b\mathbf{w}+c\mathbf{u}</m> 
+      so that when added to <m>a\mathbf{v}</m> would give the vector <m>\begin{bmatrix}7.9\\8.7\end{bmatrix}</m>.  
+      Give a rough sketch of your linear combination.
+    </p>
+  </introduction>
 
   <conclusion>
     <p>
-      A little wrap up.
+      <m>\mathbf{5.}</m> <m>\mathbf{Wrapping}</m> <m>\mathbf{It}</m> <m>\mathbf{Up}</m>
+    </p>
+    <p>
+      Based on your observations, what do you think would be the minimum number of vectors needed so that 
+      you could reach any desired vectors in <m>\mathbb{R}^2</m> as a linear combination of the vectors?  
+      What relationship must there be among these vectors so that any vector in <m>\mathbb{R}^2</m> can be 
+      obtained as a linear combination of them?
     </p>
   </conclusion>
 
