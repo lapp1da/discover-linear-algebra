@@ -165,8 +165,11 @@
         </image>
       </sidebyside>
     </p>
+    <p>
+    1. Using Two Vectors
+  </p>
   </introduction>
-
+  
   <task>
     <statement>
       <p>
@@ -238,7 +241,27 @@
       </p>
     </statement>
   </task>
+<introduction>
+  <p>
+    2. Using Two Different Vectors
+  </p>
+  <p>
+    Choose two new vectors to use for vectors  <m>\mathbf{v}</m> and <m>\mathbf{w}</m> redefining them on 
+    page 1.1 (be careful to choose entries that will allow the vectors to fit into the graphing window).  
+    While on page 1.1, you can choose menu option <m>\mathbf{1:Actions}</m> followed by <m>\mathbf{1:Define}</m> 
+    to redefine the vectors.  To enter the desired new vectors, use the math palette and select the 
+    <m>2\times1</m> vector option (see below).
+  </p>
 
+</introduction> 
+
+<task>
+  <statement>
+    <p>
+      
+    </p>
+  </statement>
+ </task> 
   <conclusion>
     <p>
       A little wrap up.
