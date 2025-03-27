@@ -159,7 +159,10 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch2-linearcomb-span-bases.html" class="internal"><span class="codenumber">2</span> <span class="title">Linear Combinations, Spanning, and Bases</span></a></div>
 <ul class="structural toc-item-list contains-active"><li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec21-gridding-space.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Gridding the Space</span></a></div>
-<ul class="structural toc-item-list active"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec21-gridding-space.html#linear-comb-span" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Linear Combinations and Spanning</span></a></div></li></ul>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec21-gridding-space.html#linear-comb-span" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Linear Combinations and Spanning</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec21-gridding-space.html#sec21-gridding-space-5" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Linear Independence</span></a></div></li>
+</ul>
 </li></ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
@@ -283,7 +286,31 @@ eBookConfig.enable_chatcodes =  false;
 <span class="process-math">\(\mathbf{5.}\)</span> <span class="process-math">\(\mathbf{Wrapping}\)</span> <span class="process-math">\(\mathbf{It}\)</span> <span class="process-math">\(\mathbf{Up}\)</span>
 </div>
 <div class="para" id="linear-comb-span-4-1-9-2">Based on your observations, what do you think would be the minimum number of vectors needed so that you could reach any desired vectors in <span class="process-math">\(\mathbb{R}^2\)</span> as a linear combination of the vectors? What relationship must there be among these vectors so that any vector in <span class="process-math">\(\mathbb{R}^2\)</span> can be obtained as a linear combination of them?</div>
-</div></article></div></section></section></div>
+</div></article></div></section><section class="subsection" id="sec21-gridding-space-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="space"> </span><span class="title">Linear Independence</span>
+</h3>
+<div class="para" id="sec21-gridding-space-5-2">As we saw in Project 2.1.2, we had a few different situations that could occur in dealing with vectors in <span class="process-math">\(\mathbb{R}^2\text{.}\)</span>  If we only have one vector, it is easily seen that we can only move along a single line containing that vector by use of scalar multiples of it.  If we have exactly two vectors, we can have a couple of scenarios.  The first happens when the two vectors are just scalar multiples of each other. In this case, adding them together in any linear combination will simply result in staying on the same line, and thus, we cannot move into other parts of the <span class="process-math">\(\mathbb{R}^2\)</span> plane.  We can’t get off the line.  The second scenario is if we have two vectors that are not scalar multiples of each other.  In this case, using scalar multiples of one of them allows us to move along an infinite line and when adding a scalar multiple of the other vector, we can veer off that course into other regions of the <span class="process-math">\(\mathbb{R}^2\)</span> plane.  In fact, to span all of <span class="process-math">\(\mathbb{R}^2\text{,}\)</span> we need to have at least two vectors that are not scalar multiples of each other.</div>
+<div class="para" id="sec21-gridding-space-5-3">The last scenario is when we had more than two vectors in <span class="process-math">\(\mathbb{R}^2\text{.}\)</span>  Recall that in this case, we could replace some of these vectors with a single vector representing their sum and thus "reduce" the number of vectors we needed to span the same space.  To see how this works algebraically, let’s explore it with some actual vectors.</div>
+<div class="para" id="sec21-gridding-space-5-4"><article class="activity project-like" id="sec21-gridding-space-5-4-1"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="sec21-gridding-space-5-4-1-1"><div class="para" id="sec21-gridding-space-5-4-1-1-1">Based on Project 2.1.2, we noticed that if we are in <span class="process-math">\(\mathbb{R}^2\text{,}\)</span> if we want to span the entire space, we need to have at least two vectors.  However, it was not enough to have two vectors, but in addition, these two vectors could not be on the same line.  Here we will explore this idea in greater detail.  Consider the set of vectors in <span class="process-math">\(\mathbb{R}^2\)</span> given by <span class="process-math">\(\left\{\begin{bmatrix}1\\2\end{bmatrix},
+\begin{bmatrix}1\\3\end{bmatrix},
+\begin{bmatrix}2\\6\end{bmatrix}\right\}\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="sec21-gridding-space-5-4-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="sec21-gridding-space-5-4-1-2-1-1">Do we need all three of these vectors to reach all of <span class="process-math">\(\mathbb{R}^2\text{?}\)</span>  If so, explain why. If not, explain why not.</div></article><article class="task exercise-like" id="sec21-gridding-space-5-4-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="sec21-gridding-space-5-4-1-3-1-1">Consider the linear combination of these vectors given by <span class="process-math">\(5\cdot\begin{bmatrix}1\\2\end{bmatrix}+
+6\cdot\begin{bmatrix}1\\3\end{bmatrix}-
+1\cdot\begin{bmatrix}2\\6\end{bmatrix}\text{.}\)</span>  Express the vector <span class="process-math">\(\begin{bmatrix}2\\6\end{bmatrix}\)</span> as a scalar multiple of <span class="process-math">\(\begin{bmatrix}1\\3\end{bmatrix}\text{.}\)</span>
+</div></article><article class="task exercise-like" id="sec21-gridding-space-5-4-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="sec21-gridding-space-5-4-1-4-1-1">Now replace the part of your linear combination, <span class="process-math">\(1\cdot\begin{bmatrix}2\\6\end{bmatrix}\text{,}\)</span> with its equivalent expression in terms of <span class="process-math">\(\begin{bmatrix}1\\3\end{bmatrix}\text{.}\)</span>  Based on your experience working with polynomials in high school, "factor out" the vector <span class="process-math">\(\begin{bmatrix}1\\3\end{bmatrix}\)</span> from the last two terms of your linear combination. What is the new scalar you get for <span class="process-math">\(\begin{bmatrix}1\\3\end{bmatrix}\text{?}\)</span>
+</div></article><article class="task exercise-like" id="sec21-gridding-space-5-4-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="sec21-gridding-space-5-4-1-5-1-1">Now you can take your original linear combination in three vectors given by <span class="process-math">\(5\cdot\begin{bmatrix}1\\2\end{bmatrix}+
+6\cdot\begin{bmatrix}1\\3\end{bmatrix}-
+1\cdot\begin{bmatrix}2\\6\end{bmatrix}\)</span> and replace it with a linear combination of only two vectors, namely <span class="process-math">\(\begin{bmatrix}1\\2\end{bmatrix}\)</span> and <span class="process-math">\(\begin{bmatrix}1\\3\end{bmatrix}\text{.}\)</span> What is this linear combination?</div></article><article class="task exercise-like" id="sec21-gridding-space-5-4-1-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="sec21-gridding-space-5-4-1-6-1-1">Using your CAS, evaluate both <span class="process-math">\(5\cdot\begin{bmatrix}1\\2\end{bmatrix}+
+6\cdot\begin{bmatrix}1\\3\end{bmatrix}-1\cdot\begin{bmatrix}2\\6\end{bmatrix}\)</span> and your new linear combination from part (d) to show they are the same.</div></article></article></div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch2-linearcomb-span-bases.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
