@@ -37,17 +37,17 @@
     <p>
      <sidebyside width="30%">
       <figure>
-       <image source="images/fly-grids-0.png">
+       <image source="images/fly-grids-0-1.png">
       <caption>Fly on Ceiling</caption>
     </image>
   </figure>
   <figure>
-    <image source="images/fly-grids-1.png">
+    <image source="images/fly-grids-1-1.png">
       <caption>Fly and Vectors</caption>
     </image>
   </figure>
   <figure>
-    <image source="images/fly-grids-2.png">
+    <image source="images/fly-grids-2-1.png">
       <caption>Fly and Grid</caption>
     </image>
   </figure>
@@ -89,19 +89,19 @@
       <p>
        <sidebyside width="30%">
       <figure>
-       <image source="images/fly-grids-0.png">
+       <image source="images/fly-grids-0-1.png">
         <caption>Fly on Ceiling</caption>
        </image>
        </figure>
   
        <figure>
-         <image source="images/fly-grids-3.png">
+         <image source="images/fly-grids-3-1.png">
          <caption>Fly and Grid</caption>
         </image>
         </figure>
 
         <figure>
-         <image source="images/fly-grids-5.png">
+         <image source="images/fly-grids-5-1.png">
          <caption>Fly and Both Grids</caption>
         </image>
         </figure>
