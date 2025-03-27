@@ -13,6 +13,15 @@ var ptx_lunr_docs = [
   "id": "frontmatter-4",
   "level": "1",
   "url": "frontmatter-4.html",
+  "type": "Dedication",
+  "number": "",
+  "title": "Dedication",
+  "body": " I want to dedicate this text to my wonderful wife, Kim, whose sacrifices and support have always made my professional goals possible. She was willing to limit her own professional ambitions to accommodate my needs. Thank you and I love you!  I also want to thank my kids, Noah, Ellen, and Sarah, for being my inspiration in the teaching and learning of mathematics. For two of them, I had the pleasure of actually being their professor and they have given me insights into how students learn mathematics. They all have been supportive of my professional life. I love you all!  "
+},
+{
+  "id": "frontmatter-5",
+  "level": "1",
+  "url": "frontmatter-5.html",
   "type": "Acknowledgements",
   "number": "",
   "title": "Acknowledgements",
