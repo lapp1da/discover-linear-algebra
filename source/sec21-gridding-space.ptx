@@ -411,7 +411,74 @@
     explore it with some actual vectors.
   </p>
   <p>
+    <activity>
+      <introduction>
+        <p>
+          Based on Project 2.1.2, we noticed that if we are in <m>\mathbb{R}^2</m>, if we want to span 
+          the entire space, we need to have at least two vectors.  However, it was not enough to have two 
+          vectors, but in addition, these two vectors could not be on the same line.  Here we will explore 
+          this idea in greater detail.  Consider the set of vectors in <m>\mathbb{R}^2</m> given by 
+          <m>\left\{\begin{bmatrix}1\\2\end{bmatrix},
+          \begin{bmatrix}1\\3\end{bmatrix},
+          \begin{bmatrix}2\\6\end{bmatrix}\right\}</m>.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Do we need all three of these vectors to reach all of <m>\mathbb{R}^2</m>?  If so, explain why.  
+            If not, explain why not.
+          </p>
+        </statement>
+      </task>
 
+      <task>
+        <statement>
+          <p>
+            Consider the linear combination of these vectors given by 
+            <m>5\cdot\begin{bmatrix}1\\2\end{bmatrix}+
+          6\cdot\begin{bmatrix}1\\3\end{bmatrix}-
+          1\cdot\begin{bmatrix}2\\6\end{bmatrix}</m>.  Express the vector <m>\begin{bmatrix}2\\6\end{bmatrix}</m> 
+          as a scalar multiple of <m>\begin{bmatrix}1\\3\end{bmatrix}</m>.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Now replace the part of your linear combination, <m>1\cdot\begin{bmatrix}2\\6\end{bmatrix}</m>, 
+            with its equivalent expression in terms of <m>\begin{bmatrix}1\\3\end{bmatrix}</m>.  Based on 
+            your experience working with polynomials in high school, "factor out" the vector 
+            <m>\begin{bmatrix}1\\3\end{bmatrix}</m> from the last two terms of your linear combination.  
+            What is the new scalar you get for <m>\begin{bmatrix}1\\3\end{bmatrix}</m>?
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Now you can take your original linear combination in three vectors given by 
+            <m>5\cdot\begin{bmatrix}1\\2\end{bmatrix}+
+          6\cdot\begin{bmatrix}1\\3\end{bmatrix}-
+          1\cdot\begin{bmatrix}2\\6\end{bmatrix}</m> and replace it with a linear combination of only two 
+          vectors, namely <m>\begin{bmatrix}1\\2\end{bmatrix}</m> and <m>\begin{bmatrix}1\\3\end{bmatrix}</m>.  
+          What is this linear combination? 
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Using your CAS, evaluate both <m>5\cdot\begin{bmatrix}1\\2\end{bmatrix}+
+            6\cdot\begin{bmatrix}1\\3\end{bmatrix}-1\cdot\begin{bmatrix}2\\6\end{bmatrix}</m> and your new 
+            linear combination from part (d) to show they are the same.
+          </p>
+        </statement>
+      </task>
+    </activity>
   </p>
 </subsection>  
 
