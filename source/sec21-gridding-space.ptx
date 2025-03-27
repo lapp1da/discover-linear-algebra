@@ -389,5 +389,31 @@
 </project>
   </p>
 </subsection>
+<subsection>
+  <title>Linear Independence</title>
+  <p>
+    As we saw in Project 2.1.2, we had a few different situations that could occur in dealing with vectors in 
+    <m>\mathbb{R}^2</m>.  If we only have one vector, it is easily seen that we can only move along a single 
+    line containing that vector by use of scalar multiples of it.  If we have exactly two vectors, we can have 
+    a couple of scenarios.  The first happens when the two vectors are just scalar multiples of each other.  
+    In this case, adding them together in any linear combination will simply result in staying on the same 
+    line, and thus, we cannot move into other parts of the <m>\mathbb{R}^2</m> plane.  We can't get off the 
+    line.  The second scenario is if we have two vectors that are not scalar multiples of each other.  In this 
+    case, using scalar multiples of one of them allows us to move along an infinite line and when adding a 
+    scalar multiple of the other vector, we can veer off that course into other regions of the 
+    <m>\mathbb{R}^2</m> plane.  In fact, to span all of <m>\mathbb{R}^2</m>, we need to have at least two 
+    vectors that are not scalar multiples of each other.
+  </p>
+  <p>
+    The last scenario is when we had more than two vectors in <m>\mathbb{R}^2</m>.  Recall that in this case, 
+    we could replace some of these vectors with a single vector representing their sum and thus "reduce" the 
+    number of vectors we needed to span the same space.  To see how this works algebraically, let's 
+    explore it with some actual vectors.
+  </p>
+  <p>
+
+  </p>
+</subsection>  
+
 
 </section>
