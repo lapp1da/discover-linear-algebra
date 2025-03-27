@@ -35,6 +35,19 @@
   <colophon xml:id="front-colophon">
     <colophon-items/>
   </colophon>
+  <dedication>
+    <p>
+      I want to dedicate this text to my wonderful wife, Kim, whose sacrifices and support have always 
+      made my professional goals possible.  She was willing to limit her own professional ambitions to 
+      accommodate my needs.  Thank you and I love you!
+    </p>
+    <p>
+      I also want to thank my kids, Noah, Ellen, and Sarah, for being my inspiration in the teaching and 
+      learning of mathematics.  For two of them, I had the pleasure of actually being their professor and 
+      they have given me insights into how students learn mathematics.  They all have been supportive of my 
+      professional life.  I love you all!
+    </p>
+  </dedication>
   <acknowledgement>
   <p>
     This book is an application of research I have conducted on the teaching and learning of linear 
