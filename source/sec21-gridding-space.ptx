@@ -158,6 +158,12 @@
       algebraic operations relate to geometric representations of the same ideas.
     </p>
     <p>
+      <figure xml:id="">
+        <caption>Linear Combinations</caption>
+        <interactive geogebra="https://www.geogebra.org/material/edit/id/z6c28fvc" reset-icon="yes" />
+      </figure>
+    </p>
+    <p>
       <sidebyside width="45%">
         <image source="images/project-2-1-2-vector-define-1.png">
         </image>
@@ -168,17 +174,23 @@
     <p>
     <m>\mathbf{1.}</m> <m>\mathbf{Using}</m> <m>\mathbf{Two}</m> <m>\mathbf{Vectors}</m>
     </p>
-  </introduction>
-  <exercise>
-  <task>
-    <statement>
-      <p>
+     <p>
         Consider the two vectors <m>\mathbf{v}=\begin{bmatrix}1\\1\end{bmatrix}</m> and 
-        <m>\mathbf{w}=\begin{bmatrix}3\\1\end{bmatrix}</m>.  On page 1.1 of the document LinearComb.tns, 
+        <m>\mathbf{w}=\begin{bmatrix}3\\1\end{bmatrix}</m>.  On page 1.1 of the TI-Nspire document, LinearComb.tns, 
         these vectors have been defined for you.  On page 1.2, you will see two sliders representing scalars 
         (<m>a</m> and <m>b</m>) along with the geometric representation of the linear combination of these 
         vectors using the scalar values (i.e. <m>a\mathbf{v}+b\mathbf{w}</m>).
       </p>
+      <p>
+        You may instead use the applet in Figure 2.1.8 where the components of the vectors can be entered 
+        directly into the fields labeled <m>v_{1}</m>, <m>v_{2}</m>, <m>w_{1}</m>, and <m>w_{2}</m> and 
+        the scalars are given by the sliders <m>a</m> and <m>b</m> above.
+      </p>
+  </introduction>
+  <exercise>
+  <task>
+    <statement>
+     
       <p>
         On page 1.2, adjust the sliders to find scalars <m>a</m> and <m>b</m> so that the linear combination 
         of the vectors <m>a\mathbf{v}</m> and <m>b\mathbf{w}</m> will be the same as the vector 
@@ -262,6 +274,10 @@
     <m>2\times1</m> vector option (see below).
   </p>
   <p>
+    If using Figure 2.1.8, simply edit the entries in the fields for the vector components to redefine the 
+    vectors <m>\mathbf{v}</m> and <m>\mathbf{w}</m>.
+  </p>
+  <p>
       <sidebyside width="45%">
         <image source="images/project-2-1-2-vector-define-2.png">
         </image>
@@ -314,8 +330,12 @@
     <m>\mathbf{3.}</m> <m>\mathbf{Using}</m> <m>\mathbf{Three}</m> <m>\mathbf{Vectors}</m>
   </p>
   <p>
-    On page 2.1 of the <m>\mathbf{LinearComb.tns}</m> document, you can see three vectors <m>\mathbf{v}</m>, 
-    <m>\mathbf{w}</m>, and <m>\mathbf{u}</m> defined.
+    If using the TI-Nspire, on page 2.1 of the <m>\mathbf{LinearComb.tns}</m> document, you can see three 
+    vectors <m>\mathbf{v}</m>, <m>\mathbf{w}</m>, and <m>\mathbf{u}</m> defined.  This part of the project 
+    will use three vectors instead of two.
+  </p>
+  <p>
+    If you are using the built-in applet (Figure 2.1.8), simply click the checkbox to show the third vector.
   </p>
   <p>
       <sidebyside width="45%">
