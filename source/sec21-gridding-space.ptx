@@ -159,6 +159,17 @@
     </p>
     <p>
       <figure xml:id="">
+      <instruction>
+        <p>
+          This interactive construction starts with two vectors added head-to-toe representing a linear 
+          combination of the two vectors.  The entries of each vector can be changed by editing their 
+          respective values in the sketch (for vector, <m>\mathbf{v}</m>, edit <m>v_{1}</m> and 
+          <m>v_{2}</m> in the sketch and similarly for vector, <m>\mathbf{w}</m>).  Later in Project 2.1.2, 
+          you will need three vectors.  You can add the thrid to the sketch by clicking the "three vectors" 
+          checkbox.  In addition, there are sliders that represent the scalars associated with each of the 
+          vectors.  These can be used to create various linear combinations of the vectors in the sketch.
+        </p>
+        </instruction>
         <caption>Linear Combinations</caption>
         <interactive geogebra="https://www.geogebra.org/material/edit/id/z6c28fvc" reset-icon="yes" />
       </figure>
