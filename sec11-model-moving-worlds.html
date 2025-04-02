@@ -14,6 +14,8 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Discovering Linear Algebra">
 <meta property="book:author" content="Douglas A. Lapp, PhD">
+<meta property="book:author" content="Contributing Author">
+<meta property="book:author" content="Tibor Marcinek, PhD">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -110,7 +112,7 @@ eBookConfig.enable_chatcodes =  false;
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
 <h1 class="heading"><a href="my-great-book.html"><span class="title">Discovering Linear Algebra:</span> <span class="subtitle">An Active Learning Approach</span></a></h1>
-<p class="byline">Douglas A. Lapp, PhD</p>
+<p class="byline">Douglas A. Lapp, PhD, Contributing Author, Tibor Marcinek, PhD</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
@@ -456,22 +458,22 @@ r_1\\r_2\\r_3\end{bmatrix}
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">Vector Space.</span>
 </h4>
 <div class="para logical" id="def-vector-space-2-1">
-<div class="para">A <span class="process-math">\(\mathbf{vector}\)</span> <span class="process-math">\(\mathbf{space}\)</span> is a nonempty set <span class="process-math">\(V\)</span> of objects, called <em class="emphasis">vectors</em>, on which are defined two operations, called <em class="emphasis">addition</em> and <em class="emphasis">scalar multiplication</em> (for real numbers), that satisfy the following axioms. For any  <span class="process-math">\(\mathbf{u}, \mathbf{v}, \mathbf{w} \in V\)</span> and <span class="process-math">\(c, d \in \mathbb{R}\text{:}\)</span>
+<div class="para">A <dfn class="terminology">vector space</dfn> is a nonempty set <span class="process-math">\(V\)</span> of objects, called <em class="emphasis">vectors</em>, on which are defined two operations, called <em class="emphasis">addition</em> and <em class="emphasis">scalar multiplication</em> (for real numbers), that satisfy the following axioms. For any  <span class="process-math">\(\mathbf{u}, \mathbf{v}, \mathbf{w} \in V\)</span> and <span class="process-math">\(c, d \in \mathbb{R}\text{:}\)</span>
 </div>
-<ol class="decimal" id="def-vector-space-2-1-9">
-<li id="def-vector-space-2-1-9-1"><div class="para" id="def-vector-space-2-1-9-1-1"><span class="process-math">\(\displaystyle \mathbf{u}+\mathbf{v} \in V\)</span></div></li>
-<li id="def-vector-space-2-1-9-2"><div class="para" id="def-vector-space-2-1-9-2-1"><span class="process-math">\(\displaystyle \mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}\)</span></div></li>
-<li id="def-vector-space-2-1-9-3"><div class="para" id="def-vector-space-2-1-9-3-1"><span class="process-math">\(\displaystyle \left(\mathbf{u}+\mathbf{v}\right)+\mathbf{w}=\mathbf{u}+\left(\mathbf{v}+\mathbf{w}\right)\)</span></div></li>
-<li id="def-vector-space-2-1-9-4"><div class="para" id="def-vector-space-2-1-9-4-1">There exists a <em class="emphasis">zero vector</em>, denoted <span class="process-math">\(\mathbf{0} \in V\text{,}\)</span> such that <span class="process-math">\(\mathbf{u}+\mathbf{0}=\mathbf{u}, \forall \mathbf{u} \in V\text{.}\)</span>
+<ol class="decimal" id="def-vector-space-2-1-8">
+<li id="def-vector-space-2-1-8-1"><div class="para" id="def-vector-space-2-1-8-1-1"><span class="process-math">\(\displaystyle \mathbf{u}+\mathbf{v} \in V\)</span></div></li>
+<li id="def-vector-space-2-1-8-2"><div class="para" id="def-vector-space-2-1-8-2-1"><span class="process-math">\(\displaystyle \mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}\)</span></div></li>
+<li id="def-vector-space-2-1-8-3"><div class="para" id="def-vector-space-2-1-8-3-1"><span class="process-math">\(\displaystyle \left(\mathbf{u}+\mathbf{v}\right)+\mathbf{w}=\mathbf{u}+\left(\mathbf{v}+\mathbf{w}\right)\)</span></div></li>
+<li id="def-vector-space-2-1-8-4"><div class="para" id="def-vector-space-2-1-8-4-1">There exists a <em class="emphasis">zero vector</em>, denoted <span class="process-math">\(\mathbf{0} \in V\text{,}\)</span> such that <span class="process-math">\(\mathbf{u}+\mathbf{0}=\mathbf{u}, \forall \mathbf{u} \in V\text{.}\)</span>
 </div></li>
-<li id="def-vector-space-2-1-9-5"><div class="para" id="def-vector-space-2-1-9-5-1">For each <span class="process-math">\(\mathbf{u} \in V\text{,}\)</span> there exists a vector denoted <span class="process-math">\(-\mathbf{u} \in V\)</span> such that <span class="process-math">\(\mathbf{u}+\left(-\mathbf{u}\right)=\mathbf{0}\text{.}\)</span>
+<li id="def-vector-space-2-1-8-5"><div class="para" id="def-vector-space-2-1-8-5-1">For each <span class="process-math">\(\mathbf{u} \in V\text{,}\)</span> there exists a vector denoted <span class="process-math">\(-\mathbf{u} \in V\)</span> such that <span class="process-math">\(\mathbf{u}+\left(-\mathbf{u}\right)=\mathbf{0}\text{.}\)</span>
 </div></li>
-<li id="def-vector-space-2-1-9-6"><div class="para" id="def-vector-space-2-1-9-6-1">The scalar multiple of <span class="process-math">\(\mathbf{u}\)</span> by <span class="process-math">\(c\text{,}\)</span> denoted <span class="process-math">\(c\mathbf{u} \in V\text{.}\)</span>
+<li id="def-vector-space-2-1-8-6"><div class="para" id="def-vector-space-2-1-8-6-1">The scalar multiple of <span class="process-math">\(\mathbf{u}\)</span> by <span class="process-math">\(c\text{,}\)</span> denoted <span class="process-math">\(c\mathbf{u} \in V\text{.}\)</span>
 </div></li>
-<li id="def-vector-space-2-1-9-7"><div class="para" id="def-vector-space-2-1-9-7-1"><span class="process-math">\(\displaystyle c\left(\mathbf{u}+\mathbf{v}\right)=c\mathbf{u}+c\mathbf{v}\)</span></div></li>
-<li id="def-vector-space-2-1-9-8"><div class="para" id="def-vector-space-2-1-9-8-1"><span class="process-math">\(\displaystyle \left(c+d\right)\mathbf{u}=c\mathbf{u}+d\mathbf{u}\)</span></div></li>
-<li id="def-vector-space-2-1-9-9"><div class="para" id="def-vector-space-2-1-9-9-1"><span class="process-math">\(\displaystyle c\left(d\mathbf{u}\right)=\left(cd\right)\mathbf{u}\)</span></div></li>
-<li id="def-vector-space-2-1-9-10"><div class="para" id="def-vector-space-2-1-9-10-1"><span class="process-math">\(\displaystyle 1\mathbf{u}=\mathbf{u}\)</span></div></li>
+<li id="def-vector-space-2-1-8-7"><div class="para" id="def-vector-space-2-1-8-7-1"><span class="process-math">\(\displaystyle c\left(\mathbf{u}+\mathbf{v}\right)=c\mathbf{u}+c\mathbf{v}\)</span></div></li>
+<li id="def-vector-space-2-1-8-8"><div class="para" id="def-vector-space-2-1-8-8-1"><span class="process-math">\(\displaystyle \left(c+d\right)\mathbf{u}=c\mathbf{u}+d\mathbf{u}\)</span></div></li>
+<li id="def-vector-space-2-1-8-9"><div class="para" id="def-vector-space-2-1-8-9-1"><span class="process-math">\(\displaystyle c\left(d\mathbf{u}\right)=\left(cd\right)\mathbf{u}\)</span></div></li>
+<li id="def-vector-space-2-1-8-10"><div class="para" id="def-vector-space-2-1-8-10-1"><span class="process-math">\(\displaystyle 1\mathbf{u}=\mathbf{u}\)</span></div></li>
 </ol>
 </div></article></div></section><section class="subsection" id="sec-Transform-Data-Matrix-Mult"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="space"> </span><span class="title">Transforming Data and Matrix Multiplication</span>
@@ -663,8 +665,7 @@ T\left(\alpha \mathbf{v}\right)=\alpha T\left(\mathbf{v}\right)
 T\left(\mathbf{v}+\mathbf{w}\right)=T\left(\mathbf{v}\right)+T\left(\mathbf{w}\right)
 \end{equation*}
 </div>
-<div class="para">where <span class="process-math">\(\mathbf{v}, \mathbf{w} \in \mathbb{R}^n\text{,}\)</span> and <span class="process-math">\(\alpha\)</span> is a scalar. Then the mapping <span class="process-math">\(T\)</span> is called <span class="process-math">\(\mathbf{linear}\)</span> or a <span class="process-math">\(\mathbf{linear} \)</span> <span class="process-math">\(\mathbf{transformation}\text{.}\)</span>
-</div>
+<div class="para">where <span class="process-math">\(\mathbf{v}, \mathbf{w} \in \mathbb{R}^n\text{,}\)</span> and <span class="process-math">\(\alpha\)</span> is a scalar. Then the mapping <span class="process-math">\(T\)</span> is called <dfn class="terminology">linear</dfn> or a <dfn class="terminology">linear transformation</dfn>.</div>
 </div></article></div>
 <div class="para logical" id="sec-Transformations-Vectors-10">
 <div class="para">Just as the relationship of Hooke’s Law can be thought of as transforming <em class="emphasis">stretch</em> into <em class="emphasis">force</em>, in our scenario between pricing structures and the revenue generated, we are similarly looking to transform a pricing scheme into the resulting revenue for our three companies.  We can even use function notation to represent this relationship.  If we let the vector <span class="process-math">\(\mathbf{p}=\begin{bmatrix}
