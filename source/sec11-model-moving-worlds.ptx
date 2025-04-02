@@ -505,7 +505,7 @@ we get the total revenue for each company organized as an ordered triple (since 
     <title>Vector Space</title>
       <statement>
         <p>
-          A <m>\mathbf{vector}</m> <m>\mathbf{space}</m> is a nonempty set <m>V</m> of objects, called
+          A <term>vector space</term> is a nonempty set <m>V</m> of objects, called
           <em>vectors</em>, on which are defined two operations, called <em>addition</em> and 
           <em>scalar multiplication</em> (for real numbers), that satisfy the following axioms.  
           For any  <m>\mathbf{u}, \mathbf{v}, \mathbf{w} \in V</m> and <m>c, d \in \mathbb{R}</m>:
@@ -893,8 +893,7 @@ we get the total revenue for each company organized as an ordered triple (since 
           T\left(\mathbf{v}+\mathbf{w}\right)=T\left(\mathbf{v}\right)+T\left(\mathbf{w}\right)
         </me>
         where <m>\mathbf{v}, \mathbf{w} \in \mathbb{R}^n</m>, and <m>\alpha</m> is a scalar.  
-        Then the mapping <m>T</m> is called <m>\mathbf{linear}</m> or a 
-        <m>\mathbf{linear} </m> <m>\mathbf{transformation}</m>.
+        Then the mapping <m>T</m> is called <term>linear</term> or a <term>linear transformation</term>.
       </p>
     </statement>
   </definition>

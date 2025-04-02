@@ -259,7 +259,7 @@
     If we start with a certain set of fixed vectors and look at all of the vectors we can get (or reach) 
     with just linear combinations of these vectors (<m>a\mathbf{v}+b\mathbf{w}</m>), it is like asking what 
     objects can we grab with our arms?  Thus we call the set of all vectors that we can reach with linear 
-    combinations of a certain set of vectors the <m>\mathbf{Span}</m> of those vectors (analogous to our 
+    combinations of a certain set of vectors the <term>Span</term> of those vectors (analogous to our 
     “arm span”).  In this case we would denote the set of all vectors that we can obtain from linear 
     combinations of <m>\mathbf{v}</m> and <m>\mathbf{w}</m> by <m>Span\left\{\mathbf{v},\mathbf{w}\right\}</m>.
   </p>
@@ -514,15 +514,29 @@
     happens if none of the three vectors are scalar multiples of another one of the three?  Suppose instead, 
     that one of the vectors is a linear combination of the other two?  Consider the set of three vectors 
     <m>\left\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3\right\}</m>.  Here we do not necessarily have one that is 
-    a scalar multiple of another, but let's say that <m>\mathbf{v}_3=\alpha\mathbf{v}_1+\beta\mathbf{v}_2</m>.  If we 
-    want to have a particular linear combination using all three vectors, 
-    <m>a\mathbf{v}_1+b\mathbf{v}_2+c\mathbf{v}_3</m>, we can instead represent this as 
+    a scalar multiple of another, but let's say that <m>\mathbf{v}_3=\alpha\mathbf{v}_1+\beta\mathbf{v}_2</m>.  
+    Since our assumption here is that none of the three vectors is a scalar multiple of any of the remaining 
+    ones, we can pick any two vectors and reach any other vector in <m>\mathbb{R}^2</m> since they do not fall 
+    on the same line and thus will span all of the plane.  Therefore, we can assume that one of the three 
+    vectors must be a linear combination of the other two.  If we want to have a particular linear combination 
+    using all three vectors, <m>a\mathbf{v}_1+b\mathbf{v}_2+c\mathbf{v}_3</m>, we can instead represent this as 
     <m>a\mathbf{v}_1+b\mathbf{v}_2+c\left(\alpha\mathbf{v}_1+\beta\mathbf{v}_2\right)</m>.  This gives 
     <m>a\mathbf{v}_1+b\mathbf{v}_2+c\alpha\mathbf{v}_1+c\beta\mathbf{v}_2=
     \left(a+c\alpha\right)\mathbf{v}_1+\left(b+c\beta\right)\mathbf{v}_2</m>.  In otherwords, a linear 
     combination using just <m>\mathbf{v}_1</m> and <m>\mathbf{v}_2</m> meaning we only need two vectors since 
-    one of the three is linearly <em>dependent</em> on the other two.
+    one of the three is linearly <em>dependent</em> on the other two.  Since we can use this argument for all 
+    three vectors, this also confirms your observations from Project 2.1.2 that given three vectors where no 
+    two share a common line, a linear combination used to reach another vector is not unique.
   </p>
+  <definition xml:id="def-linear-dependent">
+    <statement>
+      <p>
+        A set of vectors is <term>linearly dependent</term> if one of the vectors can be 
+        expressed as a linear combination of the other vectors.  Otherwise, the set of vectors is called 
+        <term>linearly independent</term>.
+      </p>
+    </statement>
+  </definition>
 
 </subsection>  
 
