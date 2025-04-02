@@ -10,7 +10,21 @@
       <personname>Douglas A. Lapp, PhD</personname>
       <department>Department of Mathematics</department>
       <institution>Central Michigan University</institution>
+      <email>lapp1da@cmich.edu</email>
     </author>
+
+
+    <author>
+    <personname>Contributing Author</personname>
+      </author>
+
+    <author>
+    <personname>Tibor Marcinek, PhD</personname>
+      <department>Department of Mathematics</department>
+      <institution>Central Michigan University</institution>
+      <email>marci1t@cmich.edu</email>
+    </author>
+
     <date>
       <today />
     </date>
