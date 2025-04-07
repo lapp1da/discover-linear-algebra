@@ -7,20 +7,31 @@
     In this section we will look at how a space can be described by many different types of 
     of coordinates and coordinate systems. As students, our first introduction to locating a point in the plane,
     <m>\mathbb{R}^2</m>, is by imagining a square grid and expressing the location of a point as a pairing of 
-    two coordinates, <m>\left(x,y\right)</m>.  As the story goes, the mathematician, Descartes, was watching a 
+    two coordinates, <m>\left(x,y\right)</m>.  As I was staring at the ceiling while visiting Caveland Lodge in 
+    Carter Caves State Park located in Olive Hill, KY, I was reminded of the story of the mathematician and 
+    philosopher, Rene Descartes.  As the story goes, the mathematician, Descartes, was watching a 
     fly walking on the ceiling.  He wondered how he might describe the position of the fly and decided that he 
     could measure the distance from the corner of the ceiling in one direction and then the distance along a 
-    perpendicular direction to uniquely locate the fly.  This was the beginning of the Cartesian (or rectangular) 
+    perpendicular direction to uniquely locate the fly (much like the grid system you can see in the image of my 
+    hotel room ceiling at Carter Caves, Figure 2.1.1).  This was the beginning of the Cartesian (or rectangular) 
     coordinate system.  However, this is not the only way we could uniquely locate the fly.
   </p>
 
   <p>
+   <sidebyside width="35%"> 
    <figure xml:id="">
-    <caption>Descartes' Fly</caption>
-    <image source="images/descarte-fly-2-1.png" width="60%">
+    <caption>Carter Cave State Park</caption>
+    <image source="images/ccsp-ceiling.png">
     <shortdescription>Descartes Fly</shortdescription>
    </image>
    </figure>
+   <figure xml:id="">
+    <caption>Descartes' Fly</caption>
+    <image source="images/descarte-fly-2-1.png">
+    <shortdescription>Descartes Fly</shortdescription>
+   </image>
+   </figure>
+   </sidebyside>
   </p>
   <subsection xml:id="linear-comb-span">
     <title>Linear Combinations and Spanning</title>
