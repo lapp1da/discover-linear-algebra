@@ -551,20 +551,27 @@
     <m>a\mathbf{v}_1+b\mathbf{v}_2+c\left(\alpha\mathbf{v}_1+\beta\mathbf{v}_2\right)</m>.  This gives 
     <m>a\mathbf{v}_1+b\mathbf{v}_2+c\alpha\mathbf{v}_1+c\beta\mathbf{v}_2=
     \left(a+c\alpha\right)\mathbf{v}_1+\left(b+c\beta\right)\mathbf{v}_2</m>.  In otherwords, a linear 
-    combination using just <m>\mathbf{v}_1</m> and <m>\mathbf{v}_2</m> meaning we only need two vectors since 
+    combination using just <m>\mathbf{v}_1</m> and <m>\mathbf{v}_2</m>, meaning we only need two vectors since 
     one of the three is linearly <em>dependent</em> on the other two.  Since we can use this argument for all 
-    three vectors, this also confirms your observations from Project 2.1.2 that given three vectors where no 
-    two share a common line, a linear combination used to reach another vector is not unique.
+    three vectors, this also confirms your observations from part 3 of Project 2.1.2 that given three vectors 
+    where no two share a common line, a linear combination used to reach another vector is not unique.
   </p>
   <definition xml:id="def-linear-dependent">
     <statement>
       <p>
         A set of vectors is <term>linearly dependent</term> if one of the vectors can be 
-        expressed as a linear combination of the other vectors.  Otherwise, the set of vectors is called 
+        expressed as a linear combination of other vectors in the set.  Otherwise, the set of vectors is called 
         <term>linearly independent</term>.
       </p>
     </statement>
   </definition>
+  <p>
+    Now you may have a question about what to do with a set of vectors containing only one nonzero vector?  
+    Based on our definition, we can't really say that one of the vectors can be expressed as a linear 
+    combination of other vectors (we don't have "other" vectors).  Therefore, we will consider this situation 
+    as falling into the "otherwise" category and state that a set of exactly one nonzero vector is a 
+    <term>linearly independent</term> set.
+  </p>
 
 </subsection>  
 
