@@ -95,7 +95,7 @@
         devices.  This time they are the standard unit vectors you are used to seeing from the Cartesian 
         plane, namely, <m>\mathbf{e}_1=\begin{bmatrix}1\\0\end{bmatrix}</m> and 
         <m>\mathbf{e}_2=\begin{bmatrix}0\\1\end{bmatrix}</m>.  Based on the grid system you see in 
-        Figure 2.1.6, what are the coordinates of the fly's location?
+        Figure 2.1.7, what are the coordinates of the fly's location?
       </p>
       <p>
        <sidebyside width="30%">
@@ -134,7 +134,7 @@
   <task>
     <statement>
       <p>
-        Looking at both grids superimposed on each other (Figure 2.1.7), explain why your responses to parts 
+        Looking at both grids superimposed on each other (Figure 2.1.8), explain why your responses to parts 
         (a) and (c) make sense.
       </p>
     </statement>
@@ -207,7 +207,7 @@
         vectors using the scalar values (i.e. <m>a\mathbf{v}+b\mathbf{w}</m>).
       </p>
       <p>
-        You may instead use the applet in Figure 2.1.8 where the components of the vectors can be entered 
+        You may instead use the applet in Figure 2.1.9 where the components of the vectors can be entered 
         directly into the fields labeled <m>v_{1}</m>, <m>v_{2}</m>, <m>w_{1}</m>, and <m>w_{2}</m> and 
         the scalars are given by the sliders <m>a</m> and <m>b</m> above.
       </p>
@@ -300,7 +300,7 @@
     <m>2\times1</m> vector option (see below).
   </p>
   <p>
-    If using Figure 2.1.8, simply edit the entries in the fields for the vector components to redefine the 
+    If using Figure 2.1.9, simply edit the entries in the fields for the vector components to redefine the 
     vectors <m>\mathbf{v}</m> and <m>\mathbf{w}</m>.
   </p>
   <p>
@@ -362,7 +362,7 @@
     will use three vectors instead of two.
   </p>
   <p>
-    If you are using the built-in applet (Figure 2.1.8), simply click the checkbox to show the third vector.
+    If you are using the built-in applet (Figure 2.1.9), simply click the checkbox to show the third vector.
   </p>
   <p>
       <sidebyside width="45%">
