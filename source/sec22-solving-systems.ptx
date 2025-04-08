@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec22-solving-systems" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Solving Systems of Equations</title>
+
+  <p>
+    In this section we will look at 
+  </p>
+
+  
+  <subsection xml:id="finding-scalars">
+    <title>Finding Scalars: Gaussian Elimination</title>
+    
+  <p>
+    
+  
+  </p>
+  
+  
+</subsection>
+<subsection xml:id="stripping-variables">
+  <title>Matrices and Stripping Away Variable Names</title>
+  <p>
+    
+  </p>
+  
+  
+</subsection>
+
+<subsection xml:id="augmented-matrices">
+  <title>Augmented Matrices and Solution Spaces</title>
+
+<p>
+  
+</p>
+
+
+</subsection>
+
+<subsection xml:id="reduced-row-echelon">
+  <title>Reduced Row Echelon Form</title>
+
+<p>
+  
+</p>
+
+
+</subsection>
+
+
+</section>

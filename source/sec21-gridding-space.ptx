@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec21-gridding-space" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Gridding the Space</title>
+  <title>Gridding and Reaching in Space</title>
 
   <p>
     In this section we will look at how a space can be described by many different types of 
@@ -158,6 +158,7 @@
     However, could we go with fewer vectors?  What about using more than two?  Let's consider what might 
     happen in either of these cases.
   </p>
+  
   <p>
   <project>
   <title>Linear Combinations and Spanning</title>
@@ -173,7 +174,8 @@
         <caption>Linear Combinations</caption>
         <interactive geogebra="https://www.geogebra.org/material/edit/id/z6c28fvc" reset-icon="yes" />
       </figure>
-        <exercise>
+        <exercise label="none">
+        
         <title>Instructions</title>
         <task>
         <p>
@@ -573,7 +575,118 @@
     <term>linearly independent</term> set.
   </p>
 
-</subsection>  
+</subsection>
+
+<subsection xml:id="subsec-existence-spanning">
+  <title>Spanning and Existence of Linear Combinations</title>
+
+<p>
+  As we saw earlier in Project 2.1.2, we had two main questions to consider.  The first was whether or not a 
+  vector could be reached using a linear combination of vectors?  The second was that, if a vector could be 
+  reached, was the linear combination used to get there unique?  A caveat to this second question is, if the 
+  linear combinations are not unique, how many are there?  Are there a finite number of them?  Are there an 
+  infinite number of them?  These are questions that will require us to consider ways of finding the linear 
+  combinations (or at least a way to describe or characterize them in the case of an infinite number).  To begin, 
+  let's first summarize what we have discovered thus far.
+</p>
+<p>
+  <definition xml:id="def-span">
+    <statement>
+      <p>
+        The <term>Span</term> of a set of vectors, <m>\mathbf{v}_1</m>, <m>\mathbf{v}_2</m>, <m>\mathbf{v}_3</m>,
+        <m>\ldots</m>, <m>\mathbf{v}_n</m> is the set of all linear combinations that can be reached by 
+        these vectors, and denoted by, 
+        <m>Span \left\{ \mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3, \ldots, \mathbf{v}_n \right\}</m>.
+      </p>
+    </statement>
+  </definition>
+</p>
+<p>
+  <activity>
+    <introduction>
+      <p>
+        Let us consider vectors in <m>\mathbb{R}^2</m> and whether or not we can reach them?  From Project 2.1.2, 
+        if we had exactly 2 vectors that did not fall along the same line, we could reach any vector in 
+        <m>\mathbb{R}^2</m>.  Once we added a third vector, we noticed that there could be more than one way 
+        to reach a given vector using linear combinations of the vectors, bu how many different ways could we do 
+        this?  In the earlier exploration, you found several, but we need to consider how many there might be.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Suppose we have vectors given by 
+          <m>\left\{ \mathbf{u}, \mathbf{v}, \mathbf{w} \right\}=
+          \left\{ \begin{bmatrix}1\\2\end{bmatrix}, \begin{bmatrix}-1\\1\end{bmatrix}, 
+          \begin{bmatrix}2\\3\end{bmatrix} \right\}
+          </m>.  Note that none of these vectors fall along a common line.  Come up with scalars 
+          <m>a</m>, <m>b</m>, and <m>c</m> so that 
+          <m>a\begin{bmatrix}1\\2\end{bmatrix}+b\begin{bmatrix}-1\\1\end{bmatrix}+
+          c\begin{bmatrix}2\\3\end{bmatrix}=\begin{bmatrix}1\\-5 \end{bmatrix}</m>.  Discuss your strategies 
+          in your groups and be prepared to share with the class.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          What would happen if you chose a specific scalar for one of the vectors, say <m>c=1</m>?  Can you 
+          find <m>a</m> and <m>b</m>, so that your linear combination will reach 
+          <m>\begin{bmatrix}1\\-5 \end{bmatrix}</m>?  If so, what are they?  If not, explain why not.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Now change your specific scalar for one of the vectors, say <m>c=4</m>?  Can you 
+          find <m>a</m> and <m>b</m>, so that your linear combination will reach 
+          <m>\begin{bmatrix}1\\-5 \end{bmatrix}</m>?  If so, what are they?  If not, explain why not.
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          If you fix one of the scalars, can you always find scalars for the other two so that you can reach 
+          <m>\begin{bmatrix}1\\-5 \end{bmatrix}</m>?  Why or why not?  Can you argue that there are infinitely 
+          many linear combinations to reach <m>\begin{bmatrix}1\\-5 \end{bmatrix}</m>?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          In the previous parts of this activity, the target vector was always <m>\begin{bmatrix}1\\-5 \end{bmatrix}</m>.  
+          Will your responses to the earlier parts change if a different target vector is chosen?  Does this 
+          set of vectors span <m>\mathbb{R}^3</m>?
+        </p>
+      </statement>
+    </task>
+    <task>
+      <statement>
+        <p>
+          In your groups, discuss what would happen if you had more than three vectors.  Would you still be 
+          able to apply your process to produce a linear combination to give any desired target vector?  
+          Would there be a finite or infinitely many such linear combinations?
+        </p>
+      </statement>
+    </task>
+  </activity> 
+</p>
+
+<p>
+  So far we have been exploring sets of vectors in <m>\mathbb{R}^2</m>.  You can imagine how this process 
+  becomes more complex as we add higher dimension vectors like vectors from <m>\mathbb{R}^3</m>, 
+  <m>\mathbb{R}^4, \ldots</m>.  The question this leads us to is how do we more easily find the scalars for 
+  the linear combinations we desire?  In the next section, we will look at ways we have found these scalars 
+  in the past from our high school experience and see how matrices can help us more efficiently find them.  
+  In addition, we will look at how matrices can help us categorize sets of vectors as being 
+  <term>linearly dependent</term> or <term>linearly independent</term> and which vectors of a set are the 
+  necessary ones and which ones we can do without.
+</p>
+
+</subsection>
 
 
 </section>
