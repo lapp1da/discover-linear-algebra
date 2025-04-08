@@ -21,5 +21,6 @@
 
   <!-- include sections -->
   <xi:include href="sec21-gridding-space.ptx" />
+  <xi:include href="sec22-solving-systems.ptx" />
 
 </chapter>
