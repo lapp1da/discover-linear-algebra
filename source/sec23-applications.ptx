@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec22-solving-systems" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Solving Systems of Equations</title>
+<section xml:id="sec23-applications" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Applications for Systems of Linear Equations</title>
 
   <p>
     In this section we will explore processes surrounding solving systems of linear equations.  In the last 
@@ -15,8 +15,8 @@
   </p>
 
   
-  <subsection xml:id="finding-scalars">
-    <title>Finding Scalars: Gaussian Elimination</title>
+  <subsection xml:id="forming-systems">
+    <title>Forming Systems as Matrices</title>
     
   <p>
     
@@ -25,8 +25,9 @@
   
   
 </subsection>
-<subsection xml:id="stripping-variables">
-  <title>Matrices and Stripping Away Variable Names</title>
+
+<subsection xml:id="multiple-representations">
+  <title>Viewing Systems with Multiple Representations</title>
   <p>
     
   </p>
@@ -34,8 +35,8 @@
   
 </subsection>
 
-<subsection xml:id="augmented-matrices">
-  <title>Augmented Matrices and Solution Spaces</title>
+<subsection xml:id="row-reducing">
+  <title>Row Reducing Matrices to Find Solutions</title>
 
 <p>
   
@@ -43,16 +44,6 @@
 
 
 </subsection>
-
-<subsection xml:id="reduced-row-echelon">
-  <title>Reduced Row Echelon Form</title>
-
-<p>
-  
-</p>
-
-</subsection>
-
 
 
 </section>
