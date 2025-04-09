@@ -9,9 +9,7 @@
     independent.  Mostly we used trial and error or tried to reduce the linear combinations by chosing 
     a value for one of the scalars and then working backwards to find the remaining scalars.  This was a 
     time-consuming process and can often be challenging if there is a unique solution.  In this section, we 
-    will try a more systematic approach that will help us find the desired scalars more efficiently.  In addtion, 
-    the techniques we will develop will also help us solve general systems of linear equations as they arise 
-    in real-world scenarios.  
+    will try a more systematic approach that will help us find the desired scalars more efficiently.  
   </p>
 
   
@@ -19,8 +17,85 @@
     <title>Finding Scalars: Gaussian Elimination</title>
     
   <p>
+    As we ended section 2.1, we wanted to establish whether or not a set of vectors was linealry independent.  
+    To do this, we needed to determine whether or not we could find a set of scalar values that would give 
+    us a linear combination for other vectors in the set.  In addition, we sought to determine the if a 
+    vector was in the <term>Span</term> of a set of vectors.  For both of these questions, we ultimately 
+    want to solve for specific scalars that would meet our desired requirements.
+  </p>
+  <p>
+    <example>
+    <title>Finding Scalars</title>
+    <p>
+      Consider a more simple version of our scenario from Chapter 1 involving prices, <m>p</m> and revenue 
+      <m>r</m> for products we are selling to various companies.  In this case, we consider fewer companies 
+      and products to make this example easier to disect.  Suppose we have the following data for the number 
+      of items for two different products for two different companies.
+    </p>
+    <p>
+      <table>
+      <title>Product Orders</title>
+      <tabular halign="center">
+      <row header="yes" bottom="minor">
+        <cell>Clients</cell>
+        <cell>Product 1</cell>
+        <cell>Product 2</cell>
+      </row>
+      <row>
+        <cell>Company 1</cell>
+        <cell>2</cell>
+        <cell>3</cell>
+      </row>
+      <row>
+        <cell>Company 2</cell>
+        <cell>1</cell>
+        <cell>5</cell>
+      </row>
+  </tabular>
+</table>
+    </p>
+    <p>
+      In this case we are looking for scalars for prices, <m>p_1</m> and <m>p_2</m>, that provide desired revenues, 
+    <m>r_1</m> and <m>r_2</m>.  This gives the following vector equation.
+    </p>
+    <p>
+      <me>
+            p_1 \begin{bmatrix}
+            2\\1\end{bmatrix} + p_2 \begin{bmatrix}
+            3\\5\end{bmatrix} = \begin{bmatrix}
+            r_1\\r_2\end{bmatrix}
+      </me>
+    </p>
+    <p>
+      A question we might ask is what prices do we need to set so that we have revenue of $43 from 
+      Company 1 and $46 from Company 2?  It may be that there are no such price combinations that will 
+      yield what we want (i.e. does this combination exist?).  There may be a case where there are 
+      infinitely many such price combinations (i.e. there is not uniqueness).  These two fundamental 
+      questions of <term>existence</term> and <term>uniqueness</term> will be ones we revisit as we seek 
+      solutions to equations.
+    </p>
+    <p>
+      So now we ask if we can find solutions to the vector equation, 
+      <m>p_1 \begin{bmatrix}
+            2\\1\end{bmatrix} + p_2 \begin{bmatrix}
+            3\\5\end{bmatrix} = \begin{bmatrix}
+            43\\46\end{bmatrix}
+      </m>.
+    </p>
+    <p>
+      However, this is not such an unusual task.  Recall from high algebra we solved these equations before, 
+      but they were simply written in a different form.  This vector equation could also be written as 
+      <me>
+        2p_1+3p_2=43
+      </me>
+      <me>
+        p_1+5p_2=46
+      </me>
+      
+      
+    </p>
     
-  
+    </example>
   </p>
   
   

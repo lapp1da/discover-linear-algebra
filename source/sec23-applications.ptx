@@ -4,14 +4,8 @@
   <title>Applications for Systems of Linear Equations</title>
 
   <p>
-    In this section we will explore processes surrounding solving systems of linear equations.  In the last 
-    section, we ended by experimenting with various scalars to determine if a set of vectors were linearly 
-    independent.  Mostly we used trial and error or tried to reduce the linear combinations by chosing 
-    a value for one of the scalars and then working backwards to find the remaining scalars.  This was a 
-    time-consuming process and can often be challenging if there is a unique solution.  In this section, we 
-    will try a more systematic approach that will help us find the desired scalars more efficiently.  In addtion, 
-    the techniques we will develop will also help us solve general systems of linear equations as they arise 
-    in real-world scenarios.  
+    In this section we use the techniques we developed earlier to help us solve general systems of linear 
+    equations as they arise in real-world scenarios.  
   </p>
 
   
