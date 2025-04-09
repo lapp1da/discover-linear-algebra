@@ -99,7 +99,7 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.15';
+eBookConfig.runestone_version = '7.5.16';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
@@ -125,7 +125,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec21-gridding-space.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch2-linearcomb-span-bases.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec21-gridding-space.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch2-linearcomb-span-bases.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec23-applications.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -177,6 +177,14 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec22-solving-systems.html#reduced-row-echelon" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Reduced Row Echelon Form</span></a></div></li>
 </ul>
 </li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec23-applications.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Applications for Systems of Linear Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec23-applications.html#forming-systems" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Forming Systems as Matrices</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec23-applications.html#multiple-representations" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Viewing Systems with Multiple Representations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec23-applications.html#row-reducing" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Row Reducing Matrices to Find Solutions</span></a></div></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
@@ -184,11 +192,60 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec22-solving-systems"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">2.2</span><span class="space"> </span><span class="title">Solving Systems of Equations</span>
 </h2>
-<div class="para" id="sec22-solving-systems-2">In this section we will look at</div>
+<div class="para" id="sec22-solving-systems-2">In this section we will explore processes surrounding solving systems of linear equations.  In the last section, we ended by experimenting with various scalars to determine if a set of vectors were linearly independent.  Mostly we used trial and error or tried to reduce the linear combinations by chosing a value for one of the scalars and then working backwards to find the remaining scalars.  This was a time-consuming process and can often be challenging if there is a unique solution.  In this section, we will try a more systematic approach that will help us find the desired scalars more efficiently.</div>
 <section class="subsection" id="finding-scalars"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="space"> </span><span class="title">Finding Scalars: Gaussian Elimination</span>
 </h3>
-<div class="para" id="finding-scalars-2"></div></section><section class="subsection" id="stripping-variables"><h3 class="heading hide-type">
+<div class="para" id="finding-scalars-2">As we ended section 2.1, we wanted to establish whether or not a set of vectors was linealry independent. To do this, we needed to determine whether or not we could find a set of scalar values that would give us a linear combination for other vectors in the set.  In addition, we sought to determine the if a vector was in the <dfn class="terminology">Span</dfn> of a set of vectors.  For both of these questions, we ultimately want to solve for specific scalars that would meet our desired requirements.</div>
+<div class="para" id="finding-scalars-3"><details id="finding-scalars-3-1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Scalars.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="finding-scalars-3-1-2">Consider a more simple version of our scenario from Chapter 1 involving prices, <span class="process-math">\(p\)</span> and revenue <span class="process-math">\(r\)</span> for products we are selling to various companies.  In this case, we consider fewer companies and products to make this example easier to disect.  Suppose we have the following data for the number of items for two different products for two different companies.</div>
+<div class="para" id="finding-scalars-3-1-3"><figure class="table table-like" id="finding-scalars-3-1-3-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.2.2<span class="period">.</span></span><span class="space"> </span>Product Orders</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Clients</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Product 1</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Product 2</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Company 1</td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">3</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Company 2</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">5</td>
+</tr>
+</table></div></figure></div>
+<div class="para" id="finding-scalars-3-1-4">In this case we are looking for scalars for prices, <span class="process-math">\(p_1\)</span> and <span class="process-math">\(p_2\text{,}\)</span> that provide desired revenues, <span class="process-math">\(r_1\)</span> and <span class="process-math">\(r_2\text{.}\)</span>  This gives the following vector equation.</div>
+<div class="para logical" id="finding-scalars-3-1-5"><div class="displaymath process-math">
+\begin{equation*}
+p_1 \begin{bmatrix}
+2\\1\end{bmatrix} + p_2 \begin{bmatrix}
+3\\5\end{bmatrix} = \begin{bmatrix}
+r_1\\r_2\end{bmatrix}
+\end{equation*}
+</div></div>
+<div class="para" id="finding-scalars-3-1-6">A question we might ask is what prices do we need to set so that we have revenue of $43 from Company 1 and $46 from Company 2?  It may be that there are no such price combinations that will yield what we want (i.e. does this combination exist?).  There may be a case where there are infinitely many such price combinations (i.e. there is not uniqueness).  These two fundamental questions of <dfn class="terminology">existence</dfn> and <dfn class="terminology">uniqueness</dfn> will be ones we revisit as we seek solutions to equations.</div>
+<div class="para" id="finding-scalars-3-1-7">So now we ask if we can find solutions to the vector equation, <span class="process-math">\(p_1 \begin{bmatrix}
+2\\1\end{bmatrix} + p_2 \begin{bmatrix}
+3\\5\end{bmatrix} = \begin{bmatrix}
+43\\46\end{bmatrix}
+\text{.}\)</span>
+</div>
+<div class="para logical" id="finding-scalars-3-1-8">
+<div class="para">However, this is not such an unusual task.  Recall from high algebra we solved these equations before, but they were simply written in a different form.  This vector equation could also be written as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2p_1+3p_2=43
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p_1+5p_2=46
+\end{equation*}
+</div>
+</div></article></details></div></section><section class="subsection" id="stripping-variables"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="space"> </span><span class="title">Matrices and Stripping Away Variable Names</span>
 </h3>
 <div class="para" id="stripping-variables-2"></div></section><section class="subsection" id="augmented-matrices"><h3 class="heading hide-type">
@@ -199,7 +256,7 @@ eBookConfig.enable_chatcodes =  false;
 </h3>
 <div class="para" id="reduced-row-echelon-2"></div></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec21-gridding-space.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec21-gridding-space.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec23-applications.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

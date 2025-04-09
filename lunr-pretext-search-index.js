@@ -250,7 +250,34 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Solving Systems of Equations",
-  "body": " Solving Systems of Equations  In this section we will look at   Finding Scalars: Gaussian Elimination      Matrices and Stripping Away Variable Names      Augmented Matrices and Solution Spaces      Reduced Row Echelon Form     "
+  "body": " Solving Systems of Equations  In this section we will explore processes surrounding solving systems of linear equations. In the last section, we ended by experimenting with various scalars to determine if a set of vectors were linearly independent. Mostly we used trial and error or tried to reduce the linear combinations by chosing a value for one of the scalars and then working backwards to find the remaining scalars. This was a time-consuming process and can often be challenging if there is a unique solution. In this section, we will try a more systematic approach that will help us find the desired scalars more efficiently.   Finding Scalars: Gaussian Elimination  As we ended section 2.1, we wanted to establish whether or not a set of vectors was linealry independent. To do this, we needed to determine whether or not we could find a set of scalar values that would give us a linear combination for other vectors in the set. In addition, we sought to determine the if a vector was in the Span of a set of vectors. For both of these questions, we ultimately want to solve for specific scalars that would meet our desired requirements.    Finding Scalars  Consider a more simple version of our scenario from Chapter 1 involving prices, and revenue for products we are selling to various companies. In this case, we consider fewer companies and products to make this example easier to disect. Suppose we have the following data for the number of items for two different products for two different companies.    Product Orders    Clients  Product 1  Product 2    Company 1  2  3    Company 2  1  5      In this case we are looking for scalars for prices, and , that provide desired revenues, and . This gives the following vector equation.     A question we might ask is what prices do we need to set so that we have revenue of $43 from Company 1 and $46 from Company 2? It may be that there are no such price combinations that will yield what we want (i.e. does this combination exist?). There may be a case where there are infinitely many such price combinations (i.e. there is not uniqueness). These two fundamental questions of existence and uniqueness will be ones we revisit as we seek solutions to equations.  So now we ask if we can find solutions to the vector equation, .  However, this is not such an unusual task. Recall from high algebra we solved these equations before, but they were simply written in a different form. This vector equation could also be written as        Matrices and Stripping Away Variable Names      Augmented Matrices and Solution Spaces      Reduced Row Echelon Form     "
+},
+{
+  "id": "finding-scalars-2",
+  "level": "2",
+  "url": "sec22-solving-systems.html#finding-scalars-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Span "
+},
+{
+  "id": "finding-scalars-3",
+  "level": "2",
+  "url": "sec22-solving-systems.html#finding-scalars-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "existence uniqueness "
+},
+{
+  "id": "sec23-applications",
+  "level": "1",
+  "url": "sec23-applications.html",
+  "type": "Section",
+  "number": "2.3",
+  "title": "Applications for Systems of Linear Equations",
+  "body": " Applications for Systems of Linear Equations  In this section we use the techniques we developed earlier to help us solve general systems of linear equations as they arise in real-world scenarios.   Forming Systems as Matrices      Viewing Systems with Multiple Representations      Row Reducing Matrices to Find Solutions     "
 },
 {
   "id": "backmatter-2",
