@@ -24,6 +24,41 @@
     want to solve for specific scalars that would meet our desired requirements.
   </p>
   <p>
+    While this process of finding scalars may seem new, it is actually not a new idea.  Recall that in high 
+    school we solved systems of equations using a variety of techniques including substitution, elimination, and 
+    graphing.  As the number of variables and equations increased, the techniques of substitution and 
+    graphing became very challenging.  The process of elimination was generally easier as the number of 
+    variables increased and so this process is the one we will refine here.
+  </p>
+  <p>
+    You may recall that there were certain operations we could perform on equations so that their solution 
+    sets did not change.  These included multiplying an equation by a nonzero constant, adding equals to equals, 
+    and rearranging the equations.  For example, since, say, <m>5=5</m>, we can also say that 
+    <m>2\cdot5=2\cdot5</m>.  Similarly for an equation like <m>x+2y=5</m> (for which a solution is clearly 
+    <m>x=1</m> and <m>y=2</m>), then if we multiply both sides by, say 3, we get 
+    <m>3\left(x+2y=5\right) \Rightarrow 3x+6y=3\cdot5\Rightarrow 3x+6y=15</m>.  Just as <m>x=1</m> and <m>y=2</m> 
+    is a solution to the original equation, due to the fact that multiplying both sides of an equation by the same 
+    value gives a new equation that is also true, <m>x=1</m> and <m>y=2</m> is also a solution to 
+    <m>3x+6y=15</m> (i.e. <m>3\cdot1+6\cdot2=3+12=15</m>).
+  </p>
+  <p>
+    In a similar fashion, if we start with <m>x+2y=5</m> and add the same amount to both sides, we get 
+    <m>x+2y+7=5+7 \Rightarrow x+2y+7=12</m>.  If we plug in <m>x=1</m> and <m>y=2</m> we get 
+    <m>1+2\cdot2+7=1+4+7=12</m>.  In both cases, if we start with an equation with a certain solution, adding 
+    the same constant to both sides or multiplying both sides by the same constant will give a new 
+    equation for which the solution to the original equation will be a solution to the new equation.
+  </p>
+  <p>
+    What if we want to add expressions to both sides of an equation?  Consider another equation, 
+    <m>4x+y=6</m>, that also has a common solution, <m>x=1</m> and <m>y=2</m>.  If we add this equation to 
+    or earlier equation, <m>x+2y=5</m>, we get 
+    <me>
+      \begin{array} 3 x+2y=5\\4x+y=6\\\overline{5x+3y=11}\end{array}
+    </me>
+    where <m>x=1</m> and <m>y=2</m> is still a solution to the result, <m>5x+3y=11</m>.
+    
+  </p>
+  <p>
     <example>
     <title>Finding Scalars</title>
     <p>
