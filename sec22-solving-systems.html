@@ -197,10 +197,23 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="space"> </span><span class="title">Finding Scalars: Gaussian Elimination</span>
 </h3>
 <div class="para" id="finding-scalars-2">As we ended section 2.1, we wanted to establish whether or not a set of vectors was linealry independent. To do this, we needed to determine whether or not we could find a set of scalar values that would give us a linear combination for other vectors in the set.  In addition, we sought to determine the if a vector was in the <dfn class="terminology">Span</dfn> of a set of vectors.  For both of these questions, we ultimately want to solve for specific scalars that would meet our desired requirements.</div>
-<div class="para" id="finding-scalars-3"><details id="finding-scalars-3-1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<div class="para" id="finding-scalars-3">While this process of finding scalars may seem new, it is actually not a new idea.  Recall that in high school we solved systems of equations using a variety of techniques including substitution, elimination, and graphing.  As the number of variables and equations increased, the techniques of substitution and graphing became very challenging.  The process of elimination was generally easier as the number of variables increased and so this process is the one we will refine here.</div>
+<div class="para" id="finding-scalars-4">You may recall that there were certain operations we could perform on equations so that their solution sets did not change.  These included multiplying an equation by a nonzero constant, adding equals to equals, and rearranging the equations.  For example, since, say, <span class="process-math">\(5=5\text{,}\)</span> we can also say that <span class="process-math">\(2\cdot5=2\cdot5\text{.}\)</span>  Similarly for an equation like <span class="process-math">\(x+2y=5\)</span> (for which a solution is clearly <span class="process-math">\(x=1\)</span> and <span class="process-math">\(y=2\)</span>), then if we multiply both sides by, say 3, we get <span class="process-math">\(3\left(x+2y=5\right) \Rightarrow 3x+6y=3\cdot5\Rightarrow 3x+6y=15\text{.}\)</span>  Just as <span class="process-math">\(x=1\)</span> and <span class="process-math">\(y=2\)</span> is a solution to the original equation, due to the fact that multiplying both sides of an equation by the same value gives a new equation that is also true, <span class="process-math">\(x=1\)</span> and <span class="process-math">\(y=2\)</span> is also a solution to <span class="process-math">\(3x+6y=15\)</span> (i.e. <span class="process-math">\(3\cdot1+6\cdot2=3+12=15\)</span>).</div>
+<div class="para" id="finding-scalars-5">In a similar fashion, if we start with <span class="process-math">\(x+2y=5\)</span> and add the same amount to both sides, we get <span class="process-math">\(x+2y+7=5+7 \Rightarrow x+2y+7=12\text{.}\)</span>  If we plug in <span class="process-math">\(x=1\)</span> and <span class="process-math">\(y=2\)</span> we get <span class="process-math">\(1+2\cdot2+7=1+4+7=12\text{.}\)</span>  In both cases, if we start with an equation with a certain solution, adding the same constant to both sides or multiplying both sides by the same constant will give a new equation for which the solution to the original equation will be a solution to the new equation.</div>
+<div class="para logical" id="finding-scalars-6">
+<div class="para">What if we want to add expressions to both sides of an equation?  Consider another equation, <span class="process-math">\(4x+y=6\text{,}\)</span> that also has a common solution, <span class="process-math">\(x=1\)</span> and <span class="process-math">\(y=2\text{.}\)</span>  If we add this equation to or earlier equation, <span class="process-math">\(x+2y=5\text{,}\)</span> we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array} 3 x+2y=5\\4x+y=6\\\overline{5x+3y=11}\end{array}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(x=1\)</span> and <span class="process-math">\(y=2\)</span> is still a solution to the result, <span class="process-math">\(5x+3y=11\text{.}\)</span>
+</div>
+</div>
+<div class="para" id="finding-scalars-7"><details id="finding-scalars-7-1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Scalars.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="finding-scalars-3-1-2">Consider a more simple version of our scenario from Chapter 1 involving prices, <span class="process-math">\(p\)</span> and revenue <span class="process-math">\(r\)</span> for products we are selling to various companies.  In this case, we consider fewer companies and products to make this example easier to disect.  Suppose we have the following data for the number of items for two different products for two different companies.</div>
-<div class="para" id="finding-scalars-3-1-3"><figure class="table table-like" id="finding-scalars-3-1-3-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.2.2<span class="period">.</span></span><span class="space"> </span>Product Orders</figcaption><div class="tabular-box natural-width"><table class="tabular">
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="finding-scalars-7-1-2">Consider a more simple version of our scenario from Chapter 1 involving prices, <span class="process-math">\(p\)</span> and revenue <span class="process-math">\(r\)</span> for products we are selling to various companies.  In this case, we consider fewer companies and products to make this example easier to disect.  Suppose we have the following data for the number of items for two different products for two different companies.</div>
+<div class="para" id="finding-scalars-7-1-3"><figure class="table table-like" id="finding-scalars-7-1-3-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.2.2<span class="period">.</span></span><span class="space"> </span>Product Orders</figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines">Clients</th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">Product 1</th>
@@ -217,8 +230,8 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b0 r0 l0 t0 lines">5</td>
 </tr>
 </table></div></figure></div>
-<div class="para" id="finding-scalars-3-1-4">In this case we are looking for scalars for prices, <span class="process-math">\(p_1\)</span> and <span class="process-math">\(p_2\text{,}\)</span> that provide desired revenues, <span class="process-math">\(r_1\)</span> and <span class="process-math">\(r_2\text{.}\)</span>  This gives the following vector equation.</div>
-<div class="para logical" id="finding-scalars-3-1-5"><div class="displaymath process-math">
+<div class="para" id="finding-scalars-7-1-4">In this case we are looking for scalars for prices, <span class="process-math">\(p_1\)</span> and <span class="process-math">\(p_2\text{,}\)</span> that provide desired revenues, <span class="process-math">\(r_1\)</span> and <span class="process-math">\(r_2\text{.}\)</span>  This gives the following vector equation.</div>
+<div class="para logical" id="finding-scalars-7-1-5"><div class="displaymath process-math">
 \begin{equation*}
 p_1 \begin{bmatrix}
 2\\1\end{bmatrix} + p_2 \begin{bmatrix}
@@ -226,14 +239,14 @@ p_1 \begin{bmatrix}
 r_1\\r_2\end{bmatrix}
 \end{equation*}
 </div></div>
-<div class="para" id="finding-scalars-3-1-6">A question we might ask is what prices do we need to set so that we have revenue of $43 from Company 1 and $46 from Company 2?  It may be that there are no such price combinations that will yield what we want (i.e. does this combination exist?).  There may be a case where there are infinitely many such price combinations (i.e. there is not uniqueness).  These two fundamental questions of <dfn class="terminology">existence</dfn> and <dfn class="terminology">uniqueness</dfn> will be ones we revisit as we seek solutions to equations.</div>
-<div class="para" id="finding-scalars-3-1-7">So now we ask if we can find solutions to the vector equation, <span class="process-math">\(p_1 \begin{bmatrix}
+<div class="para" id="finding-scalars-7-1-6">A question we might ask is what prices do we need to set so that we have revenue of $43 from Company 1 and $46 from Company 2?  It may be that there are no such price combinations that will yield what we want (i.e. does this combination exist?).  There may be a case where there are infinitely many such price combinations (i.e. there is not uniqueness).  These two fundamental questions of <dfn class="terminology">existence</dfn> and <dfn class="terminology">uniqueness</dfn> will be ones we revisit as we seek solutions to equations.</div>
+<div class="para" id="finding-scalars-7-1-7">So now we ask if we can find solutions to the vector equation, <span class="process-math">\(p_1 \begin{bmatrix}
 2\\1\end{bmatrix} + p_2 \begin{bmatrix}
 3\\5\end{bmatrix} = \begin{bmatrix}
 43\\46\end{bmatrix}
 \text{.}\)</span>
 </div>
-<div class="para logical" id="finding-scalars-3-1-8">
+<div class="para logical" id="finding-scalars-7-1-8">
 <div class="para">However, this is not such an unusual task.  Recall from high algebra we solved these equations before, but they were simply written in a different form.  This vector equation could also be written as</div>
 <div class="displaymath process-math">
 \begin{equation*}
