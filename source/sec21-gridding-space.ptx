@@ -635,6 +635,13 @@
           <m>\begin{bmatrix}1\\-5 \end{bmatrix}</m>?  If so, what are they?  If not, explain why not.
         </p>
       </statement>
+      <hint>
+        <p>
+          If <m>c=1</m>, then you have <m>a\begin{bmatrix}1\\2\end{bmatrix}+b\begin{bmatrix}-1\\1\end{bmatrix}+
+            1\cdot\begin{bmatrix}2\\3\end{bmatrix}=\begin{bmatrix}1\\-5 \end{bmatrix}</m>.  What vector 
+            equation do you now have to solve for scalar values?
+        </p>
+      </hint>
     </task>
     <task>
       <statement>
@@ -644,6 +651,13 @@
           <m>\begin{bmatrix}1\\-5 \end{bmatrix}</m>?  If so, what are they?  If not, explain why not.
         </p>
       </statement>
+      <hint>
+        <p>
+          If <m>c=4</m>, then you have <m>a\begin{bmatrix}1\\2\end{bmatrix}+b\begin{bmatrix}-1\\1\end{bmatrix}+
+            4\cdot\begin{bmatrix}2\\3\end{bmatrix}=\begin{bmatrix}1\\-5 \end{bmatrix}</m>.  What vector 
+            equation do you now have to solve for scalar values?
+        </p>
+      </hint>
     </task>
     <task>
       <statement>
@@ -659,7 +673,7 @@
         <p>
           In the previous parts of this activity, the target vector was always <m>\begin{bmatrix}1\\-5 \end{bmatrix}</m>.  
           Will your responses to the earlier parts change if a different target vector is chosen?  Does this 
-          set of vectors span <m>\mathbb{R}^3</m>?
+          set of vectors span <m>\mathbb{R}^2</m>?
         </p>
       </statement>
     </task>
@@ -668,7 +682,7 @@
         <p>
           In your groups, discuss what would happen if you had more than three vectors.  Would you still be 
           able to apply your process to produce a linear combination to give any desired target vector?  
-          Would there be a finite or infinitely many such linear combinations?
+          If so, would there be a finite or infinitely many such linear combinations?
         </p>
       </statement>
     </task>

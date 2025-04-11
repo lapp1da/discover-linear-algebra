@@ -55,7 +55,13 @@
     <me>
       \begin{array} 3 x+2y=5\\4x+y=6\\\overline{5x+3y=11}\end{array}
     </me>
-    where <m>x=1</m> and <m>y=2</m> is still a solution to the result, <m>5x+3y=11</m>.
+    where <m>x=1</m> and <m>y=2</m> is still a solution to the result, <m>5x+3y=11</m> (see Figure 2.2.1).
+    <figure xml:id="">
+      <caption>Three Lines</caption>
+      <image source="images/three-lines.png" width="60%">
+        <shortdescription>(for accessibility)</shortdescription>
+      </image>
+    </figure>
     
   </p>
   <p>
