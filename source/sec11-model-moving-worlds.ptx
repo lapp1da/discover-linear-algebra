@@ -191,7 +191,7 @@ Combining scalar multiplication with vector addition, we get
         Suppose we have orders from the three companies for each of our four products as given in the table below.
     </p>
        <p>
-        <table>
+        <table xml:id="product-orders">
   <title>Product Orders</title>
   <tabular halign="center">
     <row header="yes" bottom="minor">
@@ -237,7 +237,7 @@ Combining scalar multiplication with vector addition, we get
       <task>
       <statement>
       <p>
-        Thinking of the four <term>Products</term> from Table 1.1.1 as each being a vector where the entries 
+        Thinking of the four <term>Products</term> from <xref ref="product-orders"/> as each being a vector where the entries 
         of the vector store the orders made for each of the three companies, express this information as a 
         set of four vectors in <m>\mathbb{R}^3</m>.
       </p>

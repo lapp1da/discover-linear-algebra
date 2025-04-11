@@ -13,13 +13,13 @@
     fly walking on the ceiling.  He wondered how he might describe the position of the fly and decided that he 
     could measure the distance from the corner of the ceiling in one direction and then the distance along a 
     perpendicular direction to uniquely locate the fly (much like the grid system you can see in the image of my 
-    hotel room ceiling at Carter Caves, Figure 2.1.1).  This was the beginning of the Cartesian (or rectangular) 
+    hotel room ceiling at Carter Caves, <xref ref="carter-caves"/>).  This was the beginning of the Cartesian (or rectangular) 
     coordinate system.  However, this is not the only way we could uniquely locate the fly.
   </p>
 
   <p>
    <sidebyside width="35%"> 
-   <figure xml:id="">
+   <figure xml:id="carter-caves">
     <caption>Carter Caves State Park</caption>
     <image source="images/ccsp-ceiling.png">
     <shortdescription>Descartes Fly</shortdescription>
@@ -41,23 +41,23 @@
   <introduction>
     <p>
       Suppose you are Descartes staring at the fly on the ceiling.  At first, all you see is the fly sitting 
-      arbitrarily in space (see Figure 2.1.2).  Next, you imagine two vectors defining different directions and 
-      acting as units of measure (Figure 2.1.3).  As your imagination wanders, you begin to see two sets of 
-      parallel lines crisscrossing the ceiling (Figure 2.1.4).
+      arbitrarily in space (see <xref ref="fly-space"/>).  Next, you imagine two vectors defining different directions and 
+      acting as units of measure (<xref ref="fly-vectors"/>).  As your imagination wanders, you begin to see two sets of 
+      parallel lines crisscrossing the ceiling (<xref ref="fly-vectors-grid"/>).
     </p>
     <p>
      <sidebyside width="30%">
-      <figure>
+      <figure xml:id="fly-space">
        <image source="images/fly-grids-0-1.png">
       <caption>Fly on Ceiling</caption>
     </image>
   </figure>
-  <figure>
+  <figure xml:id="fly-vectors">
     <image source="images/fly-grids-1-1.png">
       <caption>Fly and Vectors</caption>
     </image>
   </figure>
-  <figure>
+  <figure xml:id="fly-vectors-grid">
     <image source="images/fly-grids-2-1.png">
       <caption>Fly and Grid</caption>
     </image>
@@ -95,7 +95,7 @@
         devices.  This time they are the standard unit vectors you are used to seeing from the Cartesian 
         plane, namely, <m>\mathbf{e}_1=\begin{bmatrix}1\\0\end{bmatrix}</m> and 
         <m>\mathbf{e}_2=\begin{bmatrix}0\\1\end{bmatrix}</m>.  Based on the grid system you see in 
-        Figure 2.1.7, what are the coordinates of the fly's location?
+        <xref ref="fly-standard-grid"/>, what are the coordinates of the fly's location?
       </p>
       <p>
        <sidebyside width="30%">
@@ -105,13 +105,13 @@
        </image>
        </figure>
   
-       <figure>
+       <figure xml:id="fly-standard-grid">
          <image source="images/fly-grids-3-1.png">
          <caption>Fly and Grid</caption>
         </image>
         </figure>
 
-        <figure>
+        <figure xml:id="fly-grids-both">
          <image source="images/fly-grids-5-1.png">
          <caption>Fly and Both Grids</caption>
         </image>
@@ -134,7 +134,7 @@
   <task>
     <statement>
       <p>
-        Looking at both grids superimposed on each other (Figure 2.1.8), explain why your responses to parts 
+        Looking at both grids superimposed on each other (<xref ref="fly-grids-both"/>), explain why your responses to parts 
         (a) and (c) make sense.
       </p>
     </statement>
@@ -160,7 +160,7 @@
   </p>
   
   <p>
-  <project>
+  <project xml:id="linear-comb-project">
   <title>Linear Combinations and Spanning</title>
   <introduction>
     <p>
@@ -170,7 +170,7 @@
       algebraic operations relate to geometric representations of the same ideas.
     </p>
     <p>
-      <figure xml:id="">
+      <figure xml:id="linear-comb-gbra">
         <caption>Linear Combinations</caption>
         <interactive geogebra="https://www.geogebra.org/material/edit/id/z6c28fvc" reset-icon="yes" />
       </figure>
@@ -181,7 +181,7 @@
         <p>
           This interactive construction provides, initially, two vectors displayed head-to-toe representing 
           a linear combination.  The numerical entries for each vector can be changed by simply editing 
-          their respective values in the fields provided.  For eaxample, to change vector <m>\mathbf{v}</m>, 
+          their respective values in the fields provided.  For example, to change vector <m>\mathbf{v}</m>, 
           edit the values for <m>v_{1}</m> and <m>v_{2}</m>.  In addition, there are sliders provided for 
           the scalars associated with the vectors.  Manipulating the vectors and scalars allows you to create 
           various linear combinations using the displayed vectors.  Later in the project, you will be asked 
@@ -209,7 +209,7 @@
         vectors using the scalar values (i.e. <m>a\mathbf{v}+b\mathbf{w}</m>).
       </p>
       <p>
-        You may instead use the applet in Figure 2.1.9 where the components of the vectors can be entered 
+        You may instead use the applet in <xref ref="linear-comb-gbra"/> where the components of the vectors can be entered 
         directly into the fields labeled <m>v_{1}</m>, <m>v_{2}</m>, <m>w_{1}</m>, and <m>w_{2}</m> and 
         the scalars are given by the sliders <m>a</m> and <m>b</m> above.
       </p>
@@ -302,8 +302,8 @@
     <m>2\times1</m> vector option (see below).
   </p>
   <p>
-    If using Figure 2.1.9, simply edit the entries in the fields for the vector components to redefine the 
-    vectors <m>\mathbf{v}</m> and <m>\mathbf{w}</m>.
+    If using <xref ref="linear-comb-gbra"/>, simply edit the entries in the fields for the vector components 
+    to redefine the vectors <m>\mathbf{v}</m> and <m>\mathbf{w}</m>.
   </p>
   <p>
       <sidebyside width="45%">
@@ -364,7 +364,8 @@
     will use three vectors instead of two.
   </p>
   <p>
-    If you are using the built-in applet (Figure 2.1.9), simply click the checkbox to show the third vector.
+    If you are using the built-in applet (<xref ref="linear-comb-gbra"/>), simply click the checkbox to show 
+    the third vector.
   </p>
   <p>
       <sidebyside width="45%">
@@ -386,10 +387,10 @@
         <m>\mathbf{v}</m>, <m>\mathbf{w}</m>, and <m>\mathbf{u}</m>.
       </p>
       <p>
-        If using Figure 2.1.8, move the resultant vector to <m>\begin{bmatrix}7.9\\8.7\end{bmatrix}</m> and 
-        adjust the scalars <m>a</m>, <m>b</m>, and <m>c</m> so that you get vector 
-        <m>\begin{bmatrix}7.9\\8.7\end{bmatrix}</m> as a linear combination of vectors 
-        <m>\mathbf{v}</m>, <m>\mathbf{w}</m>, and <m>\mathbf{u}</m>.
+        If using <xref ref="linear-comb-gbra"/>, move the resultant vector to 
+        <m>\begin{bmatrix}7.9\\8.7\end{bmatrix}</m> and adjust the scalars <m>a</m>, <m>b</m>, and 
+        <m>c</m> so that you get vector <m>\begin{bmatrix}7.9\\8.7\end{bmatrix}</m> as a linear combination 
+        of vectors <m>\mathbf{v}</m>, <m>\mathbf{w}</m>, and <m>\mathbf{u}</m>.
       </p>
       <p>
         Record your values for <m>a</m>, <m>b</m>, and <m>c</m> giving 
@@ -451,7 +452,7 @@
 <subsection>
   <title>Linear Independence</title>
   <p>
-    As we saw in Project 2.1.2, we had a few different situations that could occur in dealing with vectors in 
+    As we saw in <xref ref="linear-comb-project"/>, we had a few different situations that could occur in dealing with vectors in 
     <m>\mathbb{R}^2</m>.  If we only have one vector, it is easily seen that we can only move along a single 
     line containing that vector by use of scalar multiples of it.  If we have exactly two vectors, we can have 
     a couple of scenarios.  The first happens when the two vectors are just scalar multiples of each other.  
@@ -473,10 +474,10 @@
     <activity>
       <introduction>
         <p>
-          Based on Project 2.1.2, we noticed that if we are in <m>\mathbb{R}^2</m>, if we want to span 
-          the entire space, we need to have at least two vectors.  However, it was not enough to have two 
-          vectors, but in addition, these two vectors could not be on the same line.  Here we will explore 
-          this idea in greater detail.  Consider the set of vectors in <m>\mathbb{R}^2</m> given by 
+          Based on <xref ref="linear-comb-project"/>, we noticed that if we are in <m>\mathbb{R}^2</m>, if we 
+          want to span the entire space, we need to have at least two vectors.  However, it was not enough to 
+          have two vectors, but in addition, these two vectors could not be on the same line.  Here we will 
+          explore this idea in greater detail.  Consider the set of vectors in <m>\mathbb{R}^2</m> given by 
           <m>\left\{\begin{bmatrix}1\\2\end{bmatrix},
           \begin{bmatrix}1\\3\end{bmatrix},
           \begin{bmatrix}2\\6\end{bmatrix}\right\}</m>.
@@ -555,8 +556,9 @@
     \left(a+c\alpha\right)\mathbf{v}_1+\left(b+c\beta\right)\mathbf{v}_2</m>.  In otherwords, a linear 
     combination using just <m>\mathbf{v}_1</m> and <m>\mathbf{v}_2</m>, meaning we only need two vectors since 
     one of the three is linearly <em>dependent</em> on the other two.  Since we can use this argument for all 
-    three vectors, this also confirms your observations from part 3 of Project 2.1.2 that given three vectors 
-    where no two share a common line, a linear combination used to reach another vector is not unique.
+    three vectors, this also confirms your observations from part 3 of <xref ref="linear-comb-project"/> that 
+    given three vectors where no two share a common line, a linear combination used to reach another vector 
+    is not unique.
   </p>
   <definition xml:id="def-linear-dependent">
     <statement>
@@ -581,13 +583,13 @@
   <title>Spanning and Existence of Linear Combinations</title>
 
 <p>
-  As we saw earlier in Project 2.1.2, we had two main questions to consider.  The first was whether or not a 
-  vector could be reached using a linear combination of vectors?  The second was that, if a vector could be 
-  reached, was the linear combination used to get there unique?  A caveat to this second question is, if the 
-  linear combinations are not unique, how many are there?  Are there a finite number of them?  Are there an 
-  infinite number of them?  These are questions that will require us to consider ways of finding the linear 
-  combinations (or at least a way to describe or characterize them in the case of an infinite number).  To begin, 
-  let's first summarize what we have discovered thus far.
+  As we saw earlier in <xref ref="linear-comb-project"/>, we had two main questions to consider.  The first 
+  was whether or not a vector could be reached using a linear combination of vectors?  The second was that, 
+  if a vector could be reached, was the linear combination used to get there unique?  A caveat to this second 
+  question is, if the linear combinations are not unique, how many are there?  Are there a finite number of 
+  them?  Are there an infinite number of them?  These are questions that will require us to consider ways of 
+  finding the linear combinations (or at least a way to describe or characterize them in the case of an 
+  infinite number).  To begin, let's first summarize what we have discovered thus far.
 </p>
 <p>
   <definition xml:id="def-span">
@@ -605,11 +607,12 @@
   <activity>
     <introduction>
       <p>
-        Let us consider vectors in <m>\mathbb{R}^2</m> and whether or not we can reach them?  From Project 2.1.2, 
-        if we had exactly 2 vectors that did not fall along the same line, we could reach any vector in 
-        <m>\mathbb{R}^2</m>.  Once we added a third vector, we noticed that there could be more than one way 
-        to reach a given vector using linear combinations of the vectors, bu how many different ways could we do 
-        this?  In the earlier exploration, you found several, but we need to consider how many there might be.
+        Let us consider vectors in <m>\mathbb{R}^2</m> and whether or not we can reach them?  From 
+        <xref ref="linear-comb-project"/>, if we had exactly 2 vectors that did not fall along the same line, 
+        we could reach any vector in <m>\mathbb{R}^2</m>.  Once we added a third vector, we noticed that there 
+        could be more than one way to reach a given vector using linear combinations of the vectors, bu how 
+        many different ways could we do this?  In the earlier exploration, you found several, but we need to 
+        consider how many there might be.
       </p>
     </introduction>
     <task>

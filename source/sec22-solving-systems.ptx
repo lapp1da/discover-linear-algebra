@@ -55,14 +55,38 @@
     <me>
       \begin{array} 3 x+2y=5\\4x+y=6\\\overline{5x+3y=11}\end{array}
     </me>
-    where <m>x=1</m> and <m>y=2</m> is still a solution to the result, <m>5x+3y=11</m> (see Figure 2.2.1).
-    <figure xml:id="">
+    where <m>x=1</m> and <m>y=2</m> is still a solution to the result, <m>5x+3y=11</m> (see 
+    <xref ref="three-lines"/>).  What this tells us is that if we seek solutions to a system of equations, 
+    we can add any of the equations in the system to each other and get a new equation that also shares 
+    the same solution(s) as the previous equations.
+  </p>
+  <p>
+    <figure xml:id="three-lines">
       <caption>Three Lines</caption>
       <image source="images/three-lines.png" width="60%">
         <shortdescription>(for accessibility)</shortdescription>
       </image>
     </figure>
-    
+  </p>
+  <p>
+    So now suppose we did not know that the solution to our earlier set of equations, <m>x+2y=5</m> and 
+    <m>4x+y=6</m>, was <m>x=1</m> and <m>y=2</m>.  How do these manipulations that yield new equations with 
+    the same solution help us?  As you may recall from your earlier mathematics experiences, we can take the 
+    approach of trying to "eliminate" a variable from the system so that we can more easily solve for one of 
+    the variables.  In this case, consider what would happen if we multipled the top equation by -4.  This 
+    would give us
+  </p>
+  <p>
+    <me>
+      \begin{array} 3 -4(x+2y=5)\\4x+y=6\\\overline{5x+3y=11}\end{array}
+      \Rightarrow
+      \begin{array} 3 -4x-8y=-20\\4x+y=6\\\overline{0x-7y=-14}\end{array}
+      \Rightarrow
+      -7y=-14 \Rightarrow y=2
+    </me>
+    Now we can simply plug <m>y=2</m> into either of our original equations to get a value for <m>x</m>.  
+    Let's use the first equation as it is easier to solve for <m>x</m>.  This gives <m>x+2\cdot2=5</m> which 
+    yields <m>x+4=5 \Rightarrow x=1</m>.
   </p>
   <p>
     <example>
@@ -74,7 +98,7 @@
       of items for two different products for two different companies.
     </p>
     <p>
-      <table>
+      <table xml:id="product-orders-small">
       <title>Product Orders</title>
       <tabular halign="center">
       <row header="yes" bottom="minor">
