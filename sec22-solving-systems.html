@@ -172,8 +172,8 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec22-solving-systems.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Solving Systems of Equations</span></a></div>
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec22-solving-systems.html#finding-scalars" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Finding Scalars: Gaussian Elimination</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec22-solving-systems.html#stripping-variables" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Matrices and Stripping Away Variable Names</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec22-solving-systems.html#augmented-matrices" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Augmented Matrices and Solution Spaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec22-solving-systems.html#stripping-variables" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Augmented Matrices and Stripping Away Variable Names</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec22-solving-systems.html#augmented-matrices" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Matrices and Solution Spaces</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec22-solving-systems.html#reduced-row-echelon" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Reduced Row Echelon Form</span></a></div></li>
 </ul>
 </li>
@@ -273,11 +273,41 @@ r_1\\r_2\end{bmatrix}
 p_1+5p_2=46
 \end{equation*}
 </div>
-</div></article></details></div></section><section class="subsection" id="stripping-variables"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="space"> </span><span class="title">Matrices and Stripping Away Variable Names</span>
+</div></article></details></div>
+<div class="para" id="finding-scalars-11">As you may have noticed in both of these examples for solving a system with Gaussian elimination, to make it easier to manipulate and perform operations on the equations, we made it a practice to keep the variables aligned with each other and then performed the multiplication by scalars and addition of equations.  This helped us make sure we were not accidently adding the coefficients of different variables together.  For the most part, this practice just makes "bookkeeping" easier.  This should sound kind of familiar.  We did the same thing in Chapter 1 when we introduced vectors and matrices.  We viewed these arrays of elements as an easier way to keep track of corresponding components that represented values for the same type of quantities (e.g. orders of the same product, price of the same product, revenue from the same company) without needing to label them.  So the natural question is, do we need to write the variable name if we already know which variable is associated with which column in our "stacked" representation of the equations?  The answer is a resounding, no!  So let’s consider what would happen if we were to forego the writing of the variable names.</div></section><section class="subsection" id="stripping-variables"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="space"> </span><span class="title">Augmented Matrices and Stripping Away Variable Names</span>
 </h3>
-<div class="para" id="stripping-variables-2"></div></section><section class="subsection" id="augmented-matrices"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="space"> </span><span class="title">Augmented Matrices and Solution Spaces</span>
+<div class="para" id="stripping-variables-2">When we look at the general structure we have been using for our equations in the Guassian elimination process, we wanted our equations to be of the form like <span class="process-math">\(5x_1+3x_2+2x_3=-7\)</span> where the variables are all on the left side of the equation and the right side contains only a numerical value.  If we assume this structure of our equations, we can define them in the following way.</div>
+<article class="definition definition-like" id="def-linear-equations"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="def-linear-equations-1-1">A <dfn class="terminology">linear equation</dfn> in the variables, <span class="process-math">\(x_1, x_2, x_3, \ldots, x_n\)</span> may be written in the form <span class="process-math">\(a_1x_1+a_2x_2+a_3x_3+\cdots+a_nx_n=b\)</span> where the real numbers represented by <span class="process-math">\(a_1,a_2,\ldots,a_n\)</span> are called <dfn class="terminology">coefficients</dfn> and <span class="process-math">\(b\)</span> is a constant real number.</div> <div class="para" id="def-linear-equations-1-2">When we have several such equations that share common variables, we say that it is a <dfn class="terminology">system of linear equations</dfn> or, more simply, a <dfn class="terminology">linear system</dfn>.</div></article><div class="para" id="stripping-variables-4">Recall from <a href="sec11-model-moving-worlds.html" class="internal" title="Section 1.1: Modeling Data and Moving Between Worlds">Section 1.1</a>, we began by looking at systems of equations from the standpoint of transformations.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec11-model-moving-worlds.html">
+\begin{equation*}
+\begin{bmatrix}
+14\amp 9\amp 34\amp 41\\
+32\amp 7\amp 12\amp 52\\
+21\amp 8\amp 5\amp 23
+\end{bmatrix}
+\begin{bmatrix}
+p_1\\p_2\\p_3\\p_4
+\end{bmatrix} = 
+\begin{bmatrix}
+r_1\\r_2\\r_3
+\end{bmatrix}
+\Rightarrow
+\begin{array} 3
+14\cdot p_1 + 9\cdot p_2 + 34\cdot p_3 + 41\cdot p_4 =r_1 \\
+32\cdot p_1 + 7\cdot p_2 + 12\cdot p_3 + 52\cdot p_4 =r_2 \\
+21\cdot p_1 + 8\cdot p_2 + 5\cdot p_3 + 23\cdot p_4 =r_3
+\end{array}
+\end{equation*}
+</div>
+<div class="para" id="stripping-variables-6">Here we are separating out the variable names into a single vector and the <em class="emphasis">coefficients</em> are isolated into a matrix.  If you wanted to give a name to this matrix, you might call it...you guessed it, a <dfn class="terminology">coefficient matrix</dfn>.</div>
+<div class="para" id="stripping-variables-7"><article class="activity project-like" id="convert-equations-matrix-trans"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
+</h4></article></div></section><section class="subsection" id="augmented-matrices"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="space"> </span><span class="title">Matrices and Solution Spaces</span>
 </h3>
 <div class="para" id="augmented-matrices-2"></div></section><section class="subsection" id="reduced-row-echelon"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="space"> </span><span class="title">Reduced Row Echelon Form</span>
