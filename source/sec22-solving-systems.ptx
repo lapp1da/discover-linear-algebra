@@ -163,6 +163,75 @@
     </example>
   </p>
   <p>
+    <activity>
+      <introduction>
+        <p>
+          Consider the following system of equations.
+        </p>
+        <p>
+          <me>
+              \begin{array} 3
+              x + 2y + z =-1 \\
+              2x - y + 3z =6 \\
+              -x + 4y - z =-5
+              \end{array}
+          </me>
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Use the process of Gaussian elimination to reduce the system of 3 equations and 3 unknowns to 
+            a system of 2 equations and 2 unknowns by scaling and/or adding pairs of these equations.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Now eliminate another of your two remaining variables from part (a) in similar manner 
+            (scaling and/or adding pairs of these equations) to find a solution value for one of the three 
+            variables. 
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Use your value from part (b) and one of your equations found in part (a) to solve for a second 
+            unknown.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Use the two values you have found so far along with one of your original equations to solve for 
+            the last unknown.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Use the GeoGebra applet in <xref ref="3d-system-gbra"/> to verify your solution to the system.  
+            Feel free to rotate the planes so that the intersection point of all three is visible.
+          </p>
+        </statement>
+      </task>
+    </activity>
+  </p>
+  <p>
+    <figure xml:id="3d-system-gbra">
+      <caption>3D System of Equations</caption>
+      <interactive geogebra="https://www.geogebra.org/calculator/vq7srbkq" reset-icon="yes" />
+    </figure>
+  </p>
+  <p>
     As you may have noticed in both of these examples for solving a system with Gaussian elimination, to make 
     it easier to manipulate and perform operations on the equations, we made it a practice to keep the 
     variables aligned with each other and then performed the multiplication by scalars and addition of 
@@ -233,6 +302,49 @@
   </p>
   <p>
     <activity xml:id="convert-equations-matrix-trans">
+      <title>From Equations to Matrix Transformation</title>
+      <introduction>
+        <p>
+          Consider the following system of equations.
+        </p>
+        <p>
+          <me>
+            \begin{array} 3
+            x_1 - 2x_2 + x_3 =5 \\
+            2x_1 + 3x_2 - 2x_3 =-17 \\
+            3x_1 + 4x_2 + x_3 =-5
+            \end{array}
+          </me>
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Express this system of equations as a <em>coefficient matrix</em> multiplied by a <m>3\times1</m> 
+            vector that is equal to another <m>3\times1</m> vector.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Use your <term>System of Equations</term> command on your CAS to solve this system for 
+            <m>x_1</m>, <m>x_2</m>, and <m>x_3</m>.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Use the solutions you found in part (b) to show that the matrix-vector equation you created in 
+            part (a) is true by multiplying your coefficient matrix by the vector made up of the components 
+            from your solutions.
+          </p>
+        </statement>
+      </task>
+      
       
     </activity>
   </p>
