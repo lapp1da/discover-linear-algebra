@@ -274,12 +274,34 @@ p_1+5p_2=46
 \end{equation*}
 </div>
 </div></article></details></div>
-<div class="para" id="finding-scalars-11">As you may have noticed in both of these examples for solving a system with Gaussian elimination, to make it easier to manipulate and perform operations on the equations, we made it a practice to keep the variables aligned with each other and then performed the multiplication by scalars and addition of equations.  This helped us make sure we were not accidently adding the coefficients of different variables together.  For the most part, this practice just makes "bookkeeping" easier.  This should sound kind of familiar.  We did the same thing in Chapter 1 when we introduced vectors and matrices.  We viewed these arrays of elements as an easier way to keep track of corresponding components that represented values for the same type of quantities (e.g. orders of the same product, price of the same product, revenue from the same company) without needing to label them.  So the natural question is, do we need to write the variable name if we already know which variable is associated with which column in our "stacked" representation of the equations?  The answer is a resounding, no!  So let’s consider what would happen if we were to forego the writing of the variable names.</div></section><section class="subsection" id="stripping-variables"><h3 class="heading hide-type">
+<div class="para" id="finding-scalars-11"><article class="activity project-like" id="finding-scalars-11-1"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="finding-scalars-11-1-1">
+<div class="para" id="finding-scalars-11-1-1-1">Consider the following system of equations.</div>
+<div class="para logical" id="finding-scalars-11-1-1-2"><div class="displaymath process-math">
+\begin{equation*}
+\begin{array} 3
+x + 2y + z =-1 \\
+2x - y + 3z =6 \\
+-x + 4y - z =-5
+\end{array}
+\end{equation*}
+</div></div>
+</div>
+<article class="task exercise-like" id="finding-scalars-11-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="finding-scalars-11-1-2-1-1">Use the process of Gaussian elimination to reduce the system of 3 equations and 3 unknowns to a system of 2 equations and 2 unknowns by scaling and/or adding pairs of these equations.</div></article><article class="task exercise-like" id="finding-scalars-11-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="finding-scalars-11-1-3-1-1">Now eliminate another of your two remaining variables from part (a) in similar manner (scaling and/or adding pairs of these equations) to find a solution value for one of the three variables.</div></article><article class="task exercise-like" id="finding-scalars-11-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="finding-scalars-11-1-4-1-1">Use your value from part (b) and one of your equations found in part (a) to solve for a second unknown.</div></article><article class="task exercise-like" id="finding-scalars-11-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="finding-scalars-11-1-5-1-1">Use the two values you have found so far along with one of your original equations to solve for the last unknown.</div></article><article class="task exercise-like" id="finding-scalars-11-1-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="finding-scalars-11-1-6-1-1">Use the GeoGebra applet in <a href="sec22-solving-systems.html#3d-system-gbra" class="xref" data-knowl="./knowl/xref/3d-system-gbra.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.2.4">Figure 2.2.4</a> to verify your solution to the system. Feel free to rotate the planes so that the intersection point of all three is visible.</div></article></article></div>
+<div class="para" id="finding-scalars-12"><figure class="figure figure-like" id="3d-system-gbra"><iframe src="https://www.geogebra.org/material/iframe/id/https://www.geogebra.org/calculator/vq7srbkq/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/false/ctl/false" id="3d-system-gbra-2" width="600" height="600"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.4<span class="period">.</span></span><span class="space"> </span>3D System of Equations</figcaption></figure></div>
+<div class="para" id="finding-scalars-13">As you may have noticed in both of these examples for solving a system with Gaussian elimination, to make it easier to manipulate and perform operations on the equations, we made it a practice to keep the variables aligned with each other and then performed the multiplication by scalars and addition of equations.  This helped us make sure we were not accidently adding the coefficients of different variables together.  For the most part, this practice just makes "bookkeeping" easier.  This should sound kind of familiar.  We did the same thing in Chapter 1 when we introduced vectors and matrices.  We viewed these arrays of elements as an easier way to keep track of corresponding components that represented values for the same type of quantities (e.g. orders of the same product, price of the same product, revenue from the same company) without needing to label them.  So the natural question is, do we need to write the variable name if we already know which variable is associated with which column in our "stacked" representation of the equations?  The answer is a resounding, no!  So let’s consider what would happen if we were to forego the writing of the variable names.</div></section><section class="subsection" id="stripping-variables"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="space"> </span><span class="title">Augmented Matrices and Stripping Away Variable Names</span>
 </h3>
 <div class="para" id="stripping-variables-2">When we look at the general structure we have been using for our equations in the Guassian elimination process, we wanted our equations to be of the form like <span class="process-math">\(5x_1+3x_2+2x_3=-7\)</span> where the variables are all on the left side of the equation and the right side contains only a numerical value.  If we assume this structure of our equations, we can define them in the following way.</div>
 <article class="definition definition-like" id="def-linear-equations"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span>
 </h4>
 <div class="para" id="def-linear-equations-1-1">A <dfn class="terminology">linear equation</dfn> in the variables, <span class="process-math">\(x_1, x_2, x_3, \ldots, x_n\)</span> may be written in the form <span class="process-math">\(a_1x_1+a_2x_2+a_3x_3+\cdots+a_nx_n=b\)</span> where the real numbers represented by <span class="process-math">\(a_1,a_2,\ldots,a_n\)</span> are called <dfn class="terminology">coefficients</dfn> and <span class="process-math">\(b\)</span> is a constant real number.</div> <div class="para" id="def-linear-equations-1-2">When we have several such equations that share common variables, we say that it is a <dfn class="terminology">system of linear equations</dfn> or, more simply, a <dfn class="terminology">linear system</dfn>.</div></article><div class="para" id="stripping-variables-4">Recall from <a href="sec11-model-moving-worlds.html" class="internal" title="Section 1.1: Modeling Data and Moving Between Worlds">Section 1.1</a>, we began by looking at systems of equations from the standpoint of transformations.</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec11-model-moving-worlds.html">
@@ -305,8 +327,25 @@ r_1\\r_2\\r_3
 </div>
 <div class="para" id="stripping-variables-6">Here we are separating out the variable names into a single vector and the <em class="emphasis">coefficients</em> are isolated into a matrix.  If you wanted to give a name to this matrix, you might call it...you guessed it, a <dfn class="terminology">coefficient matrix</dfn>.</div>
 <div class="para" id="stripping-variables-7"><article class="activity project-like" id="convert-equations-matrix-trans"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
-</h4></article></div></section><section class="subsection" id="augmented-matrices"><h3 class="heading hide-type">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">From Equations to Matrix Transformation.</span>
+</h4>
+<div class="introduction" id="convert-equations-matrix-trans-2">
+<div class="para" id="convert-equations-matrix-trans-2-1">Consider the following system of equations.</div>
+<div class="para logical" id="convert-equations-matrix-trans-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\begin{array} 3
+x_1 - 2x_2 + x_3 =5 \\
+2x_1 + 3x_2 - 2x_3 =-17 \\
+3x_1 + 4x_2 + x_3 =-5
+\end{array}
+\end{equation*}
+</div></div>
+</div>
+<article class="task exercise-like" id="convert-equations-matrix-trans-3"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="convert-equations-matrix-trans-3-1-1">Express this system of equations as a <em class="emphasis">coefficient matrix</em> multiplied by a <span class="process-math">\(3\times1\)</span> vector that is equal to another <span class="process-math">\(3\times1\)</span> vector.</div></article><article class="task exercise-like" id="convert-equations-matrix-trans-4"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="convert-equations-matrix-trans-4-1-1">Use your <dfn class="terminology">System of Equations</dfn> command on your CAS to solve this system for <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> and <span class="process-math">\(x_3\text{.}\)</span>
+</div></article><article class="task exercise-like" id="convert-equations-matrix-trans-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="convert-equations-matrix-trans-5-1-1">Use the solutions you found in part (b) to show that the matrix-vector equation you created in part (a) is true by multiplying your coefficient matrix by the vector made up of the components from your solutions.</div></article></article></div></section><section class="subsection" id="augmented-matrices"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="space"> </span><span class="title">Matrices and Solution Spaces</span>
 </h3>
 <div class="para" id="augmented-matrices-2"></div></section><section class="subsection" id="reduced-row-echelon"><h3 class="heading hide-type">
