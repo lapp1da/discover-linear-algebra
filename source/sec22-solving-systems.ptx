@@ -92,7 +92,7 @@
     <example>
     <title>Finding Scalars</title>
     <p>
-      Consider a more simple version of our scenario from Chapter 1 involving prices, <m>p</m> and revenue 
+      Consider a more simplified version of our scenario from Chapter 1 involving prices, <m>p</m> and revenue 
       <m>r</m> for products we are selling to various companies.  In this case, we consider fewer companies 
       and products to make this example easier to disect.  Suppose we have the following data for the number 
       of items for two different products for two different companies.
@@ -145,7 +145,7 @@
             2\\1\end{bmatrix} + p_2 \begin{bmatrix}
             3\\5\end{bmatrix} = \begin{bmatrix}
             43\\46\end{bmatrix}
-      </m>.
+      </m>?
     </p>
     <p>
       However, this is not such an unusual task.  Recall from high algebra we solved these equations before, 
@@ -156,8 +156,32 @@
       <me>
         p_1+5p_2=46
       </me>
-      
-      
+    </p>
+    <p>
+      Now we can use the process of Gaussian elimination to reduce these equations to only one variable.  Suppose 
+      we multiply the second equation by <m>-2</m> and add the resulting equations to obtain the following.
+    </p>
+    <p>
+      <me>
+        \begin{array} 2 \quad 2p_1+3p_2=43\\ -2(p_1+ 5p_2=46)\end{array}
+        \Rightarrow
+        \begin{array} 3 \quad 2p_1+3p_2=\quad 43\\ -2p_1-10p_2= -92\\
+        \overline{\quad 0p_1- \; 7p_2=-49}\end{array}
+        \Rightarrow
+        -7p_2=-49 \Rightarrow p_2=7
+      </me>
+    </p>
+    <p>
+      Now we can use our value for <m>p_2=7</m> in one of our original equations (let's use the second one 
+      since it is easier) to get <m>p_1+5\cdot7=46</m> which gives <m>p_1=46-35=11</m>.
+    </p>
+    <p>
+      Checking this result we get 
+      <m>11\cdot \begin{bmatrix}
+        2\\1\end{bmatrix} + 7\cdot \begin{bmatrix}
+        3\\5\end{bmatrix} = \begin{bmatrix}
+        43\\46\end{bmatrix}
+      </m>.
     </p>
     
     </example>
@@ -228,7 +252,7 @@
   <p>
     <figure xml:id="3d-system-gbra">
       <caption>3D System of Equations</caption>
-      <interactive geogebra="https://www.geogebra.org/calculator/vq7srbkq" reset-icon="yes" />
+      <interactive geogebra="https://www.geogebra.org/3d/ytewv5yw" reset-icon="yes" />
     </figure>
   </p>
   <p>
