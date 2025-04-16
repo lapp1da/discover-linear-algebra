@@ -2,7 +2,7 @@
 
 <section xml:id="sec22-solving-systems" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Solving Systems of Equations</title>
-
+<introduction>
   <p>
     In this section we will explore processes surrounding solving systems of linear equations.  In the last 
     section, we ended by experimenting with various scalars to determine if a set of vectors were linearly 
@@ -11,7 +11,7 @@
     time-consuming process and can often be challenging if there is a unique solution.  In this section, we 
     will try a more systematic approach that will help us find the desired scalars more efficiently.  
   </p>
-
+</introduction>
   
   <subsection xml:id="finding-scalars">
     <title>Finding Scalars: Gaussian Elimination</title>

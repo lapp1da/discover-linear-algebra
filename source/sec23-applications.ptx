@@ -2,12 +2,12 @@
 
 <section xml:id="sec23-applications" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Applications for Systems of Linear Equations</title>
-
+<introduction>
   <p>
     In this section we use the techniques we developed earlier to help us solve general systems of linear 
     equations as they arise in real-world scenarios.  
   </p>
-
+</introduction>
   
   <subsection xml:id="forming-systems">
     <title>Forming Systems as Matrices</title>

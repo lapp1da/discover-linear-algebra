@@ -2,6 +2,8 @@
 
 <section xml:id="sec11-model-moving-worlds" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Modeling Data and Moving Between Worlds</title>
+  <introduction>
+  
   <p>
   In this section we will look at linear algebra as a way to encode information 
   and operate on it allowing us to move between different sets of information.  To this end, we 
@@ -180,6 +182,9 @@ Combining scalar multiplication with vector addition, we get
     We can use these <em>linear combinations</em> applying them to our previous scenario for moving 
     between price of materials and the revenue they generate.
   </p>
+
+</introduction>
+
 <subsection xml:id="sec-Linear-Comb-Data">
   <title>Linear Combinations and Dealing with Data</title>
 

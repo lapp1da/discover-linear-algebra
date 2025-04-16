@@ -2,7 +2,7 @@
 
 <section xml:id="sec21-gridding-space" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Gridding and Reaching in Space</title>
-
+<introduction>
   <p>
     In this section we will look at how a space can be described by many different types of 
     of coordinates and coordinate systems. As students, our first introduction to locating a point in the plane,
@@ -33,6 +33,7 @@
    </figure>
    </sidebyside>
   </p>
+</introduction>
   <subsection xml:id="linear-comb-span">
     <title>Linear Combinations and Spanning</title>
     
@@ -172,8 +173,11 @@
     <p>
       <figure xml:id="linear-comb-gbra">
         <caption>Linear Combinations</caption>
-        <interactive geogebra="https://www.geogebra.org/material/edit/id/z6c28fvc" reset-icon="yes" />
+        <interactive xml:id="linear-comb-dynamic" platform="geogebra" width="100%" reset-icon="yes">
+          <slate xml:id="ggb-linear-comb" surface="geogebra" material="z6c28fvc" />
+        </interactive>
       </figure>
+      
         <exercise label="none">
         
         <title>Instructions</title>
