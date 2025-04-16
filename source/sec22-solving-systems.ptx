@@ -242,19 +242,25 @@
       <task>
         <statement>
           <p>
-            Use the GeoGebra applet in <xref ref="3d-system-gbra"/> to verify your solution to the system.  
+            Use the GeoGebra applet in <xref ref="3d-system-graphical" /> to verify your solution to the system.  
             Feel free to rotate the planes so that the intersection point of all three is visible.
           </p>
+          
+          <p>
+            <figure xml:id="3d-system-graphical">
+              <caption>3D System of Equations</caption>
+              <interactive xml:id="geogebra-3d-example" platform="geogebra" width="100%" reset-icon="yes">
+                <slate xml:id="ggb-3d-example" surface="geogebra" material="ytewv5yw" />
+              </interactive>
+            </figure>
+          </p>
+          
         </statement>
       </task>
     </activity>
   </p>
-  <p>
-    <figure xml:id="3d-system-gbra">
-      <caption>3D System of Equations</caption>
-      <interactive geogebra="https://www.geogebra.org/3d/ytewv5yw" reset-icon="yes" />
-    </figure>
-  </p>
+  
+
   <p>
     As you may have noticed in both of these examples for solving a system with Gaussian elimination, to make 
     it easier to manipulate and perform operations on the equations, we made it a practice to keep the 
