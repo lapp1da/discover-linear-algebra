@@ -74,11 +74,15 @@
     the same solution help us?  As you may recall from your earlier mathematics experiences, we can take the 
     approach of trying to "eliminate" a variable from the system so that we can more easily solve for one of 
     the variables.  In this case, consider what would happen if we multipled the top equation by -4.  This 
-    would give us
+    would give us a new equation, <m>-4x-8y=-20</m>, and we can use it in place of the original one.  Why multiply 
+    it by -4?  As we saw, if two equations share the same solution(s), we can add them and the resulting 
+    equation will also have the same solution(s).  The -4 was selected since it will give a coefficient of 
+    <m>x</m> that is the opposite of the coefficient of <m>x</m> in the second equation so that when added 
+    they will cancel each other to leave us only the variable <m>y</m>.
   </p>
   <p>
     <me>
-      \begin{array} 3 -4(x+2y=5)\\\quad 4x+\; y=6\\\overline{\quad 5x+3y=11}\end{array}
+      \begin{array} 2 -4(x+2y=5)\\\quad 4x+\; y=6\end{array}
       \Rightarrow
       \begin{array} 3 \quad -4x-8y=-20\\ \quad\;\; 4x+\;\, y=\quad\; 6\\ \quad \overline{\quad 0x-7y=-14}\end{array}
       \Rightarrow
@@ -87,6 +91,11 @@
     Now we can simply plug <m>y=2</m> into either of our original equations to get a value for <m>x</m>.  
     Let's use the first equation as it is easier to solve for <m>x</m>.  This gives <m>x+2\cdot2=5</m> which 
     yields <m>x+4=5 \Rightarrow x=1</m>.
+  </p>
+  <p>
+    <em>Now consider the following example where we use this process to find scalars for a linear 
+      combination of vectors.
+    </em>
   </p>
   <p>
     <example>
