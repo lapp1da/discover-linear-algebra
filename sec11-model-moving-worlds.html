@@ -164,7 +164,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec21-gridding-space.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Gridding and Reaching in Space</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec21-gridding-space.html#linear-comb-span" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Linear Combinations and Spanning</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec21-gridding-space.html#sec21-gridding-space-5" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Linear Independence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec21-gridding-space.html#sec21-gridding-space-4" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Linear Independence</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec21-gridding-space.html#subsec-existence-spanning" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Spanning and Existence of Linear Combinations</span></a></div></li>
 </ul>
 </li>
@@ -192,8 +192,8 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec11-model-moving-worlds"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">Modeling Data and Moving Between Worlds</span>
 </h2>
-<div class="para" id="sec11-model-moving-worlds-2">In this section we will look at linear algebra as a way to encode information and operate on it allowing us to move between different sets of information.  To this end, we will define how <em class="emphasis">matrices</em> and <em class="emphasis">vectors</em> are operated on with binary operations like addition and multiplication.  While multiplication of matrices may seem weird at first, you will see that it is defined as it is for convenience in manipulating data and transforming different types of values into other computed values based on them.  We begin by considering a case where we want to move between a pricing scheme and the revenue it generates for three different companies with three different sets of orders of our products.</div>
-<div class="para logical" id="sec11-model-moving-worlds-3">
+<section class="introduction" id="sec11-model-moving-worlds-2"><div class="para" id="sec11-model-moving-worlds-2-1">In this section we will look at linear algebra as a way to encode information and operate on it allowing us to move between different sets of information.  To this end, we will define how <em class="emphasis">matrices</em> and <em class="emphasis">vectors</em> are operated on with binary operations like addition and multiplication.  While multiplication of matrices may seem weird at first, you will see that it is defined as it is for convenience in manipulating data and transforming different types of values into other computed values based on them.  We begin by considering a case where we want to move between a pricing scheme and the revenue it generates for three different companies with three different sets of orders of our products.</div>
+<div class="para logical" id="sec11-model-moving-worlds-2-2">
 <div class="para">To accomplish this, we will use constructs created to deal with objects that contain multiple entries. In the scenario we are using where companies place orders for products, we want to encode the numerical values for the orders organizing them according to the product and company placing the order.  Here just want to reduce the information to an array of values and so we define a <em class="emphasis">matrix</em> as an array of values (or objects) consisting of rows and columns.  We typically contain these values with brackets or parentheses like:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -212,14 +212,14 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para">In the matrices above, the columns could represent the numbers of each of four products being ordered and the rows could represent the three different companies placing the orders (see the table of orders for this situation given in Table 1.1.1).</div>
 </div>
-<div class="para" id="sec11-model-moving-worlds-4">We also define a <em class="emphasis">vector</em> as matrix with a single column such as <span class="process-math">\(\mathbf{v}=\begin{bmatrix}
+<div class="para" id="sec11-model-moving-worlds-2-3">We also define a <em class="emphasis">vector</em> as matrix with a single column such as <span class="process-math">\(\mathbf{v}=\begin{bmatrix}
 2\\0\\-3
 \end{bmatrix}\)</span> or <span class="process-math">\(\mathbf{w}=\begin{bmatrix}
 1\\7\\-1\\4
 \end{bmatrix}
 \text{.}\)</span> Note that we are using boldface to denote the names of the vectors for convenience to distinguish them from numerical objects that we call <em class="emphasis">scalars</em>.  In a text like this, using boldface makes sense in print, but typically, in written work, we use a harpoon over the name since boldface is not practical with a pen.  In this case, we would write the names as <span class="process-math">\(\overset{\rightharpoonup}{v}\)</span> or <span class="process-math">\(\overset{\rightharpoonup}{w}\)</span> respectively.</div>
-<div class="para" id="sec11-model-moving-worlds-5">You may have encountered vectors before in geometry or physics.  We will go into greater detail later with respect to the geometric interpretation, but for now, the behavior remains the same in that operations still work as they do in geometry and physics.  Essentially, vectors consist of <em class="emphasis">components</em> so that when the vectors are added, we simply add the components.</div>
-<div class="para" id="sec11-model-moving-worlds-6"><article class="definition definition-like" id="def-vector-add"><h3 class="heading">
+<div class="para" id="sec11-model-moving-worlds-2-4">You may have encountered vectors before in geometry or physics.  We will go into greater detail later with respect to the geometric interpretation, but for now, the behavior remains the same in that operations still work as they do in geometry and physics.  Essentially, vectors consist of <em class="emphasis">components</em> so that when the vectors are added, we simply add the components.</div>
+<div class="para" id="sec11-model-moving-worlds-2-5"><article class="definition definition-like" id="def-vector-add"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="period">.</span>
 </h3>
 <div class="para logical" id="def-vector-add-1-1">
@@ -248,7 +248,7 @@ v_n+u_n
 \end{equation*}
 </div>
 </div></article></div>
-<div class="para" id="sec11-model-moving-worlds-7">For example, suppose we have the two vectors in <span class="process-math">\(\mathbb{R}^3\text{,}\)</span> <span class="process-math">\(\begin{bmatrix}
+<div class="para" id="sec11-model-moving-worlds-2-6">For example, suppose we have the two vectors in <span class="process-math">\(\mathbb{R}^3\text{,}\)</span> <span class="process-math">\(\begin{bmatrix}
 1\\-5\\2
 \end{bmatrix}
 \text{and}
@@ -266,7 +266,7 @@ v_n+u_n
 \end{bmatrix}
 \text{.}\)</span>
 </div>
-<div class="para logical" id="sec11-model-moving-worlds-8">
+<div class="para logical" id="sec11-model-moving-worlds-2-7">
 <div class="para">The other basic operation we can do with vectors is to <em class="emphasis">scale</em> them (geometrically make them longer or shorter or in the case of negative values, make them go in the opposite direction).  For this reason, when we multiply the vector by a numerical value, we call that value a <em class="emphasis">scalar</em>.  For example,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -280,7 +280,7 @@ v_n+u_n
 </div>
 <div class="para">In essence, we scaled the vector by a factor of 2.</div>
 </div>
-<div class="para" id="sec11-model-moving-worlds-9"><article class="definition definition-like" id="def-scalar-mult"><h3 class="heading">
+<div class="para" id="sec11-model-moving-worlds-2-8"><article class="definition definition-like" id="def-scalar-mult"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="period">.</span>
 </h3>
 <div class="para logical" id="def-scalar-mult-1-1">
@@ -304,9 +304,9 @@ cv_n
 <div class="para">where <span class="process-math">\(c\in \mathbb{R}\text{.}\)</span>
 </div>
 </div></article></div>
-<div class="para logical" id="sec11-model-moving-worlds-10">
+<div class="para logical" id="sec11-model-moving-worlds-2-9">
 <div class="para">Combining scalar multiplication with vector addition, we get</div>
-<div class="displaymath process-math" id="sec11-model-moving-worlds-10-1">
+<div class="displaymath process-math" id="sec11-model-moving-worlds-2-9-1">
 \begin{equation}
 c_1\cdot \mathbf{v}+c_2\cdot \mathbf{u} = 
 c_1\cdot \begin{bmatrix}
@@ -330,8 +330,7 @@ c_1 v_n+c_2 u_n
 \end{equation}
 </div>
 <div class="para">We can use these <em class="emphasis">linear combinations</em> applying them to our previous scenario for moving between price of materials and the revenue they generate.</div>
-</div>
-<section class="subsection" id="sec-Linear-Comb-Data"><h3 class="heading hide-type">
+</div></section><section class="subsection" id="sec-Linear-Comb-Data"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="space"> </span><span class="title">Linear Combinations and Dealing with Data</span>
 </h3>
 <div class="para" id="sec-Linear-Comb-Data-2">Continuing our scenario from the introduction.  Suppose that a supplier provides four different products with prices, <span class="process-math">\(p_1, p_2, p_3, p_4 \text{,}\)</span> to three companies.  One thing we may want to do is to play with pricing schemes and look at the generated revenue we would get from each of the three companies. Suppose we have orders from the three companies for each of our four products as given in the table below.</div>
