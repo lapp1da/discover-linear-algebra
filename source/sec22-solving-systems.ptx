@@ -268,6 +268,37 @@
       </task>
     </activity>
   </p>
+
+  <p>
+    Now that we have worked through a process to reduce a system of equations to fewer and fewer variables, 
+    we can summarize the operations that changed the look of the equations without changing the solutions.  
+    We essentially have three types of "moves" we can do that will create equivalent systems of equations that 
+    maintain the same solutions as the original system.
+  </p>
+
+  <p>
+    <table>
+      <title></title>
+      <tabular>
+        <row>
+          <cell>Scaling</cell>
+          <cell>In this situation, we can multiply an entire equation by a constant and not change the solutions.  
+            For example, <m>\frac{1}{2} \left(2x+4y=8\right \Rightarrow x+2y=4</m> will have the same solutions 
+            as the original, <m>2x+4y=8</m>.
+          </cell>
+        </row>
+        <row>
+          <cell>Swapping</cell>
+          <cell>blah</cell>
+        </row>
+        <row>
+          <cell>Replacing</cell>
+          <cell>blah</cell>
+        </row>
+      </tabular>
+    </table>
+    
+  </p>
   
 
   <p>
