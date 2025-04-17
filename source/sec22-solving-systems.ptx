@@ -403,10 +403,11 @@
   </p>
   <p>
     To enable us to more easily work with the solution process, we can tweak our <em>coefficient matrix</em> 
-    just a bit, so that the numerical values from the right-hand side of our equations are also included.  
-    We can simply <em>augment</em> our coefficient matrix with these values.  Consider the system of 
-    equations given below.  We can use the processes of scaling equations and adding them together like in 
-    <xref ref="convert-equations-matrix-trans" /> to try and simplify the system to find solutions.
+    just a bit, so that the numerical values from the right-hand side of our equations (which do change as we 
+    manipilate) are also included.  We can simply <em>augment</em> our coefficient matrix with these values.  
+    Consider the system of equations given below.  We can use the processes of scaling equations and adding them 
+    together like in <xref ref="convert-equations-matrix-trans" /> to try and simplify the system to find 
+    solutions.
   </p>
   <p>
     <me>
@@ -433,13 +434,13 @@
     </me>
   </p>
   <p>
-    Once we have reduced the equations to an <term>augmented matrix</term> with the coefficients on the left side of the 
-    bar and the numerical values from the right side of the equations on the right side of the bar, we can 
-    use the process we used earlier to operate on the matrix and reduce it to a simplified form.  Recall that 
-    before, we wanted to eliminate variables so that we could get an equation with just one variable in it.  
-    Here we will do the same, but instead, we wish to manipulate the matrix so that we have entries that are 
-    zero in locations (this is like eliminating the variable from that particular equation).  Note that the rows 
-    represent equations and the columns represent the variables, <m>x_1</m>, <m>x_2</m>, and <m>x_3</m>, 
+    Once we have reduced the equations to an <term>augmented matrix</term> with the coefficients on the left 
+    side of the bar and the numerical values from the right side of the equations on the right side of the bar, 
+    we can use the process we used earlier to operate on the matrix and reduce it to a simplified form.  
+    Recall that before, we wanted to eliminate variables so that we could get an equation with just one variable 
+    in it.  Here we will do the same, but instead, we wish to manipulate the matrix so that we have entries that 
+    are zero in locations (this is like eliminating the variable from that particular equation).  Note that the 
+    rows represent equations and the columns represent the variables, <m>x_1</m>, <m>x_2</m>, and <m>x_3</m>, 
     respectively.
   </p>
   <p>
