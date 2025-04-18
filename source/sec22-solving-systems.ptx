@@ -277,29 +277,75 @@
   </p>
 
   <p>
-    <table>
-      <title></title>
-      <tabular>
-        <row>
-          <cell>Scaling</cell>
-          <cell>In this situation, we can multiply an entire equation by a constant and not change the solutions.  
-            For example, <m>\frac{1}{2} \left(2x+4y=8\right \Rightarrow x+2y=4</m> will have the same solutions 
+    <description>
+      <item>
+        <term>Scaling</term>
+        <details>
+          <p>In this situation, we can multiply an entire equation by a constant and not change the solutions.  
+            For example, <m>\frac{1}{2} \left(2x+4y=8\right) \Rightarrow x+2y=4</m> will have the same solutions 
             as the original, <m>2x+4y=8</m>.
-          </cell>
-        </row>
-        <row>
-          <cell>Swapping</cell>
-          <cell>blah</cell>
-        </row>
-        <row>
-          <cell>Replacing</cell>
-          <cell>blah</cell>
-        </row>
-      </tabular>
-    </table>
-    
+          </p>
+          <p>
+            
+          </p>
+        </details>
+      </item>
+      <item>
+        <term>Swapping</term>
+        <details>
+          <p>
+            Here we are allowing the position of the listed equations within the system to be simply swapped.  
+            This principle is kind of obvious since the two systems of equations
+            <me>
+              \begin{aligned}
+              3x+2y=1 \\
+              -x+5y=11
+              \end{aligned}
+              \quad and \quad
+              \begin{aligned}
+              -x+5y=11\\
+              3x+2y=1
+              \end{aligned}
+            </me>
+            clearly have the same solution!
+            
+          </p>
+          <p>
+            
+          </p>
+        </details>
+      </item>
+      <item>
+        <term>Replacing</term>
+        <details>
+          <p>In this situation, we found that if you multiply one equation by a scalar (even if it just 1) and 
+            and add it to another equation and use this result in place of the equation you added the 
+            scalar multiple to, the solutions to the system remain the same.  For example, we can take a system 
+            like
+            <me>
+              \begin{aligned}
+              3x+2y=1 \\
+              -x+5y=11
+              \end{aligned}
+            </me>
+            and take, say 3, times the bottom equation and add it to the top equation replacing the top equation 
+            with this result to get 
+            <me>
+              \begin{aligned}
+              0x+17y=34 \\
+              -x+5y=11
+              \end{aligned}
+            </me>
+            and we will still have the same solution, <m>x=-1</m> and <m>y=2</m>, be the solution to both systems.
+            
+          </p>
+          <p>
+            
+          </p>
+        </details>
+      </item>
+      </description>
   </p>
-  
 
   <p>
     As you may have noticed in both of these examples for solving a system with Gaussian elimination, to make 
