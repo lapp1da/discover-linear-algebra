@@ -98,7 +98,7 @@
     </em>
   </p>
   <p>
-    <example>
+    <example xml:id="find-scalars">
     <title>Finding Scalars</title>
     <p>
       Consider a more simplified version of our scenario from Chapter 1 involving prices, <m>p</m> and revenue 
@@ -196,7 +196,7 @@
     </example>
   </p>
   <p>
-    <activity>
+    <activity xml:id="solve-3by3-system">
       <introduction>
         <p>
           Consider the following system of equations.
@@ -318,8 +318,8 @@
       <item>
         <term>Replacing</term>
         <details>
-          <p>In this situation, we found that if you multiply one equation by a scalar (even if it just 1) and 
-            and add it to another equation and use this result in place of the equation you added the 
+          <p>In this situation, we found that if we multiply one equation by a scalar (even if it just 1) and 
+            and add it to another equation and use this result in place of the equation we added the 
             scalar multiple to, the solutions to the system remain the same.  For example, we can take a system 
             like
             <me>
@@ -351,15 +351,15 @@
     As you may have noticed in both of these examples for solving a system with Gaussian elimination, to make 
     it easier to manipulate and perform operations on the equations, we made it a practice to keep the 
     variables aligned with each other and then performed the multiplication by scalars and addition of 
-    equations.  This helped us make sure we were not accidently adding the coefficients of different variables 
-    together.  For the most part, this practice just makes "bookkeeping" easier.  This should sound kind of 
-    familiar.  We did the same thing in Chapter 1 when we introduced vectors and matrices.  We viewed these 
-    arrays of elements as an easier way to keep track of corresponding components that represented values for 
-    the same type of quantities (e.g. orders of the same product, price of the same product, revenue from 
-    the same company) without needing to label them.  So the natural question is, do we need to write the 
-    variable name if we already know which variable is associated with which column in our "stacked" 
-    representation of the equations?  The answer is a resounding, no!  So let's consider what would happen if 
-    we were to forego the writing of the variable names.
+    equations using the three "moves" described above.  This helped us make sure we were not accidently 
+    adding the coefficients of different variables together.  For the most part, this practice just makes 
+    "bookkeeping" easier.  This should sound kind of familiar.  We did the same thing in Chapter 1 when we 
+    introduced vectors and matrices.  We viewed these arrays of elements as an easier way to keep track of 
+    corresponding components that represented values for the same type of quantities (e.g. orders of the same 
+    product, price of the same product, revenue from the same company) without needing to label them.  So the 
+    natural question is, do we need to write the variable name if we already know which variable is associated 
+    with which column in our "stacked" representation of the equations?  The answer is a resounding, no!  So 
+    let's consider what would happen if we were to forego the writing of the variable names.
   </p>
   
   
@@ -368,9 +368,9 @@
   <title>Augmented Matrices and Stripping Away Variable Names</title>
   <p>
     When we look at the general structure we have been using for our equations in the Guassian elimination 
-    process, we wanted our equations to be of the form like <m>5x_1+3x_2+2x_3=-7</m> where the variables are 
+    process, we wanted our equations to be of the form, <m>5x_1+3x_2+2x_3=-7</m>, where the variables are 
     all on the left side of the equation and the right side contains only a numerical value.  If we assume this 
-    structure of our equations, we can define them in the following way.
+    structure for our equations, we can define them in the following way.
   </p>
 
   <definition xml:id="def-linear-equations">
@@ -426,9 +426,9 @@
         <p>
           <me>
             \begin{array} 3
-            x_1 - 2x_2 + x_3 =5 \\
-            2x_1 + 3x_2 - 2x_3 =-17 \\
-            3x_1 + 4x_2 + x_3 =-5
+            x_1-2x_2+x_3=5 \\
+            2x_1+3x_2-2x_3=-17 \\
+            3x_1+4x_2+x_3=-5
             \end{array}
           </me>
         </p>
@@ -468,8 +468,9 @@
   <p>
     In the last activity, you took a system of equations and converted it into a coefficient matrix, a 
     vector whose components represented the variables, and another vector whose components represented the 
-    values from right-hand side of the equations.  From Chapter 1, we viewed these equations as transformations 
-    and in this section we used Gaussian elimination to find solutions for the variables in the equations.  
+    values from the right-hand side of the equations.  From Chapter 1, we viewed these equations as transformations 
+    and in this section we used Gaussian elimination to find solutions for the variables in the equations (see 
+    <xref ref="find-scalars" /> and <xref ref="solve-3by3-system"/>).  
     So how are these connected?  Think back to our use of Gaussian elimination.  What did we really 
     manipulate?  We kept the variables aligned for convenience and multiplied entire equations by scalar values 
     and from time to time added equations together.  However, the only things we really changed in the process 
