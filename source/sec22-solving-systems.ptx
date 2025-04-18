@@ -547,8 +547,14 @@
     </me>
   </p>
   <p>
-    This can also be done step-by-step on most basic graphing calculators.
-    
+    This can also be done step-by-step on most basic graphing calculators.  In this case, the first entry in the 
+    <m>\mathbf{mRowAdd}</m> command is the scalar (-4), followed by the matrix, then the row that is being 
+    scaled (row 1), and finally the row that is being added to and thus <m>\mathbf{replaced}</m> (row 3).
+  </p>
+  <p>
+    <image source="images/nspire-system-stage1.png" width="50%">
+      <shortdescription>Using CAS Stage 1</shortdescription>
+    </image>
   </p>
   <p>
     Now we can do the same thing for the third row multiplying Row 1 by <m>-2</m> and adding it to Row 3 and 
@@ -572,6 +578,11 @@
       \end{array}
       \right]
     </me>
+  </p>
+  <p>
+    <image source="images/nspire-system-stage2.png" width="50%">
+      <shortdescription>Using CAS Stage 1</shortdescription>
+    </image>
   </p>
   <p>
     At this point, we can begin to back-solve since the last row represents an equation that contains only 
