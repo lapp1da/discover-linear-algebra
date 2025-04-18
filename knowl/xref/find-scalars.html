@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Scalars.</span>
+</h4>
+<div class="para">Consider a more simplified version of our scenario from Chapter 1 involving prices, <span class="process-math">\(p\)</span> and revenue <span class="process-math">\(r\)</span> for products we are selling to various companies.  In this case, we consider fewer companies and products to make this example easier to disect.  Suppose we have the following data for the number of items for two different products for two different companies.</div>
+<div class="para"><figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.2.3<span class="period">.</span></span><span class="space"> </span>Product Orders</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Clients</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Product 1</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Product 2</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Company 1</td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">3</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Company 2</td>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">5</td>
+</tr>
+</table></div></figure></div>
+<div class="para">In this case we are looking for scalars for prices, <span class="process-math">\(p_1\)</span> and <span class="process-math">\(p_2\text{,}\)</span> that provide desired revenues, <span class="process-math">\(r_1\)</span> and <span class="process-math">\(r_2\text{.}\)</span>  This gives the following vector equation.</div>
+<div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+p_1 \begin{bmatrix}
+2\\1\end{bmatrix} + p_2 \begin{bmatrix}
+3\\5\end{bmatrix} = \begin{bmatrix}
+r_1\\r_2\end{bmatrix}
+\end{equation*}
+</div></div>
+<div class="para">A question we might ask is what prices do we need to set so that we have revenue of $43 from Company 1 and $46 from Company 2?  It may be that there are no such price combinations that will yield what we want (i.e. does this combination exist?).  There may be a case where there are infinitely many such price combinations (i.e. there is not uniqueness).  These two fundamental questions of <dfn class="terminology">existence</dfn> and <dfn class="terminology">uniqueness</dfn> will be ones we revisit as we seek solutions to equations.</div>
+<div class="para">So now we ask if we can find solutions to the vector equation, <span class="process-math">\(p_1 \begin{bmatrix}
+2\\1\end{bmatrix} + p_2 \begin{bmatrix}
+3\\5\end{bmatrix} = \begin{bmatrix}
+43\\46\end{bmatrix}
+\text{?}\)</span>
+</div>
+<div class="para logical">
+<div class="para">However, this is not such an unusual task.  Recall from high algebra we solved these equations before, but they were simply written in a different form.  This vector equation could also be written as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2p_1+3p_2=43
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p_1+5p_2=46
+\end{equation*}
+</div>
+</div>
+<div class="para">Now we can use the process of Gaussian elimination to reduce these equations to only one variable.  Suppose we multiply the second equation by <span class="process-math">\(-2\)</span> and add the resulting equations to obtain the following.</div>
+<div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+\begin{array} 2 \quad 2p_1+3p_2=43\\ -2(p_1+ 5p_2=46)\end{array}
+\Rightarrow
+\begin{array} 3 \quad 2p_1+3p_2=\quad 43\\ -2p_1-10p_2= -92\\
+\overline{\quad 0p_1- \; 7p_2=-49}\end{array}
+\Rightarrow
+-7p_2=-49 \Rightarrow p_2=7
+\end{equation*}
+</div></div>
+<div class="para">Now we can use our value for <span class="process-math">\(p_2=7\)</span> in one of our original equations (let’s use the second one since it is easier) to get <span class="process-math">\(p_1+5\cdot7=46\)</span> which gives <span class="process-math">\(p_1=46-35=11\text{.}\)</span>
+</div>
+<div class="para">Checking this result we get <span class="process-math">\(11\cdot \begin{bmatrix}
+2\\1\end{bmatrix} + 7\cdot \begin{bmatrix}
+3\\5\end{bmatrix} = \begin{bmatrix}
+43\\46\end{bmatrix}
+\text{.}\)</span>
+</div></article><span class="incontext"><a class="internal" href="sec22-solving-systems.html#find-scalars">in-context</a></span>
+</body>
+</html>

@@ -226,10 +226,10 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div>
 <div class="para" id="finding-scalars-10"><em class="emphasis">Now consider the following example where we use this process to find scalars for a linear combination of vectors.</em></div>
-<div class="para" id="finding-scalars-11"><details id="finding-scalars-11-1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<div class="para" id="finding-scalars-11"><details id="find-scalars" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Scalars.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="finding-scalars-11-1-2">Consider a more simplified version of our scenario from Chapter 1 involving prices, <span class="process-math">\(p\)</span> and revenue <span class="process-math">\(r\)</span> for products we are selling to various companies.  In this case, we consider fewer companies and products to make this example easier to disect.  Suppose we have the following data for the number of items for two different products for two different companies.</div>
-<div class="para" id="finding-scalars-11-1-3"><figure class="table table-like" id="product-orders-small"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.2.3<span class="period">.</span></span><span class="space"> </span>Product Orders</figcaption><div class="tabular-box natural-width"><table class="tabular">
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="find-scalars-2">Consider a more simplified version of our scenario from Chapter 1 involving prices, <span class="process-math">\(p\)</span> and revenue <span class="process-math">\(r\)</span> for products we are selling to various companies.  In this case, we consider fewer companies and products to make this example easier to disect.  Suppose we have the following data for the number of items for two different products for two different companies.</div>
+<div class="para" id="find-scalars-3"><figure class="table table-like" id="product-orders-small"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.2.3<span class="period">.</span></span><span class="space"> </span>Product Orders</figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t0 lines">Clients</th>
 <th scope="col" class="c m b1 r0 l0 t0 lines">Product 1</th>
@@ -246,8 +246,8 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b0 r0 l0 t0 lines">5</td>
 </tr>
 </table></div></figure></div>
-<div class="para" id="finding-scalars-11-1-4">In this case we are looking for scalars for prices, <span class="process-math">\(p_1\)</span> and <span class="process-math">\(p_2\text{,}\)</span> that provide desired revenues, <span class="process-math">\(r_1\)</span> and <span class="process-math">\(r_2\text{.}\)</span>  This gives the following vector equation.</div>
-<div class="para logical" id="finding-scalars-11-1-5"><div class="displaymath process-math">
+<div class="para" id="find-scalars-4">In this case we are looking for scalars for prices, <span class="process-math">\(p_1\)</span> and <span class="process-math">\(p_2\text{,}\)</span> that provide desired revenues, <span class="process-math">\(r_1\)</span> and <span class="process-math">\(r_2\text{.}\)</span>  This gives the following vector equation.</div>
+<div class="para logical" id="find-scalars-5"><div class="displaymath process-math">
 \begin{equation*}
 p_1 \begin{bmatrix}
 2\\1\end{bmatrix} + p_2 \begin{bmatrix}
@@ -255,14 +255,14 @@ p_1 \begin{bmatrix}
 r_1\\r_2\end{bmatrix}
 \end{equation*}
 </div></div>
-<div class="para" id="finding-scalars-11-1-6">A question we might ask is what prices do we need to set so that we have revenue of $43 from Company 1 and $46 from Company 2?  It may be that there are no such price combinations that will yield what we want (i.e. does this combination exist?).  There may be a case where there are infinitely many such price combinations (i.e. there is not uniqueness).  These two fundamental questions of <dfn class="terminology">existence</dfn> and <dfn class="terminology">uniqueness</dfn> will be ones we revisit as we seek solutions to equations.</div>
-<div class="para" id="finding-scalars-11-1-7">So now we ask if we can find solutions to the vector equation, <span class="process-math">\(p_1 \begin{bmatrix}
+<div class="para" id="find-scalars-6">A question we might ask is what prices do we need to set so that we have revenue of $43 from Company 1 and $46 from Company 2?  It may be that there are no such price combinations that will yield what we want (i.e. does this combination exist?).  There may be a case where there are infinitely many such price combinations (i.e. there is not uniqueness).  These two fundamental questions of <dfn class="terminology">existence</dfn> and <dfn class="terminology">uniqueness</dfn> will be ones we revisit as we seek solutions to equations.</div>
+<div class="para" id="find-scalars-7">So now we ask if we can find solutions to the vector equation, <span class="process-math">\(p_1 \begin{bmatrix}
 2\\1\end{bmatrix} + p_2 \begin{bmatrix}
 3\\5\end{bmatrix} = \begin{bmatrix}
 43\\46\end{bmatrix}
 \text{?}\)</span>
 </div>
-<div class="para logical" id="finding-scalars-11-1-8">
+<div class="para logical" id="find-scalars-8">
 <div class="para">However, this is not such an unusual task.  Recall from high algebra we solved these equations before, but they were simply written in a different form.  This vector equation could also be written as</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -275,8 +275,8 @@ p_1+5p_2=46
 \end{equation*}
 </div>
 </div>
-<div class="para" id="finding-scalars-11-1-9">Now we can use the process of Gaussian elimination to reduce these equations to only one variable.  Suppose we multiply the second equation by <span class="process-math">\(-2\)</span> and add the resulting equations to obtain the following.</div>
-<div class="para logical" id="finding-scalars-11-1-10"><div class="displaymath process-math">
+<div class="para" id="find-scalars-9">Now we can use the process of Gaussian elimination to reduce these equations to only one variable.  Suppose we multiply the second equation by <span class="process-math">\(-2\)</span> and add the resulting equations to obtain the following.</div>
+<div class="para logical" id="find-scalars-10"><div class="displaymath process-math">
 \begin{equation*}
 \begin{array} 2 \quad 2p_1+3p_2=43\\ -2(p_1+ 5p_2=46)\end{array}
 \Rightarrow
@@ -286,20 +286,20 @@ p_1+5p_2=46
 -7p_2=-49 \Rightarrow p_2=7
 \end{equation*}
 </div></div>
-<div class="para" id="finding-scalars-11-1-11">Now we can use our value for <span class="process-math">\(p_2=7\)</span> in one of our original equations (let’s use the second one since it is easier) to get <span class="process-math">\(p_1+5\cdot7=46\)</span> which gives <span class="process-math">\(p_1=46-35=11\text{.}\)</span>
+<div class="para" id="find-scalars-11">Now we can use our value for <span class="process-math">\(p_2=7\)</span> in one of our original equations (let’s use the second one since it is easier) to get <span class="process-math">\(p_1+5\cdot7=46\)</span> which gives <span class="process-math">\(p_1=46-35=11\text{.}\)</span>
 </div>
-<div class="para" id="finding-scalars-11-1-12">Checking this result we get <span class="process-math">\(11\cdot \begin{bmatrix}
+<div class="para" id="find-scalars-12">Checking this result we get <span class="process-math">\(11\cdot \begin{bmatrix}
 2\\1\end{bmatrix} + 7\cdot \begin{bmatrix}
 3\\5\end{bmatrix} = \begin{bmatrix}
 43\\46\end{bmatrix}
 \text{.}\)</span>
 </div></article></details></div>
-<div class="para" id="finding-scalars-12"><article class="activity project-like" id="finding-scalars-12-1"><h4 class="heading">
+<div class="para" id="finding-scalars-12"><article class="activity project-like" id="solve-3by3-system"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="finding-scalars-12-1-1">
-<div class="para" id="finding-scalars-12-1-1-1">Consider the following system of equations.</div>
-<div class="para logical" id="finding-scalars-12-1-1-2"><div class="displaymath process-math">
+<div class="introduction" id="solve-3by3-system-1">
+<div class="para" id="solve-3by3-system-1-1">Consider the following system of equations.</div>
+<div class="para logical" id="solve-3by3-system-1-2"><div class="displaymath process-math">
 \begin{equation*}
 \begin{array} 3
 x + 2y + z =-1 \\
@@ -309,12 +309,12 @@ x + 2y + z =-1 \\
 \end{equation*}
 </div></div>
 </div>
-<article class="task exercise-like" id="finding-scalars-12-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="finding-scalars-12-1-2-1-1">Use the process of Gaussian elimination to reduce the system of 3 equations and 3 unknowns to a system of 2 equations and 2 unknowns by scaling and/or adding pairs of these equations.</div></article><article class="task exercise-like" id="finding-scalars-12-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="finding-scalars-12-1-3-1-1">Now eliminate another of your two remaining variables from part (a) in similar manner (scaling and/or adding pairs of these equations) to find a solution value for one of the three variables.</div></article><article class="task exercise-like" id="finding-scalars-12-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="finding-scalars-12-1-4-1-1">Use your value from part (b) and one of your equations found in part (a) to solve for a second unknown.</div></article><article class="task exercise-like" id="finding-scalars-12-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="finding-scalars-12-1-5-1-1">Use the two values you have found so far along with one of your original equations to solve for the last unknown.</div></article><article class="task exercise-like" id="finding-scalars-12-1-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="finding-scalars-12-1-6-1-1">Use the GeoGebra applet in <a href="sec22-solving-systems.html#3d-system-graphical" class="xref" data-knowl="./knowl/xref/3d-system-graphical.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.2.4">Figure 2.2.4</a> to verify your solution to the system. Feel free to rotate the planes so that the intersection point of all three is visible.</div> <div class="para" id="finding-scalars-12-1-6-1-2"><figure class="figure figure-like" id="3d-system-graphical"><iframe id="geogebra-3d-example" width="600" height="600" src="geogebra-3d-example-if.html"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.4<span class="period">.</span></span><span class="space"> </span>3D System of Equations</figcaption></figure></div></article></article></div>
+<article class="task exercise-like" id="solve-3by3-system-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="solve-3by3-system-2-1-1">Use the process of Gaussian elimination to reduce the system of 3 equations and 3 unknowns to a system of 2 equations and 2 unknowns by scaling and/or adding pairs of these equations.</div></article><article class="task exercise-like" id="solve-3by3-system-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="solve-3by3-system-3-1-1">Now eliminate another of your two remaining variables from part (a) in similar manner (scaling and/or adding pairs of these equations) to find a solution value for one of the three variables.</div></article><article class="task exercise-like" id="solve-3by3-system-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="solve-3by3-system-4-1-1">Use your value from part (b) and one of your equations found in part (a) to solve for a second unknown.</div></article><article class="task exercise-like" id="solve-3by3-system-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="solve-3by3-system-5-1-1">Use the two values you have found so far along with one of your original equations to solve for the last unknown.</div></article><article class="task exercise-like" id="solve-3by3-system-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="solve-3by3-system-6-1-1">Use the GeoGebra applet in <a href="sec22-solving-systems.html#3d-system-graphical" class="xref" data-knowl="./knowl/xref/3d-system-graphical.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.2.4">Figure 2.2.4</a> to verify your solution to the system. Feel free to rotate the planes so that the intersection point of all three is visible.</div> <div class="para" id="solve-3by3-system-6-1-2"><figure class="figure figure-like" id="3d-system-graphical"><iframe id="geogebra-3d-example" width="600" height="600" src="geogebra-3d-example-if.html"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.4<span class="period">.</span></span><span class="space"> </span>3D System of Equations</figcaption></figure></div></article></article></div>
 <div class="para" id="finding-scalars-13">Now that we have worked through a process to reduce a system of equations to fewer and fewer variables, we can summarize the operations that changed the look of the equations without changing the solutions. We essentially have three types of "moves" we can do that will create equivalent systems of equations that maintain the same solutions as the original system.</div>
 <div class="para" id="finding-scalars-14">
 <dfn class="terminology">Scaling</dfn> <div class="para" id="finding-scalars-14-1-1-2-1">In this situation, we can multiply an entire equation by a constant and not change the solutions. For example, <span class="process-math">\(\frac{1}{2} \left(2x+4y=8\right) \Rightarrow x+2y=4\)</span> will have the same solutions as the original, <span class="process-math">\(2x+4y=8\text{.}\)</span>
@@ -335,7 +335,7 @@ x + 2y + z =-1 \\
 </div>
 <div class="para">clearly have the same solution!</div>
 </div> <div class="para" id="finding-scalars-14-1-2-2-2"></div> <dfn class="terminology">Replacing</dfn> <div class="para logical" id="finding-scalars-14-1-3-2-1">
-<div class="para">In this situation, we found that if you multiply one equation by a scalar (even if it just 1) and and add it to another equation and use this result in place of the equation you added the scalar multiple to, the solutions to the system remain the same.  For example, we can take a system like</div>
+<div class="para">In this situation, we found that if we multiply one equation by a scalar (even if it just 1) and and add it to another equation and use this result in place of the equation we added the scalar multiple to, the solutions to the system remain the same.  For example, we can take a system like</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \begin{aligned}
@@ -356,15 +356,15 @@ x + 2y + z =-1 \\
 <div class="para">and we will still have the same solution, <span class="process-math">\(x=-1\)</span> and <span class="process-math">\(y=2\text{,}\)</span> be the solution to both systems.</div>
 </div> <div class="para" id="finding-scalars-14-1-3-2-2"></div>
 </div>
-<div class="para" id="finding-scalars-15">As you may have noticed in both of these examples for solving a system with Gaussian elimination, to make it easier to manipulate and perform operations on the equations, we made it a practice to keep the variables aligned with each other and then performed the multiplication by scalars and addition of equations.  This helped us make sure we were not accidently adding the coefficients of different variables together.  For the most part, this practice just makes "bookkeeping" easier.  This should sound kind of familiar.  We did the same thing in Chapter 1 when we introduced vectors and matrices.  We viewed these arrays of elements as an easier way to keep track of corresponding components that represented values for the same type of quantities (e.g. orders of the same product, price of the same product, revenue from the same company) without needing to label them.  So the natural question is, do we need to write the variable name if we already know which variable is associated with which column in our "stacked" representation of the equations?  The answer is a resounding, no!  So let’s consider what would happen if we were to forego the writing of the variable names.</div></section><section class="subsection" id="stripping-variables"><h3 class="heading hide-type">
+<div class="para" id="finding-scalars-15">As you may have noticed in both of these examples for solving a system with Gaussian elimination, to make it easier to manipulate and perform operations on the equations, we made it a practice to keep the variables aligned with each other and then performed the multiplication by scalars and addition of equations using the three "moves" described above.  This helped us make sure we were not accidently adding the coefficients of different variables together.  For the most part, this practice just makes "bookkeeping" easier.  This should sound kind of familiar.  We did the same thing in Chapter 1 when we introduced vectors and matrices.  We viewed these arrays of elements as an easier way to keep track of corresponding components that represented values for the same type of quantities (e.g. orders of the same product, price of the same product, revenue from the same company) without needing to label them.  So the natural question is, do we need to write the variable name if we already know which variable is associated with which column in our "stacked" representation of the equations?  The answer is a resounding, no!  So let’s consider what would happen if we were to forego the writing of the variable names.</div></section><section class="subsection" id="stripping-variables"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="space"> </span><span class="title">Augmented Matrices and Stripping Away Variable Names</span>
 </h3>
-<div class="para" id="stripping-variables-2">When we look at the general structure we have been using for our equations in the Guassian elimination process, we wanted our equations to be of the form like <span class="process-math">\(5x_1+3x_2+2x_3=-7\)</span> where the variables are all on the left side of the equation and the right side contains only a numerical value.  If we assume this structure of our equations, we can define them in the following way.</div>
+<div class="para" id="stripping-variables-2">When we look at the general structure we have been using for our equations in the Guassian elimination process, we wanted our equations to be of the form, <span class="process-math">\(5x_1+3x_2+2x_3=-7\text{,}\)</span> where the variables are all on the left side of the equation and the right side contains only a numerical value.  If we assume this structure for our equations, we can define them in the following way.</div>
 <article class="definition definition-like" id="def-linear-equations"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span>
 </h4>
 <div class="para" id="def-linear-equations-1-1">A <dfn class="terminology">linear equation</dfn> in the variables, <span class="process-math">\(x_1, x_2, x_3, \ldots, x_n\)</span> may be written in the form <span class="process-math">\(a_1x_1+a_2x_2+a_3x_3+\cdots+a_nx_n=b\)</span> where the real numbers represented by <span class="process-math">\(a_1,a_2,\ldots,a_n\)</span> are called <dfn class="terminology">coefficients</dfn> and <span class="process-math">\(b\)</span> is a constant real number.</div> <div class="para" id="def-linear-equations-1-2">When we have several such equations that share common variables, we say that it is a <dfn class="terminology">system of linear equations</dfn> or, more simply, a <dfn class="terminology">linear system</dfn>.</div></article><div class="para" id="stripping-variables-4">Recall from <a href="sec11-model-moving-worlds.html" class="internal" title="Section 1.1: Modeling Data and Moving Between Worlds">Section 1.1</a>, we began by looking at systems of equations from the standpoint of transformations.</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec11-model-moving-worlds.html ./knowl/xref/convert-equations-matrix-trans.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec11-model-moving-worlds.html ./knowl/xref/find-scalars.html ./knowl/xref/solve-3by3-system.html ./knowl/xref/convert-equations-matrix-trans.html">
 \begin{equation*}
 \begin{bmatrix}
 14\amp 9\amp 34\amp 41\\
@@ -394,9 +394,9 @@ r_1\\r_2\\r_3
 <div class="para logical" id="convert-equations-matrix-trans-2-2"><div class="displaymath process-math">
 \begin{equation*}
 \begin{array} 3
-x_1 - 2x_2 + x_3 =5 \\
-2x_1 + 3x_2 - 2x_3 =-17 \\
-3x_1 + 4x_2 + x_3 =-5
+x_1-2x_2+x_3=5 \\
+2x_1+3x_2-2x_3=-17 \\
+3x_1+4x_2+x_3=-5
 \end{array}
 \end{equation*}
 </div></div>
@@ -406,7 +406,7 @@ x_1 - 2x_2 + x_3 =5 \\
 <div class="para" id="convert-equations-matrix-trans-4-1-1">Use your <dfn class="terminology">System of Equations</dfn> command on your CAS to solve this system for <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> and <span class="process-math">\(x_3\text{.}\)</span>
 </div></article><article class="task exercise-like" id="convert-equations-matrix-trans-5"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="convert-equations-matrix-trans-5-1-1">Use the solutions you found in part (b) to show that the matrix-vector equation you created in part (a) is true by multiplying your coefficient matrix by the vector made up of the components from your solutions.</div></article></article></div>
-<div class="para" id="stripping-variables-8">In the last activity, you took a system of equations and converted it into a coefficient matrix, a vector whose components represented the variables, and another vector whose components represented the values from right-hand side of the equations.  From Chapter 1, we viewed these equations as transformations and in this section we used Gaussian elimination to find solutions for the variables in the equations. So how are these connected?  Think back to our use of Gaussian elimination.  What did we really manipulate?  We kept the variables aligned for convenience and multiplied entire equations by scalar values and from time to time added equations together.  However, the only things we really changed in the process were the <em class="emphasis">values</em> of the coefficients (the very things that become isloated in the coefficient matrix in our transformation version of the equations).  So the natural question is, why do we waste our time writing down the variable names if we are just going to keep them aligned anyway.  Instead, why don’t we simply work with the numerical values of the coefficients?</div>
+<div class="para" id="stripping-variables-8">In the last activity, you took a system of equations and converted it into a coefficient matrix, a vector whose components represented the variables, and another vector whose components represented the values from the right-hand side of the equations.  From Chapter 1, we viewed these equations as transformations and in this section we used Gaussian elimination to find solutions for the variables in the equations (see <a href="sec22-solving-systems.html#find-scalars" class="xref" data-knowl="./knowl/xref/find-scalars.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.2.2: Finding Scalars">Example 2.2.2</a> and <a href="sec22-solving-systems.html#solve-3by3-system" class="xref" data-knowl="./knowl/xref/solve-3by3-system.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 2.2.1">Activity 2.2.1</a>). So how are these connected?  Think back to our use of Gaussian elimination.  What did we really manipulate?  We kept the variables aligned for convenience and multiplied entire equations by scalar values and from time to time added equations together.  However, the only things we really changed in the process were the <em class="emphasis">values</em> of the coefficients (the very things that become isloated in the coefficient matrix in our transformation version of the equations).  So the natural question is, why do we waste our time writing down the variable names if we are just going to keep them aligned anyway.  Instead, why don’t we simply work with the numerical values of the coefficients?</div>
 <div class="para" id="stripping-variables-9">To enable us to more easily work with the solution process, we can tweak our <em class="emphasis">coefficient matrix</em> just a bit, so that the numerical values from the right-hand side of our equations (which do change as we manipilate) are also included.  We can simply <em class="emphasis">augment</em> our coefficient matrix with these values. Consider the system of equations given below.  We can use the processes of scaling equations and adding them together like in <a href="sec22-solving-systems.html#convert-equations-matrix-trans" class="xref" data-knowl="./knowl/xref/convert-equations-matrix-trans.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 2.2.2: From Equations to Matrix Transformation">Activity 2.2.2</a> to try and simplify the system to find solutions.</div>
 <div class="para logical" id="stripping-variables-10"><div class="displaymath process-math">
 \begin{equation*}
@@ -450,8 +450,10 @@ x_1 + 2x_2 + 4x_3 =5 \\
 \right]
 \end{equation*}
 </div></div>
-<div class="para" id="stripping-variables-16">Now we can do the same thing for the third row multiplying Row 1 by <span class="process-math">\(-2\)</span> and adding it to Row 3 and replacing Row 3 with the result.</div>
-<div class="para logical" id="stripping-variables-17"><div class="displaymath process-math">
+<div class="para" id="stripping-variables-16">This can also be done step-by-step on most basic graphing calculators.  In this case, the first entry in the <span class="process-math">\(\mathbf{mRowAdd}\)</span> command is the scalar (-4), followed by the matrix, then the row that is being scaled (row 1), and finally the row that is being added to and thus <span class="process-math">\(\mathbf{replaced}\)</span> (row 3).</div>
+<div class="para" id="stripping-variables-17"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/images/nspire-system-stage1.png" class="contained" alt="Using CAS Stage 1"></div></div>
+<div class="para" id="stripping-variables-18">Now we can do the same thing for the third row multiplying Row 1 by <span class="process-math">\(-2\)</span> and adding it to Row 3 and replacing Row 3 with the result.</div>
+<div class="para logical" id="stripping-variables-19"><div class="displaymath process-math">
 \begin{equation*}
 \left[
 \begin{array}{ccc|c}
@@ -470,9 +472,10 @@ x_1 + 2x_2 + 4x_3 =5 \\
 \right]
 \end{equation*}
 </div></div>
-<div class="para" id="stripping-variables-18">At this point, we can begin to back-solve since the last row represents an equation that contains only the variable <span class="process-math">\(x_3\text{.}\)</span>  Once we have this value, we can use it in <span class="process-math">\(R_2\)</span> since it now has entries representing <span class="process-math">\(x_2\)</span> and <span class="process-math">\(x_3\)</span> and inserting our value for <span class="process-math">\(x_3\)</span> leaves just <span class="process-math">\(x_2\text{.}\)</span> Finally, we then use the values we have obtained for <span class="process-math">\(x_2\)</span> and <span class="process-math">\(x_3\)</span> in the first row to get our value for <span class="process-math">\(x_1\text{.}\)</span>  The fact that our matrix has zeros in the lower left that enable us to easily back-solve means that this kind of matrix is special and thus deserves a special name.  We refer to this structure of a matrix as <dfn class="terminology">upper triangular</dfn> since the nonzero values of the coefficient matrix portion of the augmented matrix form a triangle.</div>
-<div class="para" id="stripping-variables-19">If we want, we could make our back-solving easier by scaling the last two rows.  If we multiply both the second and third rows by <span class="process-math">\(-\frac{1}{3}\text{,}\)</span> we get</div>
-<div class="para logical" id="stripping-variables-20"><div class="displaymath process-math">
+<div class="para" id="stripping-variables-20"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/images/nspire-system-stage2.png" class="contained" alt="Using CAS Stage 1"></div></div>
+<div class="para" id="stripping-variables-21">At this point, we can begin to back-solve since the last row represents an equation that contains only the variable <span class="process-math">\(x_3\text{.}\)</span>  Once we have this value, we can use it in <span class="process-math">\(R_2\)</span> since it now has entries representing <span class="process-math">\(x_2\)</span> and <span class="process-math">\(x_3\)</span> and inserting our value for <span class="process-math">\(x_3\)</span> leaves just <span class="process-math">\(x_2\text{.}\)</span> Finally, we then use the values we have obtained for <span class="process-math">\(x_2\)</span> and <span class="process-math">\(x_3\)</span> in the first row to get our value for <span class="process-math">\(x_1\text{.}\)</span>  The fact that our matrix has zeros in the lower left that enable us to easily back-solve means that this kind of matrix is special and thus deserves a special name.  We refer to this structure of a matrix as <dfn class="terminology">upper triangular</dfn> since the nonzero values of the coefficient matrix portion of the augmented matrix form a triangle.</div>
+<div class="para" id="stripping-variables-22">If we want, we could make our back-solving easier by scaling the last two rows.  If we multiply both the second and third rows by <span class="process-math">\(-\frac{1}{3}\text{,}\)</span> we get</div>
+<div class="para logical" id="stripping-variables-23"><div class="displaymath process-math">
 \begin{equation*}
 \left[
 \begin{array}{ccc|c}
@@ -483,12 +486,16 @@ x_1 + 2x_2 + 4x_3 =5 \\
 \right]
 \end{equation*}
 </div></div>
-<div class="para" id="stripping-variables-21">Froom this version of the augmented matrix, we can easily see that <span class="process-math">\(x_3=2\text{.}\)</span>  As a result, we can see that <span class="process-math">\(x_2+4\cdot2=6\)</span> and so <span class="process-math">\(x_2=6-8=-2\text{.}\)</span>  Using the first row with these values gives us <span class="process-math">\(x_1+2\cdot-2+4\cdot2=5 \Rightarrow x_1-4+8=5\text{.}\)</span>  This results in <span class="process-math">\(x_1=1\text{.}\)</span>
-</div>
-<div class="para" id="stripping-variables-22"><article class="activity project-like" id="stripping-variables-22-1"><h4 class="heading">
+<div class="para" id="stripping-variables-24">Here the <span class="process-math">\(\mathbf{mRow}\)</span> command first takes the scalar, followed by the matrix and then the row that is being scaled.</div>
+<div class="para" id="stripping-variables-25"><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="sbspanel top" style="width:47.3684210526316%;"><img src="external/images/nspire-system-stage3.png" class="contained"></div>
+<div class="sbspanel top" style="width:47.3684210526316%;"><img src="external/images/nspire-system-stage4.png" class="contained"></div>
+</div></div></div>
+<div class="para" id="stripping-variables-26">From this version of the augmented matrix, we can easily see that <span class="process-math">\(x_3=2\text{.}\)</span>  As a result, we can see that <span class="process-math">\(x_2+4\cdot2=6\)</span> and so <span class="process-math">\(x_2=6-8=-2\text{.}\)</span>  Using the first row with these values gives us <span class="process-math">\(x_1+2\cdot-2+4\cdot2=5 \Rightarrow x_1-4+8=5\text{.}\)</span>  This results in <span class="process-math">\(x_1=1\text{.}\)</span>  You may notice that we can continue to using these manipulation processes to further reduce this matrix so that the "back-solve" process will be easier, but we will address this later in this section.</div>
+<div class="para" id="stripping-variables-27"><article class="activity project-like" id="stripping-variables-27-1"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="stripping-variables-22-1-1"><div class="para logical" id="stripping-variables-22-1-1-1">
+<div class="introduction" id="stripping-variables-27-1-1"><div class="para logical" id="stripping-variables-27-1-1-1">
 <div class="para">Consider the following system of equations.</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -500,11 +507,11 @@ x_1 + x_2 + 2x_3 =7 \\
 \end{equation*}
 </div>
 </div></div>
-<article class="task exercise-like" id="stripping-variables-22-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="stripping-variables-22-1-2-1-1">Convert the system of equations into an augmented matrix.</div></article><article class="task exercise-like" id="stripping-variables-22-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="stripping-variables-22-1-3-1-1">Use Gaussian Elimination to reduce your augmented matrix to one that is in upper triangular form. Be sure to indicate your process at each stage by using notation such as <span class="process-math">\(\overset{5R_1+R_3 \rightarrow R_3}{\longrightarrow}\text{.}\)</span>
-</div></article><article class="task exercise-like" id="stripping-variables-22-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="stripping-variables-22-1-4-1-1">After you have solved for one of the values of the unknowns, back-solve to find the remaining unknown values.</div></article></article></div></section><section class="subsection" id="augmented-matrices"><h3 class="heading hide-type">
+<article class="task exercise-like" id="stripping-variables-27-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="stripping-variables-27-1-2-1-1">Convert the system of equations into an augmented matrix.</div></article><article class="task exercise-like" id="stripping-variables-27-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="stripping-variables-27-1-3-1-1">Use Gaussian Elimination to reduce your augmented matrix to one that is in upper triangular form. Be sure to indicate your process at each stage by using notation such as <span class="process-math">\(\overset{5R_1+R_3 \rightarrow R_3}{\longrightarrow}\)</span> or <span class="process-math">\(\overset{R_1 \leftrightarrow R_3}{\longrightarrow}\text{.}\)</span>
+</div></article><article class="task exercise-like" id="stripping-variables-27-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="stripping-variables-27-1-4-1-1">After you have solved for one of the values of the unknowns, back-solve to find the remaining unknown values.</div></article></article></div></section><section class="subsection" id="augmented-matrices"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="space"> </span><span class="title">Matrices and Solution Spaces</span>
 </h3>
 <div class="para" id="augmented-matrices-2"></div></section><section class="subsection" id="reduced-row-echelon"><h3 class="heading hide-type">
