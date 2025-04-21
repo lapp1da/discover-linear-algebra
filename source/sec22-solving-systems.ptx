@@ -682,7 +682,9 @@
             Use Gaussian Elimination to reduce your augmented matrix to one that is in upper triangular form.  
             Be sure to indicate your process at each stage by using notation such as 
             <m>\overset{5R_1+R_3 \rightarrow R_3}{\longrightarrow}</m> or 
-            <m>\overset{R_1 \leftrightarrow R_3}{\longrightarrow}</m>.
+            <m>\overset{R_1 \leftrightarrow R_3}{\longrightarrow}</m>.  Feel free to use technology 
+            (e.g. <m>\mathbf{mRowAdd}</m> command) to perform the arithmetic, but make sure to show your 
+            stages in the reduction process.
           </p>
         </statement>
       </task>
@@ -696,6 +698,18 @@
       </task>
     </activity>
   </p>
+
+  <p>
+    Now that we have converted a system of equations to augmented matrix form and then used the process of 
+    Gaussian elimination to reduce the system and find solutions, we might ask the question, will we always be 
+    able to reduce the matrix to a nice upper triangular form where back-solving to obtain a unique solution 
+    is possible?  As you will recall from <xref ref="linear-comb-project" />, not all linear combinations of 
+    vectors (and thus systems) end with a unique solution.  This means that it will not always be able to find 
+    a unique solution to a given system of equations and thus get a nice upper triangular matrix.  In the next 
+    subsection, we will examine how we can describe the set of solutions for linear systems to determine whether 
+    or not the solution(s) is (are) unique, infinite, or non-existent by simplying looking at the reduced 
+    version of the matrix.
+  </p>
   
 
   
@@ -703,9 +717,57 @@
 
 <subsection xml:id="augmented-matrices">
   <title>Matrices and Solution Spaces</title>
-
+<introduction>
+  <p>
+    In the last subsection, it seemed that when we had a system of 3 equations and 3 unknowns, the solution was 
+    always unique.  Note that we have already seen, uniqueness is not always guaranteed (see 
+    <xref ref="linear-comb-project" />).  So how does the reduced version of the augmented matrix give us 
+    clues as to the nature of the solution(s)?  Let's investigate this here from both a numerical and 
+    graphical point of view.
+  </p>
+</introduction>
 <p>
-  
+  <activity xml:id="system-solve-infinite-solutions">
+    <introduction>
+  <p>
+    Consider the following system of equations.
+    <me>
+      \begin{array} 3
+      x_1 + 2x_2 - x_3 =1 \\
+      x_1 + 2x_2 + 2x_3 =7 \\
+      2x_1 + 4x_2 + x_3 =8
+      \end{array}
+    </me>
+  </p>
+</introduction>
+<task>
+  <statement>
+    <p>
+      Convert the system of equations into an augmented matrix.
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      Use Gaussian Elimination to reduce your augmented matrix to one that is in upper triangular form.  
+      Be sure to indicate your process at each stage by using notation such as 
+      <m>\overset{5R_1+R_3 \rightarrow R_3}{\longrightarrow}</m> or 
+      <m>\overset{R_1 \leftrightarrow R_3}{\longrightarrow}</m>.  Feel free to use technology 
+      (e.g. <m>\mathbf{mRowAdd}</m> command) to perform the arithmetic, but make sure to show your stages in 
+      the reduction process.
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      After you have solved for one of the values of the unknowns, back-solve to find the remaining unknown 
+      values.
+    </p>
+  </statement>
+</task>
+</activity>
 </p>
 
 
@@ -713,53 +775,55 @@
 
 <subsection xml:id="reduced-row-echelon">
   <title>Reduced Row Echelon Form</title>
+<introduction>
+  <p>
+    Recall that in <xref ref="stripping-variables" />, we focused on getting an augmented matrix into 
+    <em>upper triangular form</em>.  In particular, toward the end of this process, we tried to make 
+    back-solving easier by making sure that the coefficient of the lead position (variable) in each row was 1.  
+    We refer to this structure of the matrix as <term>row echelon form</term>.
+  </p>
+  
+  <p>
+    <definition xml:id="def-row-echelon-form">
+      <title>Row Echelon Form</title>
+      <statement>
+        <p>
+          A matrix is in <term>row echelon form</term> if it meets the following three criteria.
+          <ol>
+            <li>
+              <p>
+                <term>Zeros at the Bottom</term>
+              </p>
+              <p>
+                If the matrix has any rows that consist of all zeros, these rows appear at the bottom of the matrix.
+              </p>
+            </li>
+            <li>
+              <p>
+                <term>Leading Entries Are 1</term>
+              </p>
+              <p>
+                The first non-zero entry in each non-zero row (aka the "lead entry") is a 1. These leading 
+                entries are also called <term>pivots</term>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <term>Staggered Leads</term>
+              </p>
+              <p>
+                If we choose any two successive rows starting from the top, the lead entry of the lower row 
+                is to the right of the lead entry of the higher row. This creates a "staggered"  or "stairstep" 
+                pattern.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </definition>
+  </p>
+</introduction>
 
-<p>
-  Recall that in <xref ref="stripping-variables" />, we focused on getting an augmented matrix into 
-  <em>upper triangular form</em>.  In particular, toward the end of this process, we tried to make 
-  back-solving easier by making sure that the coefficient of the lead position (variable) in each row was 1.  
-  We refer to this structure of the matrix as <term>row echelon form</term>.
-</p>
-
-<p>
-  <definition xml:id="def-row-echelon-form">
-    <title>Row Echelon Form</title>
-    <statement>
-      <p>
-        A matrix is in <term>row echelon form</term> if it meets the following three criteria.
-        <ol>
-          <li>
-            <p>
-              <term>Zeros at the Bottom</term>
-            </p>
-            <p>
-              If the matrix has any rows that consist of all zeros, these rows appear at the bottom of the matrix.
-            </p>
-          </li>
-          <li>
-            <p>
-              <term>Leading Entries Are 1</term>
-            </p>
-            <p>
-              The first non-zero entry in each non-zero row (aka the "lead entry") is a 1. These leading 
-              entries are also called <term>pivots</term>.
-            </p>
-          </li>
-          <li>
-            <p>
-              <term>Staggered Leads</term>
-            </p>
-            <p>
-              If we choose any two successive rows starting from the top, the lead entry of the lower row 
-              is to the right of the lead entry of the higher row. This creates a "staggered"  or "stairstep" 
-              pattern.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </definition>
-</p>
 
 </subsection>
 
