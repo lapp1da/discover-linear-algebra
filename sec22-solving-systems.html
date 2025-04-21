@@ -364,7 +364,7 @@ x + 2y + z =-1 \\
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span>
 </h4>
 <div class="para" id="def-linear-equations-1-1">A <dfn class="terminology">linear equation</dfn> in the variables, <span class="process-math">\(x_1, x_2, x_3, \ldots, x_n\)</span> may be written in the form <span class="process-math">\(a_1x_1+a_2x_2+a_3x_3+\cdots+a_nx_n=b\)</span> where the real numbers represented by <span class="process-math">\(a_1,a_2,\ldots,a_n\)</span> are called <dfn class="terminology">coefficients</dfn> and <span class="process-math">\(b\)</span> is a constant real number.</div> <div class="para" id="def-linear-equations-1-2">When we have several such equations that share common variables, we say that it is a <dfn class="terminology">system of linear equations</dfn> or, more simply, a <dfn class="terminology">linear system</dfn>.</div></article><div class="para" id="stripping-variables-4">Recall from <a href="sec11-model-moving-worlds.html" class="internal" title="Section 1.1: Modeling Data and Moving Between Worlds">Section 1.1</a>, we began by looking at systems of equations from the standpoint of transformations.</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec11-model-moving-worlds.html ./knowl/xref/find-scalars.html ./knowl/xref/solve-3by3-system.html ./knowl/xref/convert-equations-matrix-trans.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec11-model-moving-worlds.html ./knowl/xref/find-scalars.html ./knowl/xref/solve-3by3-system.html ./knowl/xref/convert-equations-matrix-trans.html ./knowl/xref/linear-comb-project.html">
 \begin{equation*}
 \begin{bmatrix}
 14\amp 9\amp 34\amp 41\\
@@ -529,16 +529,34 @@ x_1 + x_2 + 2x_3 =7 \\
 </div></div>
 <article class="task exercise-like" id="system-solve-upper-triangular-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="system-solve-upper-triangular-2-1-1">Convert the system of equations into an augmented matrix.</div></article><article class="task exercise-like" id="system-solve-upper-triangular-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="system-solve-upper-triangular-3-1-1">Use Gaussian Elimination to reduce your augmented matrix to one that is in upper triangular form. Be sure to indicate your process at each stage by using notation such as <span class="process-math">\(\overset{5R_1+R_3 \rightarrow R_3}{\longrightarrow}\)</span> or <span class="process-math">\(\overset{R_1 \leftrightarrow R_3}{\longrightarrow}\text{.}\)</span>
-</div></article><article class="task exercise-like" id="system-solve-upper-triangular-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="system-solve-upper-triangular-4-1-1">After you have solved for one of the values of the unknowns, back-solve to find the remaining unknown values.</div></article></article></div></section><section class="subsection" id="augmented-matrices"><h3 class="heading hide-type">
+<div class="para" id="system-solve-upper-triangular-3-1-1">Use Gaussian Elimination to reduce your augmented matrix to one that is in upper triangular form. Be sure to indicate your process at each stage by using notation such as <span class="process-math">\(\overset{5R_1+R_3 \rightarrow R_3}{\longrightarrow}\)</span> or <span class="process-math">\(\overset{R_1 \leftrightarrow R_3}{\longrightarrow}\text{.}\)</span>  Feel free to use technology (e.g. <span class="process-math">\(\mathbf{mRowAdd}\)</span> command) to perform the arithmetic, but make sure to show your stages in the reduction process.</div></article><article class="task exercise-like" id="system-solve-upper-triangular-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="system-solve-upper-triangular-4-1-1">After you have solved for one of the values of the unknowns, back-solve to find the remaining unknown values.</div></article></article></div>
+<div class="para" id="stripping-variables-31">Now that we have converted a system of equations to augmented matrix form and then used the process of Gaussian elimination to reduce the system and find solutions, we might ask the question, will we always be able to reduce the matrix to a nice upper triangular form where back-solving to obtain a unique solution is possible?  As you will recall from <a href="sec21-gridding-space.html#linear-comb-project" class="xref" data-knowl="./knowl/xref/linear-comb-project.html" data-reveal-label="Reveal" data-close-label="Close" title="Project 2.1.2: Linear Combinations and Spanning">Project 2.1.2</a>, not all linear combinations of vectors (and thus systems) end with a unique solution.  This means that it will not always be able to find a unique solution to a given system of equations and thus get a nice upper triangular matrix.  In the next subsection, we will examine how we can describe the set of solutions for linear systems to determine whether or not the solution(s) is (are) unique, infinite, or non-existent by simplying looking at the reduced version of the matrix.</div></section><section class="subsection" id="augmented-matrices"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="space"> </span><span class="title">Matrices and Solution Spaces</span>
 </h3>
-<div class="para" id="augmented-matrices-2"></div></section><section class="subsection" id="reduced-row-echelon"><h3 class="heading hide-type">
+<section class="introduction" id="augmented-matrices-2"><div class="para" id="augmented-matrices-2-1">In the last subsection, it seemed that when we had a system of 3 equations and 3 unknowns, the solution was always unique.  Note that we have already seen, uniqueness is not always guaranteed (see <a href="sec21-gridding-space.html#linear-comb-project" class="xref" data-knowl="./knowl/xref/linear-comb-project.html" data-reveal-label="Reveal" data-close-label="Close" title="Project 2.1.2: Linear Combinations and Spanning">Project 2.1.2</a>).  So how does the reduced version of the augmented matrix give us clues as to the nature of the solution(s)?  Let’s investigate this here from both a numerical and graphical point of view.</div></section><div class="para" id="augmented-matrices-3"><article class="activity project-like" id="system-solve-infinite-solutions"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="system-solve-infinite-solutions-1"><div class="para logical" id="system-solve-infinite-solutions-1-1">
+<div class="para">Consider the following system of equations.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array} 3
+x_1 + 2x_2 - x_3 =1 \\
+x_1 + 2x_2 + 2x_3 =7 \\
+2x_1 + 4x_2 + x_3 =8
+\end{array}
+\end{equation*}
+</div>
+</div></div>
+<article class="task exercise-like" id="system-solve-infinite-solutions-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="system-solve-infinite-solutions-2-1-1">Convert the system of equations into an augmented matrix.</div></article><article class="task exercise-like" id="system-solve-infinite-solutions-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="system-solve-infinite-solutions-3-1-1">Use Gaussian Elimination to reduce your augmented matrix to one that is in upper triangular form. Be sure to indicate your process at each stage by using notation such as <span class="process-math">\(\overset{5R_1+R_3 \rightarrow R_3}{\longrightarrow}\)</span> or <span class="process-math">\(\overset{R_1 \leftrightarrow R_3}{\longrightarrow}\text{.}\)</span>  Feel free to use technology (e.g. <span class="process-math">\(\mathbf{mRowAdd}\)</span> command) to perform the arithmetic, but make sure to show your stages in the reduction process.</div></article><article class="task exercise-like" id="system-solve-infinite-solutions-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="system-solve-infinite-solutions-4-1-1">After you have solved for one of the values of the unknowns, back-solve to find the remaining unknown values.</div></article></article></div></section><section class="subsection" id="reduced-row-echelon"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="space"> </span><span class="title">Reduced Row Echelon Form</span>
 </h3>
-<div class="para" id="reduced-row-echelon-2">Recall that in <a href="sec22-solving-systems.html#stripping-variables" class="internal" title="Subsection 2.2.2: Augmented Matrices and Stripping Away Variable Names">Subsection 2.2.2</a>, we focused on getting an augmented matrix into <em class="emphasis">upper triangular form</em>.  In particular, toward the end of this process, we tried to make back-solving easier by making sure that the coefficient of the lead position (variable) in each row was 1. We refer to this structure of the matrix as <dfn class="terminology">row echelon form</dfn>.</div>
-<div class="para" id="reduced-row-echelon-3"><article class="definition definition-like" id="def-row-echelon-form"><h4 class="heading">
+<section class="introduction" id="reduced-row-echelon-2"><div class="para" id="reduced-row-echelon-2-1">Recall that in <a href="sec22-solving-systems.html#stripping-variables" class="internal" title="Subsection 2.2.2: Augmented Matrices and Stripping Away Variable Names">Subsection 2.2.2</a>, we focused on getting an augmented matrix into <em class="emphasis">upper triangular form</em>.  In particular, toward the end of this process, we tried to make back-solving easier by making sure that the coefficient of the lead position (variable) in each row was 1. We refer to this structure of the matrix as <dfn class="terminology">row echelon form</dfn>.</div>
+<div class="para" id="reduced-row-echelon-2-2"><article class="definition definition-like" id="def-row-echelon-form"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Row Echelon Form.</span>
 </h4>
 <div class="para logical" id="def-row-echelon-form-2-1">
@@ -557,7 +575,7 @@ x_1 + x_2 + 2x_3 =7 \\
 <div class="para" id="def-row-echelon-form-2-1-2-3-2">If we choose any two successive rows starting from the top, the lead entry of the lower row is to the right of the lead entry of the higher row. This creates a "staggered"  or "stairstep" pattern.</div>
 </li>
 </ol>
-</div></article></div></section></section></div>
+</div></article></div></section></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec21-gridding-space.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec23-applications.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
