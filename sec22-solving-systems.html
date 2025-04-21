@@ -473,9 +473,13 @@ x_1 + 2x_2 + 4x_3 =5 \\
 \end{equation*}
 </div></div>
 <div class="para" id="stripping-variables-20"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/images/nspire-system-stage2.png" class="contained" alt="Using CAS Stage 1"></div></div>
-<div class="para" id="stripping-variables-21">At this point, we can begin to back-solve since the last row represents an equation that contains only the variable <span class="process-math">\(x_3\text{.}\)</span>  Once we have this value, we can use it in <span class="process-math">\(R_2\)</span> since it now has entries representing <span class="process-math">\(x_2\)</span> and <span class="process-math">\(x_3\)</span> and inserting our value for <span class="process-math">\(x_3\)</span> leaves just <span class="process-math">\(x_2\text{.}\)</span> Finally, we then use the values we have obtained for <span class="process-math">\(x_2\)</span> and <span class="process-math">\(x_3\)</span> in the first row to get our value for <span class="process-math">\(x_1\text{.}\)</span>  The fact that our matrix has zeros in the lower left that enable us to easily back-solve means that this kind of matrix is special and thus deserves a special name.  We refer to this structure of a matrix as <dfn class="terminology">upper triangular</dfn> since the nonzero values of the coefficient matrix portion of the augmented matrix form a triangle.</div>
-<div class="para" id="stripping-variables-22">If we want, we could make our back-solving easier by scaling the last two rows.  If we multiply both the second and third rows by <span class="process-math">\(-\frac{1}{3}\text{,}\)</span> we get</div>
-<div class="para logical" id="stripping-variables-23"><div class="displaymath process-math">
+<div class="para" id="stripping-variables-21">At this point, we can begin to back-solve since the last row represents an equation that contains only the variable <span class="process-math">\(x_3\text{.}\)</span>  Once we have this value, we can use it in <span class="process-math">\(R_2\)</span> since it now has entries representing <span class="process-math">\(x_2\)</span> and <span class="process-math">\(x_3\)</span> and inserting our value for <span class="process-math">\(x_3\)</span> leaves just <span class="process-math">\(x_2\text{.}\)</span> Finally, we then use the values we have obtained for <span class="process-math">\(x_2\)</span> and <span class="process-math">\(x_3\)</span> in the first row to get our value for <span class="process-math">\(x_1\text{.}\)</span>
+</div>
+<div class="para" id="stripping-variables-22">From this version of the augmented matrix, we can see that <span class="process-math">\(-3x_3=-6\)</span> and so <span class="process-math">\(x_3=2\text{.}\)</span>  As a result, we can see that <span class="process-math">\(-3x_2-12\cdot2=-18\)</span> and so <span class="process-math">\(x_2+4\cdot2=6 \Rightarrow x_2=6-8=-2\text{.}\)</span>  Using the first row with these values gives us  <span class="process-math">\(x_1+2\cdot-2+4\cdot2=5 \Rightarrow x_1-4+8=5\text{.}\)</span>  This results in <span class="process-math">\(x_1=5+4-8=1\text{.}\)</span>
+</div>
+<div class="para" id="stripping-variables-23">The fact that our matrix has zeros in the lower left that enable us to easily back-solve means that this kind of matrix is special and thus deserves a special name.  We refer to this structure of a matrix as <dfn class="terminology">upper triangular</dfn> since the nonzero values of the coefficient matrix portion of the augmented matrix form a triangle.</div>
+<div class="para" id="stripping-variables-24">If we want, we could make our back-solving easier by scaling the last two rows.  If we multiply both the second and third rows by <span class="process-math">\(-\frac{1}{3}\text{,}\)</span> we get</div>
+<div class="para logical" id="stripping-variables-25"><div class="displaymath process-math">
 \begin{equation*}
 \left[
 \begin{array}{ccc|c}
@@ -486,16 +490,32 @@ x_1 + 2x_2 + 4x_3 =5 \\
 \right]
 \end{equation*}
 </div></div>
-<div class="para" id="stripping-variables-24">Here the <span class="process-math">\(\mathbf{mRow}\)</span> command first takes the scalar, followed by the matrix and then the row that is being scaled.</div>
-<div class="para" id="stripping-variables-25"><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
+<div class="para" id="stripping-variables-26">Here the <span class="process-math">\(\mathbf{mRow}\)</span> command first takes the scalar, followed by the matrix and then the row that is being scaled.</div>
+<div class="para" id="stripping-variables-27"><div class="sidebyside"><div class="sbsrow" style="margin-left:2.5%;margin-right:2.5%;">
 <div class="sbspanel top" style="width:47.3684210526316%;"><img src="external/images/nspire-system-stage3.png" class="contained"></div>
 <div class="sbspanel top" style="width:47.3684210526316%;"><img src="external/images/nspire-system-stage4.png" class="contained"></div>
 </div></div></div>
-<div class="para" id="stripping-variables-26">From this version of the augmented matrix, we can easily see that <span class="process-math">\(x_3=2\text{.}\)</span>  As a result, we can see that <span class="process-math">\(x_2+4\cdot2=6\)</span> and so <span class="process-math">\(x_2=6-8=-2\text{.}\)</span>  Using the first row with these values gives us <span class="process-math">\(x_1+2\cdot-2+4\cdot2=5 \Rightarrow x_1-4+8=5\text{.}\)</span>  This results in <span class="process-math">\(x_1=1\text{.}\)</span>  You may notice that we can continue to using these manipulation processes to further reduce this matrix so that the "back-solve" process will be easier, but we will address this later in this section.</div>
-<div class="para" id="stripping-variables-27"><article class="activity project-like" id="stripping-variables-27-1"><h4 class="heading">
+<div class="para" id="stripping-variables-28">From this version of the augmented matrix, we can more easily see that <span class="process-math">\(x_3=2\text{.}\)</span>  As a result, we can see that <span class="process-math">\(x_2+4\cdot2=6\)</span> and so <span class="process-math">\(x_2=6-8=-2\text{.}\)</span>  Using the first row with these values gives us <span class="process-math">\(x_1+2\cdot-2+4\cdot2=5 \Rightarrow x_1-4+8=5\text{.}\)</span>  This results in <span class="process-math">\(x_1=1\text{.}\)</span>
+</div>
+<div class="para logical" id="stripping-variables-29">
+<div class="para">You may notice that we can continue to use these manipulation processes to further reduce this matrix so that the "back-solve" process will be even easier.  For example, wouldn’t it be great if we could get the matrix into the form</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[
+\begin{array}{ccc|c}
+1 \amp 0 \amp 0 \amp 1 \\
+0 \amp 1 \amp 0 \amp -2 \\
+0 \amp 0 \amp 1 \amp 2
+\end{array}
+\right]
+\end{equation*}
+</div>
+<div class="para">where we can easily read off the solutions since each row has a 1 in the position of a different variable and zeros everywhere else (i.e. no other substitutions to make)?  We will address this later in this section.</div>
+</div>
+<div class="para" id="stripping-variables-30"><article class="activity project-like" id="system-solve-upper-triangular"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="stripping-variables-27-1-1"><div class="para logical" id="stripping-variables-27-1-1-1">
+<div class="introduction" id="system-solve-upper-triangular-1"><div class="para logical" id="system-solve-upper-triangular-1-1">
 <div class="para">Consider the following system of equations.</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -507,17 +527,37 @@ x_1 + x_2 + 2x_3 =7 \\
 \end{equation*}
 </div>
 </div></div>
-<article class="task exercise-like" id="stripping-variables-27-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="stripping-variables-27-1-2-1-1">Convert the system of equations into an augmented matrix.</div></article><article class="task exercise-like" id="stripping-variables-27-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="stripping-variables-27-1-3-1-1">Use Gaussian Elimination to reduce your augmented matrix to one that is in upper triangular form. Be sure to indicate your process at each stage by using notation such as <span class="process-math">\(\overset{5R_1+R_3 \rightarrow R_3}{\longrightarrow}\)</span> or <span class="process-math">\(\overset{R_1 \leftrightarrow R_3}{\longrightarrow}\text{.}\)</span>
-</div></article><article class="task exercise-like" id="stripping-variables-27-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="stripping-variables-27-1-4-1-1">After you have solved for one of the values of the unknowns, back-solve to find the remaining unknown values.</div></article></article></div></section><section class="subsection" id="augmented-matrices"><h3 class="heading hide-type">
+<article class="task exercise-like" id="system-solve-upper-triangular-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="system-solve-upper-triangular-2-1-1">Convert the system of equations into an augmented matrix.</div></article><article class="task exercise-like" id="system-solve-upper-triangular-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="system-solve-upper-triangular-3-1-1">Use Gaussian Elimination to reduce your augmented matrix to one that is in upper triangular form. Be sure to indicate your process at each stage by using notation such as <span class="process-math">\(\overset{5R_1+R_3 \rightarrow R_3}{\longrightarrow}\)</span> or <span class="process-math">\(\overset{R_1 \leftrightarrow R_3}{\longrightarrow}\text{.}\)</span>
+</div></article><article class="task exercise-like" id="system-solve-upper-triangular-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="system-solve-upper-triangular-4-1-1">After you have solved for one of the values of the unknowns, back-solve to find the remaining unknown values.</div></article></article></div></section><section class="subsection" id="augmented-matrices"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="space"> </span><span class="title">Matrices and Solution Spaces</span>
 </h3>
 <div class="para" id="augmented-matrices-2"></div></section><section class="subsection" id="reduced-row-echelon"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="space"> </span><span class="title">Reduced Row Echelon Form</span>
 </h3>
-<div class="para" id="reduced-row-echelon-2"></div></section></section></div>
+<div class="para" id="reduced-row-echelon-2">Recall that in <a href="sec22-solving-systems.html#stripping-variables" class="internal" title="Subsection 2.2.2: Augmented Matrices and Stripping Away Variable Names">Subsection 2.2.2</a>, we focused on getting an augmented matrix into <em class="emphasis">upper triangular form</em>.  In particular, toward the end of this process, we tried to make back-solving easier by making sure that the coefficient of the lead position (variable) in each row was 1. We refer to this structure of the matrix as <dfn class="terminology">row echelon form</dfn>.</div>
+<div class="para" id="reduced-row-echelon-3"><article class="definition definition-like" id="def-row-echelon-form"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Row Echelon Form.</span>
+</h4>
+<div class="para logical" id="def-row-echelon-form-2-1">
+<div class="para">A matrix is in <dfn class="terminology">row echelon form</dfn> if it meets the following three criteria.</div>
+<ol class="decimal" id="def-row-echelon-form-2-1-2">
+<li id="def-row-echelon-form-2-1-2-1">
+<div class="para" id="def-row-echelon-form-2-1-2-1-1"><dfn class="terminology">Zeros at the Bottom</dfn></div>
+<div class="para" id="def-row-echelon-form-2-1-2-1-2">If the matrix has any rows that consist of all zeros, these rows appear at the bottom of the matrix.</div>
+</li>
+<li id="def-row-echelon-form-2-1-2-2">
+<div class="para" id="def-row-echelon-form-2-1-2-2-1"><dfn class="terminology">Leading Entries Are 1</dfn></div>
+<div class="para" id="def-row-echelon-form-2-1-2-2-2">The first non-zero entry in each non-zero row (aka the "lead entry") is a 1. These leading entries are also called <dfn class="terminology">pivots</dfn>.</div>
+</li>
+<li id="def-row-echelon-form-2-1-2-3">
+<div class="para" id="def-row-echelon-form-2-1-2-3-1"><dfn class="terminology">Staggered Leads</dfn></div>
+<div class="para" id="def-row-echelon-form-2-1-2-3-2">If we choose any two successive rows starting from the top, the lead entry of the lower row is to the right of the lead entry of the higher row. This creates a "staggered"  or "stairstep" pattern.</div>
+</li>
+</ol>
+</div></article></div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec21-gridding-space.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec23-applications.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
