@@ -656,7 +656,7 @@
   </p>
 
   <p>
-    <activity>
+    <activity xml:id="system-solve-upper-triangular">
       <introduction>
         <p>
           Consider the following system of equations.
