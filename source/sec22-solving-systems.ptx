@@ -717,7 +717,50 @@
   <title>Reduced Row Echelon Form</title>
 
 <p>
-  
+  Recall that in <xref ref="stripping-variables" />, we focused on getting an augmented matrix into 
+  <em>upper triangular form</em>.  In particular, toward the end of this process, we tried to make 
+  back-solving easier by making sure that the coefficient of the lead position (variable) in each row was 1.  
+  We refer to this structure of the matrix as <term>row echelon form</term>.
+</p>
+
+<p>
+  <definition xml:id="def-row-echelon-form">
+    <title>Row Echelon Form</title>
+    <statement>
+      <p>
+        A matrix is in <term>row echelon form</term> if it meets the following three criteria.
+        <ol>
+          <li>
+            <p>
+              <term>Zeros at the Bottom</term>
+            </p>
+            <p>
+              If the matrix has any rows that consist of all zeros, these rows appear at the bottom of the matrix.
+            </p>
+          </li>
+          <li>
+            <p>
+              <term>Leading Entries Are 1</term>
+            </p>
+            <p>
+              The first non-zero entry in each non-zero row (aka the "lead entry") is a 1. These leading 
+              entries are also called <term>pivots</term>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <term>Staggered Leads</term>
+            </p>
+            <p>
+              If we choose any two successive rows starting from the top, the lead entry of the lower row 
+              is to the right of the lead entry of the higher row. This creates a "staggered"  or "stairstep" 
+              pattern.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </definition>
 </p>
 
 </subsection>
