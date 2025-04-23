@@ -762,7 +762,7 @@
 <task>
   <statement>
     <p>
-      Describe any differences you see with respect to the reduced matrix.  How is it different than the reduced 
+      Describe any differences you see with respect to the reduced matrix.  How is it different from the reduced 
       forms you have seen thus far?
     </p>
   </statement>
@@ -785,7 +785,7 @@
 <task>
   <statement>
     <p>
-      What variables have solutions that depend on other variables?  Explain any dependences you see.  How 
+      What variables have solutions that depend on other variables?  Explain any dependencies you see.  How 
       many solutions are there to this system?
     </p>
   </statement>
@@ -793,23 +793,150 @@
 <task>
   <statement>
     <p>
-      Consider the 3D sketch of these 3 equations in XXX.  Explain how your response in part (f) is consistent 
-      with the sketch in XXX.
+      Consider the 3D sketch of these 3 equations in <xref ref="3d-system-infinite-solution" /> (note that 
+      <m>x=x_1</m>, <m>y=x_2</m>, and <m>z=x_3</m> for the purpose of the sketch).  Explain how your 
+      response in part (f) is consistent with the sketch.
     </p>
   </statement>
 </task>
 <task>
   <statement>
     <p>
-      Use your response in part (f) and generate at least 3 different solutions to the system.  Adjust the 
-      coordinates for point A in the sketch to match the values for <m>x_1</m>, <m>x_2</m>, and <m>x_3</m> 
-      you found in your solutions.  Explain how the location of the point A in the sketch demonstrates it as 
-      a solution to the system of equations.
+      Use your response in part (f) and generate at least 3 different solutions to the system.  
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      Adjust the coordinates for point A in the sketch in <xref ref="3d-system-infinite-solution" /> to match 
+      the values for <m>x_1</m>, <m>x_2</m>, and <m>x_3</m> you found in part (h).  Explain how the location of 
+      the point A in the sketch for each solution demonstrates it as a solution to the system of equations.  
+      How does the sketch illustrate the nature of the number of solutions to the system?  Explain the 
+      geometric properties of the sketch that would show all of the solutions.
     </p>
   </statement>
 </task>
 </activity>
 </p>
+
+<p>
+  <figure xml:id="3d-system-infinite-solution">
+    <caption>3D System of Equations</caption>
+    <interactive xml:id="3d-system-example-infinite" platform="geogebra" width="100%" reset-icon="yes">
+      <slate xml:id="ggb-3d-example-infinite" surface="geogebra" material="ugmkuurm" />
+    </interactive>
+  </figure>
+</p>
+
+<p>
+  Now that we can see that there are scenarios where we can have more than one solution to a system of equations, 
+  are there other possibilities?  The next activity will explore what else can happen from both a matrix 
+  perspective and a geometric one.
+</p>
+
+<p>
+  <activity xml:id="system-solve-no-solutions">
+    <introduction>
+  <p>
+    Consider the following system of equations.
+    <me>
+      \begin{array} 3
+      x_1 + 2x_2 - x_3 =1 \\
+      x_1 + 2x_2 + 2x_3 =7 \\
+      -x_1 - 2x_2  =-2
+      \end{array}
+    </me>
+  </p>
+</introduction>
+<task>
+  <statement>
+    <p>
+      Convert the system of equations into an augmented matrix.
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      Use Gaussian Elimination to reduce your augmented matrix to one that is in upper triangular form.  
+      Be sure to indicate your process at each stage by using notation such as 
+      <m>\overset{5R_1+R_3 \rightarrow R_3}{\longrightarrow}</m> or 
+      <m>\overset{R_1 \leftrightarrow R_3}{\longrightarrow}</m>.  Feel free to use technology 
+      (e.g. <m>\mathbf{mRowAdd}</m> command) to perform the arithmetic, but make sure to show your stages in 
+      the reduction process.
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      Describe any differences you see with respect to the reduced matrix.  How is it different from the reduced 
+      forms you have seen thus far?
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      What does the last row tell you about choices for <m>x_1</m>, <m>x_2</m>, and <m>x_3</m>?
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      What variables have unique and fixed values when it comes to solutions to the system?  Explain your 
+      thinking.
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      What variables have solutions that depend on other variables?  Explain any dependencies you see.  How 
+      many solutions are there to this system?
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      Consider the 3D sketch of these 3 equations in <xref ref="3d-system-no-solution" /> (note that 
+      <m>x=x_1</m>, <m>y=x_2</m>, and <m>z=x_3</m> for the purpose of the sketch).  Explain how your 
+      response in part (f) is consistent with the sketch.
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      Use your response in part (f) to explain the nature of the solutions to the system.  
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      Adjust the coordinates for point A in the sketch in <xref ref="3d-system-no-solution" /> to match 
+      the values for <m>x_1</m>, <m>x_2</m>, and <m>x_3</m> you found in part (h), if you found any.  Explain 
+      how the location of the point A in the sketch for any solutions you may or may not have found demonstrates 
+      the nature of the number of solutions to the system?
+    </p>
+  </statement>
+</task>
+</activity>
+</p>
+
+<p>
+  <figure xml:id="3d-system-no-solution">
+    <caption>3D System of Equations</caption>
+    <interactive xml:id="3d-system-example-no" platform="geogebra" width="100%" reset-icon="yes">
+      <slate xml:id="ggb-3d-example-no" surface="geogebra" material="ygrsmzzd" />
+    </interactive>
+  </figure>
+</p>
+
 
 
 </subsection>
