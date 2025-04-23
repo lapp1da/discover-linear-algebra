@@ -318,7 +318,7 @@
       <item>
         <term>Replacing</term>
         <details>
-          <p>In this situation, we found that if we multiply one equation by a scalar (even if it just 1) and 
+          <p>In this situation, we found that if we multiply one equation by a scalar (even if it is just 1)  
             and add it to another equation and use this result in place of the equation we added the 
             scalar multiple to, the solutions to the system remain the same.  For example, we can take a system 
             like
@@ -762,8 +762,49 @@
 <task>
   <statement>
     <p>
-      After you have solved for one of the values of the unknowns, back-solve to find the remaining unknown 
-      values.
+      Describe any differences you see with respect to the reduced matrix.  How is it different than the reduced 
+      forms you have seen thus far?
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      What does the last row tell you about choices for <m>x_1</m>, <m>x_2</m>, and <m>x_3</m>?
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      What variables have unique and fixed values when it comes to solutions to the system?  Explain your 
+      thinking.
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      What variables have solutions that depend on other variables?  Explain any dependences you see.  How 
+      many solutions are there to this system?
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      Consider the 3D sketch of these 3 equations in XXX.  Explain how your response in part (f) is consistent 
+      with the sketch in XXX.
+    </p>
+  </statement>
+</task>
+<task>
+  <statement>
+    <p>
+      Use your response in part (f) and generate at least 3 different solutions to the system.  Adjust the 
+      coordinates for point A in the sketch to match the values for <m>x_1</m>, <m>x_2</m>, and <m>x_3</m> 
+      you found in your solutions.  Explain how the location of the point A in the sketch demonstrates it as 
+      a solution to the system of equations.
     </p>
   </statement>
 </task>
