@@ -937,6 +937,71 @@
   </figure>
 </p>
 
+<p>
+  Now that we have examined several possible scenarios with respect to solutions to a system of equations, it 
+  begins to make sense what is happening both symbolically and geometrically when it comes to solutions.  We 
+  can define what it means to be a solution in the following way.
+</p>
+
+<p>
+  <definition xml:id="def-solution">
+    <statement>
+      <p>
+        A <term>solution</term> to a linear system of equations is simply a set of values,
+        <m>\left\{s_1, s_2, s_3, \ldots, s_n\right\}</m>, (sometimes we express this as an ordered n-tuple of 
+        the form, <m>\left(s_1, s_2, s_3, \ldots, s_n\right)</m>), such that choosing these values for variables
+        <m>x_1=s_1, x_2=s_2, x_3=s_3, \ldots, x_n=s_n</m> make all of the equations in the system true at the 
+        same time.
+      </p>
+    </statement>
+  </definition>
+</p>
+
+<p>
+  In the last several activities, the solutions to systems have suggested some common conclusions when it comes 
+  to the nature of these solutions.
+</p>
+
+<remark>
+  <p>
+    <term>Solutions to Systems of Linear Equations</term>
+  </p>
+  <p>
+    Given a set of linear equations, there are only the following possibilities for solutions to the system:
+    <ol>
+    <li>
+      <p>
+        There is exactly one solution.
+      </p>
+    </li>
+    <li>
+      <p>
+        There are infinitely many solutions.
+      </p>
+    </li>
+    <li>
+      <p>
+        There are no solutions.
+      </p>
+    </li>
+  </ol>
+  </p>
+</remark>
+
+<p>
+  <definition xml:id="def-solution-space">
+    <statement>
+      <p>
+        We call the set of all sets, <m>\left(s_1, s_2, s_3, \ldots, s_n\right)</m>, that satisify the system 
+        of equations the <term>solution space</term>.  Note that in our examples of 3 equations in 3 variables, 
+        these 3-tuples were physically represented as points in 3-dimensional space.  The 
+        <term>solution space</term> could be simply a single point or possibly an infinite number of points 
+        forming a line or other geometric object.
+      </p>
+    </statement>
+  </definition>
+</p>
+
 
 
 </subsection>
