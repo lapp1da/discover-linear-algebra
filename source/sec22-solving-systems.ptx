@@ -945,6 +945,8 @@
 
 <p>
   <definition xml:id="def-solution">
+    <title>Solution of Linear System</title>
+    
     <statement>
       <p>
         A <term>solution</term> to a linear system of equations is simply a set of values,
@@ -962,10 +964,9 @@
   to the nature of these solutions.
 </p>
 
-<remark>
-  <p>
-    <term>Solutions to Systems of Linear Equations</term>
-  </p>
+<proposition xml:id="possible-solution-types">
+  <title>Solutions to Systems of Linear Equations</title>
+  
   <p>
     Given a set of linear equations, there are only the following possibilities for solutions to the system:
     <ol>
@@ -986,22 +987,141 @@
     </li>
   </ol>
   </p>
-</remark>
+</proposition>
 
 <p>
   <definition xml:id="def-solution-space">
+    <title>Solution Space</title>
+    
     <statement>
       <p>
         We call the set of all sets, <m>\left(s_1, s_2, s_3, \ldots, s_n\right)</m>, that satisify the system 
         of equations the <term>solution space</term>.  Note that in our examples of 3 equations in 3 variables, 
         these 3-tuples were physically represented as points in 3-dimensional space.  The 
         <term>solution space</term> could be simply a single point or possibly an infinite number of points 
-        forming a line or other geometric object.
+        forming a line or other geometric object (in 3D, what might this object be?).
       </p>
     </statement>
   </definition>
 </p>
+<p>
+  <activity xml:id="act-identify-solution-spaces">
+    <title>Identifying Solution Spaces</title>
+    
+    
+    <task>
+      <statement>
+        <p>
+          Create an augmented matrix for the system
+        </p>
+        <me>
+          \begin{array} 3
+          x_1 - 3x_2 + 2x_3 =-1 \\
+          -x_1 + 2x_2 - 2x_3 =-1 \\
+          -x_1 + 2x_2 - x_3 =2
+          \end{array}
+        </me>
+        <p>
+          and reduce it to describe the solution space.  Be specific and explain both the numerical nature of 
+          the solution as well as the geometric interpretation.
+        </p>
+      </statement>
+    </task>
 
+    <task>
+      <statement>
+        <p>
+          Consider a system in <m>x</m> and <m>y</m> that when reduced gives the row equivalent matrix
+          <me>
+            \left[
+            \begin{array}{cc|c}
+            1 \amp 0 \amp 1 \\
+            0 \amp 1 \amp -2 \\
+            0 \amp 0 \amp 0
+           \end{array}
+          \right]
+          </me>
+          provide a system of 3 equations that fit this description and describe its solution set.  Give 
+          both a numerical description as well as a geometric one.
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Consider a system in <m>x</m> and <m>y</m> that when reduced gives the row equivalent matrix
+          <me>
+            \left[
+            \begin{array}{cc|c}
+            1 \amp 0 \amp 1 \\
+            0 \amp 1 \amp -2 \\
+            0 \amp 0 \amp 1
+           \end{array}
+          \right]
+          </me>
+          provide a system of 3 equations that fit this description and describe its solution set.  Give 
+          both a numerical description as well as a geometric one.
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Suppose we have a <m>3\times5</m> augmented matrix of the form 
+          <me>
+            \left[
+            \begin{array}{cccc|c}
+            * \amp * \amp * \amp * \amp * \\
+            * \amp * \amp * \amp * \amp * \\
+            * \amp * \amp * \amp * \amp *
+           \end{array}
+          \right]
+          </me>
+          where the <m>*</m>'s represent any real numbers (not necessairly the same).
+        </p>
+        <p>
+          <ol>
+            <li>
+              <p>
+                What kind of system does this represent (number of equations, number of variables)?
+              </p>
+            </li>
+            <li>
+              <p>
+                Given what you have discovered thus far, do you think this system has exactly one, infinitely 
+                many, or no solutions?  Explain your reasoning.  Would it depend on the specific <m>*</m> 
+                values?
+              </p>
+            </li>
+            <li>
+              <p>
+                Suppose we now get specific and the matrix we have is row equivalent to the augmented matrix 
+                <me>
+                  \left[
+                  \begin{array}{cccc|c}
+                  1 \amp 3 \amp 0 \amp 2 \amp -5 \\
+                  0 \amp 0 \amp 1 \amp -1 \amp 2 \\
+                  0 \amp 0 \amp 0 \amp 0 \amp 0
+                 \end{array}
+                \right]
+                </me>
+                do you think this system has exactly one, infinitely 
+                many, or no solutions?  Explain your reasoning.  If there is exactly one solution, give it.  If 
+                there are infinitley many solutions, provide a way to generate all of them.  If there are no 
+                solutions, provide a justification.  Let the first column represent <m>x_1</m>, the second 
+                represent <m>x_2</m>, etc. in your description.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </task>
+    
+    
+  </activity>
+</p>
 
 
 </subsection>
@@ -1012,8 +1132,10 @@
   <p>
     Recall that in <xref ref="stripping-variables" />, we focused on getting an augmented matrix into 
     <em>upper triangular form</em>.  In particular, toward the end of this process, we tried to make 
-    back-solving easier by making sure that the coefficient of the lead position (variable) in each row was 1.  
-    We refer to this structure of the matrix as <term>row echelon form</term>.
+    back-solving easier by making sure that the coefficient of the lead position (variable) in each row was 1 
+    and that the rows toward the bottom had successively more zeros moving from left to right.  
+    We refer to this structure of the matrix as <term>row echelon form</term> and give the following definition 
+    to explicitly describe what we mean.
   </p>
   
   <p>
@@ -1022,7 +1144,7 @@
       <statement>
         <p>
           A matrix is in <term>row echelon form</term> if it meets the following three criteria.
-          <ol>
+          <ul>
             <li>
               <p>
                 <term>Zeros at the Bottom</term>
@@ -1050,12 +1172,139 @@
                 pattern.
               </p>
             </li>
-          </ol>
+          </ul>
         </p>
       </statement>
     </definition>
   </p>
 </introduction>
+
+<p>
+  In the previous activities, we tried to get matrices into row echelon form so that we can more easily 
+  back-solve, but you may have noticed that after a matrix is in <em>row echelon form</em>, there can still 
+  be further reductions that could be done.  This next activity examines ways this might be done and some 
+  limitations to this process.
+</p>
+
+<p>
+  <activity xml:id="act-matrix-reduce-rref">
+    <introduction>
+      <p>
+        Consider a system of equations whose augmented matrix is row equivalent to 
+        <me>
+          \left[
+          \begin{array}{cccc|c}
+          1 \amp 4 \amp 2 \amp -3 \amp 1 \\
+          0 \amp 0 \amp 1 \amp -1 \amp 3 \\
+          0 \amp 0 \amp 0 \amp 0 \amp 0
+         \end{array}
+        \right]
+        </me>
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          This system has an infinite number of solutions.  Suppose we want to generate solutions to this 
+          system.  Describe a process for generating the solutions.  What variables are "free" to be used 
+          to generate the other variables?
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Since the first and second columns contain zeros in the last two rows, we cannot multiply the 
+          second or thrid rows by a scalar and add them to the first row to place zeros in either of the 
+          first two positions of the first row (we are stuck with the 1 and 4 in those positions).  However, 
+          the second row has a 1 and -1 in the third and fourth position, respectively.  This means we could 
+          use the second row to further reduce the third or fourth positions in first row to zero.  This would 
+          make back-solving even easier when the time comes.
+        </p>
+        <p>
+          Using row operations with row 2, try to reduce this matrix further to place a zero in the first row at 
+          the third position.  Explain your process.
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Using row operations with row 2, try to reduce the matrix from part (b) further to place a zero in 
+          the first row at the fourth position.  Explain your process.  Describe any issues you encounter.
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Can you reduce the original matrix to have zeros in the first row in both the third and fourth 
+          positions?
+        </p>
+      </statement>
+    </task>
+  </activity>
+</p>
+
+<p>
+  The dilemma we encountered in <xref ref="act-matrix-reduce-rref" /> raises an interesting question.  How far 
+  can we reduce a matrix before further manipulation with row operations begins to screw up entries we have 
+  already reduced to zero entries?  This question prompts us to refine our idea of 
+  <term>row echelon form</term> leading to a definition of what we call <term>reduced row echelon form</term> 
+  by adding one additional criteria to our <term>row echelon form</term> definition 
+  (<xref ref="def-row-echelon-form" />).
+</p>
+
+<p>
+  <definition xml:id="def-reduced-row-echelon-form">
+    <title>Reduced Row Echelon Form</title>
+    <statement>
+      <p>
+        A matrix is in <term>reduced row echelon form</term> if it meets the following four criteria.
+        <ul>
+          <li>
+            <p>
+              <term>Zeros at the Bottom</term>
+            </p>
+            <p>
+              If the matrix has any rows that consist of all zeros, these rows appear at the bottom of the matrix.
+            </p>
+          </li>
+          <li>
+            <p>
+              <term>Leading Entries Are 1</term>
+            </p>
+            <p>
+              The first nonzero entry in each nonzero row (aka the "lead entry") is a 1. These leading 
+              entries are also called <term>pivots</term>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <term>Staggered Leads</term>
+            </p>
+            <p>
+              If we choose any two successive rows starting from the top, the lead entry of the lower row 
+              is to the right of the lead entry of the higher row. This creates a "staggered"  or "stairstep" 
+              pattern.
+            </p>
+          </li>
+          <li>
+            <p>
+              <term>Lead Entry Sole Non-zero Column Entry</term>
+            </p>
+            <p>
+              The lead entries are the only nonzero entries in their respective columns.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </statement>
+  </definition>
+</p>
 
 
 </subsection>
