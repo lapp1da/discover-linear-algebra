@@ -1306,6 +1306,62 @@
   </definition>
 </p>
 
+<p>
+  <activity>
+    <introduction>
+      <p>
+        Consider the following augmented matrices.  Place them in <term>row reduced echelon form (rref)</term> 
+        using basic row operations if they are not already in <term>rref</term>.  After they have been 
+        reduced, describe the solution space in each case.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          Send a spy from your group to another group to compare your group's rref form for each case.  Note 
+          anything you discover.
+        </p>
+      </statement>
+    </task>
+  </activity>
+</p>
+
+<p>
+  <theorem xml:id="thm-uniqueness-rref">
+    <title>Uniqueness of RREF Matrix</title>
+    <statement>
+      <p>
+        For any given matrix, <m>A</m>, its <term>reduced row echelon form</term> matrix is unique.
+      </p>
+    </statement>
+  </theorem>
+  
+</p>
+
 
 </subsection>
 
