@@ -125,7 +125,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec21-gridding-space.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch2-linearcomb-span-bases.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec23-applications.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec21-gridding-space.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch2-linearcomb-span-bases.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec23-solution-spaces-rref.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -173,16 +173,21 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec22-solving-systems.html#finding-scalars" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Finding Scalars: Gaussian Elimination</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec22-solving-systems.html#stripping-variables" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Augmented Matrices and Stripping Away Variable Names</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec22-solving-systems.html#augmented-matrices" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Matrices and Solution Spaces</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec22-solving-systems.html#reduced-row-echelon" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Reduced Row Echelon Form</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec23-applications.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Applications for Systems of Linear Equations</span></a></div>
+<div class="toc-title-box"><a href="sec23-solution-spaces-rref.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Solution Spaces and Reduced Row Echelon Form</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec23-applications.html#forming-systems" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Forming Systems as Matrices</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec23-applications.html#multiple-representations" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Viewing Systems with Multiple Representations</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec23-applications.html#row-reducing" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Row Reducing Matrices to Find Solutions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec23-solution-spaces-rref.html#augmented-matrices" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Matrices and Solution Spaces</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec23-solution-spaces-rref.html#reduced-row-echelon" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Reduced Row Echelon Form</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec23-applications.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Applications for Systems of Linear Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec23-applications.html#forming-systems" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Forming Systems as Matrices</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec23-applications.html#multiple-representations" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Viewing Systems with Multiple Representations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec23-applications.html#row-reducing" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Row Reducing Matrices to Find Solutions</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -531,247 +536,9 @@ x_1 + x_2 + 2x_3 =7 \\
 <div class="para" id="system-solve-upper-triangular-2-1-1">Convert the system of equations into an augmented matrix.</div></article><article class="task exercise-like" id="system-solve-upper-triangular-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="system-solve-upper-triangular-3-1-1">Use Gaussian Elimination to reduce your augmented matrix to one that is in upper triangular form. Be sure to indicate your process at each stage by using notation such as <span class="process-math">\(\overset{5R_1+R_3 \rightarrow R_3}{\longrightarrow}\)</span> or <span class="process-math">\(\overset{R_1 \leftrightarrow R_3}{\longrightarrow}\text{.}\)</span>  Feel free to use technology (e.g. <span class="process-math">\(\mathbf{mRowAdd}\)</span> command) to perform the arithmetic, but make sure to show your stages in the reduction process.</div></article><article class="task exercise-like" id="system-solve-upper-triangular-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="system-solve-upper-triangular-4-1-1">After you have solved for one of the values of the unknowns, back-solve to find the remaining unknown values.</div></article></article></div>
-<div class="para" id="stripping-variables-31">Now that we have converted a system of equations to augmented matrix form and then used the process of Gaussian elimination to reduce the system and find solutions, we might ask the question, will we always be able to reduce the matrix to a nice upper triangular form where back-solving to obtain a unique solution is possible?  As you will recall from <a href="sec21-gridding-space.html#linear-comb-project" class="xref" data-knowl="./knowl/xref/linear-comb-project.html" data-reveal-label="Reveal" data-close-label="Close" title="Project 2.1.2: Linear Combinations and Spanning">Project 2.1.2</a>, not all linear combinations of vectors (and thus systems) end with a unique solution.  This means that it will not always be able to find a unique solution to a given system of equations and thus get a nice upper triangular matrix.  In the next subsection, we will examine how we can describe the set of solutions for linear systems to determine whether or not the solution(s) is (are) unique, infinite, or non-existent by simplying looking at the reduced version of the matrix.</div></section><section class="subsection" id="augmented-matrices"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="space"> </span><span class="title">Matrices and Solution Spaces</span>
-</h3>
-<section class="introduction" id="augmented-matrices-2"><div class="para" id="augmented-matrices-2-1">In the last subsection, it seemed that when we had a system of 3 equations and 3 unknowns, the solution was always unique.  Note that we have already seen, uniqueness is not always guaranteed (see <a href="sec21-gridding-space.html#linear-comb-project" class="xref" data-knowl="./knowl/xref/linear-comb-project.html" data-reveal-label="Reveal" data-close-label="Close" title="Project 2.1.2: Linear Combinations and Spanning">Project 2.1.2</a>).  So how does the reduced version of the augmented matrix give us clues as to the nature of the solution(s)?  Let’s investigate this here from both a numerical and graphical point of view.</div></section><div class="para" id="augmented-matrices-3"><article class="activity project-like" id="system-solve-infinite-solutions"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="system-solve-infinite-solutions-1"><div class="para logical" id="system-solve-infinite-solutions-1-1">
-<div class="para">Consider the following system of equations.</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{array} 3
-x_1 + 2x_2 - x_3 =1 \\
-x_1 + 2x_2 + 2x_3 =7 \\
-2x_1 + 4x_2 + x_3 =8
-\end{array}
-\end{equation*}
-</div>
-</div></div>
-<article class="task exercise-like" id="system-solve-infinite-solutions-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="system-solve-infinite-solutions-2-1-1">Convert the system of equations into an augmented matrix.</div></article><article class="task exercise-like" id="system-solve-infinite-solutions-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="system-solve-infinite-solutions-3-1-1">Use Gaussian Elimination to reduce your augmented matrix to one that is in upper triangular form. Be sure to indicate your process at each stage by using notation such as <span class="process-math">\(\overset{5R_1+R_3 \rightarrow R_3}{\longrightarrow}\)</span> or <span class="process-math">\(\overset{R_1 \leftrightarrow R_3}{\longrightarrow}\text{.}\)</span>  Feel free to use technology (e.g. <span class="process-math">\(\mathbf{mRowAdd}\)</span> command) to perform the arithmetic, but make sure to show your stages in the reduction process.</div></article><article class="task exercise-like" id="system-solve-infinite-solutions-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="system-solve-infinite-solutions-4-1-1">Describe any differences you see with respect to the reduced matrix.  How is it different from the reduced forms you have seen thus far?</div></article><article class="task exercise-like" id="system-solve-infinite-solutions-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="system-solve-infinite-solutions-5-1-1">What does the last row tell you about choices for <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> and <span class="process-math">\(x_3\text{?}\)</span>
-</div></article><article class="task exercise-like" id="system-solve-infinite-solutions-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="system-solve-infinite-solutions-6-1-1">What variables have unique and fixed values when it comes to solutions to the system?  Explain your thinking.</div></article><article class="task exercise-like" id="system-solve-infinite-solutions-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para" id="system-solve-infinite-solutions-7-1-1">What variables have solutions that depend on other variables?  Explain any dependencies you see.  How many solutions are there to this system?</div></article><article class="task exercise-like" id="system-solve-infinite-solutions-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
-<div class="para" id="system-solve-infinite-solutions-8-1-1">Consider the 3D sketch of these 3 equations in <a href="sec22-solving-systems.html#3d-system-infinite-solution" class="xref" data-knowl="./knowl/xref/3d-system-infinite-solution.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.2.6">Figure 2.2.6</a> (note that <span class="process-math">\(x=x_1\text{,}\)</span> <span class="process-math">\(y=x_2\text{,}\)</span> and <span class="process-math">\(z=x_3\)</span> for the purpose of the sketch).  Explain how your response in part (f) is consistent with the sketch.</div></article><article class="task exercise-like" id="system-solve-infinite-solutions-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
-<div class="para" id="system-solve-infinite-solutions-9-1-1">Use your response in part (f) and generate at least 3 different solutions to the system.</div></article><article class="task exercise-like" id="system-solve-infinite-solutions-10"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="system-solve-infinite-solutions-10-1-1">Adjust the coordinates for point A in the sketch in <a href="sec22-solving-systems.html#3d-system-infinite-solution" class="xref" data-knowl="./knowl/xref/3d-system-infinite-solution.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.2.6">Figure 2.2.6</a> to match the values for <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> and <span class="process-math">\(x_3\)</span> you found in part (h).  Explain how the location of the point A in the sketch for each solution demonstrates it as a solution to the system of equations. How does the sketch illustrate the nature of the number of solutions to the system?  Explain the geometric properties of the sketch that would show all of the solutions.</div></article></article></div>
-<div class="para" id="augmented-matrices-4"><figure class="figure figure-like" id="3d-system-infinite-solution"><iframe id="3d-system-example-infinite" width="600" height="600" src="3d-system-example-infinite-if.html"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.6<span class="period">.</span></span><span class="space"> </span>3D System of Equations</figcaption></figure></div>
-<div class="para" id="augmented-matrices-5">Now that we can see that there are scenarios where we can have more than one solution to a system of equations, are there other possibilities?  The next activity will explore what else can happen from both a matrix perspective and a geometric one.</div>
-<div class="para" id="augmented-matrices-6"><article class="activity project-like" id="system-solve-no-solutions"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="system-solve-no-solutions-1"><div class="para logical" id="system-solve-no-solutions-1-1">
-<div class="para">Consider the following system of equations.</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{array} 3
-x_1 + 2x_2 - x_3 =1 \\
-x_1 + 2x_2 + 2x_3 =7 \\
--x_1 - 2x_2  =-2
-\end{array}
-\end{equation*}
-</div>
-</div></div>
-<article class="task exercise-like" id="system-solve-no-solutions-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="system-solve-no-solutions-2-1-1">Convert the system of equations into an augmented matrix.</div></article><article class="task exercise-like" id="system-solve-no-solutions-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="system-solve-no-solutions-3-1-1">Use Gaussian Elimination to reduce your augmented matrix to one that is in upper triangular form. Be sure to indicate your process at each stage by using notation such as <span class="process-math">\(\overset{5R_1+R_3 \rightarrow R_3}{\longrightarrow}\)</span> or <span class="process-math">\(\overset{R_1 \leftrightarrow R_3}{\longrightarrow}\text{.}\)</span>  Feel free to use technology (e.g. <span class="process-math">\(\mathbf{mRowAdd}\)</span> command) to perform the arithmetic, but make sure to show your stages in the reduction process.</div></article><article class="task exercise-like" id="system-solve-no-solutions-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="system-solve-no-solutions-4-1-1">Describe any differences you see with respect to the reduced matrix.  How is it different from the reduced forms you have seen thus far?</div></article><article class="task exercise-like" id="system-solve-no-solutions-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="system-solve-no-solutions-5-1-1">What does the last row tell you about choices for <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> and <span class="process-math">\(x_3\text{?}\)</span>
-</div></article><article class="task exercise-like" id="system-solve-no-solutions-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="system-solve-no-solutions-6-1-1">What variables have unique and fixed values when it comes to solutions to the system?  Explain your thinking.</div></article><article class="task exercise-like" id="system-solve-no-solutions-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para" id="system-solve-no-solutions-7-1-1">What variables have solutions that depend on other variables?  Explain any dependencies you see.  How many solutions are there to this system?</div></article><article class="task exercise-like" id="system-solve-no-solutions-8"><h5 class="heading"><span class="codenumber">(g)</span></h5>
-<div class="para" id="system-solve-no-solutions-8-1-1">Consider the 3D sketch of these 3 equations in <a href="sec22-solving-systems.html#3d-system-no-solution" class="xref" data-knowl="./knowl/xref/3d-system-no-solution.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.2.7">Figure 2.2.7</a> (note that <span class="process-math">\(x=x_1\text{,}\)</span> <span class="process-math">\(y=x_2\text{,}\)</span> and <span class="process-math">\(z=x_3\)</span> for the purpose of the sketch).  Explain how your response in part (f) is consistent with the sketch.</div></article><article class="task exercise-like" id="system-solve-no-solutions-9"><h5 class="heading"><span class="codenumber">(h)</span></h5>
-<div class="para" id="system-solve-no-solutions-9-1-1">Use your response in part (f) to explain the nature of the solutions to the system.</div></article><article class="task exercise-like" id="system-solve-no-solutions-10"><h5 class="heading"><span class="codenumber">(i)</span></h5>
-<div class="para" id="system-solve-no-solutions-10-1-1">Adjust the coordinates for point A in the sketch in <a href="sec22-solving-systems.html#3d-system-no-solution" class="xref" data-knowl="./knowl/xref/3d-system-no-solution.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.2.7">Figure 2.2.7</a> to match the values for <span class="process-math">\(x_1\text{,}\)</span> <span class="process-math">\(x_2\text{,}\)</span> and <span class="process-math">\(x_3\)</span> you found in part (h), if you found any.  Explain how the location of the point A in the sketch for any solutions you may or may not have found demonstrates the nature of the number of solutions to the system?</div></article></article></div>
-<div class="para" id="augmented-matrices-7"><figure class="figure figure-like" id="3d-system-no-solution"><iframe id="3d-system-example-no" width="600" height="600" src="3d-system-example-no-if.html"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.2.7<span class="period">.</span></span><span class="space"> </span>3D System of Equations</figcaption></figure></div>
-<div class="para" id="augmented-matrices-8">Now that we have examined several possible scenarios with respect to solutions to a system of equations, it begins to make sense what is happening both symbolically and geometrically when it comes to solutions.  We can define what it means to be a solution in the following way.</div>
-<div class="para" id="augmented-matrices-9"><article class="definition definition-like" id="def-solution"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Solution of Linear System.</span>
-</h4>
-<div class="para" id="def-solution-2-1">A <dfn class="terminology">solution</dfn> to a linear system of equations is simply a set of values, <span class="process-math">\(\left\{s_1, s_2, s_3, \ldots, s_n\right\}\text{,}\)</span> (sometimes we express this as an ordered n-tuple of the form, <span class="process-math">\(\left(s_1, s_2, s_3, \ldots, s_n\right)\)</span>), such that choosing these values for variables <span class="process-math">\(x_1=s_1, x_2=s_2, x_3=s_3, \ldots, x_n=s_n\)</span> make all of the equations in the system true at the same time.</div></article></div>
-<div class="para" id="augmented-matrices-10">In the last several activities, the solutions to systems have suggested some common conclusions when it comes to the nature of these solutions.</div>
-<article class="proposition theorem-like" id="possible-solution-types"><h4 class="heading">
-<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">Solutions to Systems of Linear Equations.</span>
-</h4>
-<div class="para logical" id="possible-solution-types-2">
-<div class="para">Given a set of linear equations, there are only the following possibilities for solutions to the system:</div>
-<ol class="decimal" id="possible-solution-types-2-1">
-<li id="possible-solution-types-2-1-1"><div class="para" id="possible-solution-types-2-1-1-1">There is exactly one solution.</div></li>
-<li id="possible-solution-types-2-1-2"><div class="para" id="possible-solution-types-2-1-2-1">There are infinitely many solutions.</div></li>
-<li id="possible-solution-types-2-1-3"><div class="para" id="possible-solution-types-2-1-3-1">There are no solutions.</div></li>
-</ol>
-</div></article><div class="para" id="augmented-matrices-12"><article class="definition definition-like" id="def-solution-space"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">Solution Space.</span>
-</h4>
-<div class="para" id="def-solution-space-2-1">We call the set of all sets, <span class="process-math">\(\left(s_1, s_2, s_3, \ldots, s_n\right)\text{,}\)</span> that satisify the system of equations the <dfn class="terminology">solution space</dfn>.  Note that in our examples of 3 equations in 3 variables, these 3-tuples were physically represented as points in 3-dimensional space.  The <dfn class="terminology">solution space</dfn> could be simply a single point or possibly an infinite number of points forming a line or other geometric object (in 3D, what might this object be?).</div></article></div>
-<div class="para" id="augmented-matrices-13"><article class="activity project-like" id="act-identify-solution-spaces"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Identifying Solution Spaces.</span>
-</h4>
-<article class="task exercise-like" id="act-identify-solution-spaces-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="act-identify-solution-spaces-2-1-1">Create an augmented matrix for the system</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{array} 3
-x_1 - 3x_2 + 2x_3 =-1 \\
--x_1 + 2x_2 - 2x_3 =-1 \\
--x_1 + 2x_2 - x_3 =2
-\end{array}
-\end{equation*}
-</div>
-<div class="para" id="act-identify-solution-spaces-2-1-3">and reduce it to describe the solution space.  Be specific and explain both the numerical nature of the solution as well as the geometric interpretation.</div></article><article class="task exercise-like" id="act-identify-solution-spaces-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="act-identify-solution-spaces-3-1-1">
-<div class="para">Consider a system in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> that when reduced gives the row equivalent matrix</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\left[
-\begin{array}{cc|c}
-1 \amp 0 \amp 1 \\
-0 \amp 1 \amp -2 \\
-0 \amp 0 \amp 0
-\end{array}
-\right]
-\end{equation*}
-</div>
-<div class="para">provide a system of 3 equations that fit this description and describe its solution set.  Give both a numerical description as well as a geometric one.</div>
-</div></article><article class="task exercise-like" id="act-identify-solution-spaces-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para logical" id="act-identify-solution-spaces-4-1-1">
-<div class="para">Consider a system in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> that when reduced gives the row equivalent matrix</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\left[
-\begin{array}{cc|c}
-1 \amp 0 \amp 1 \\
-0 \amp 1 \amp -2 \\
-0 \amp 0 \amp 1
-\end{array}
-\right]
-\end{equation*}
-</div>
-<div class="para">provide a system of 3 equations that fit this description and describe its solution set.  Give both a numerical description as well as a geometric one.</div>
-</div></article><article class="task exercise-like" id="act-identify-solution-spaces-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para logical" id="act-identify-solution-spaces-5-1-1">
-<div class="para">Suppose we have a <span class="process-math">\(3\times5\)</span> augmented matrix of the form</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\left[
-\begin{array}{cccc|c}
-* \amp * \amp * \amp * \amp * \\
-* \amp * \amp * \amp * \amp * \\
-* \amp * \amp * \amp * \amp *
-\end{array}
-\right]
-\end{equation*}
-</div>
-<div class="para">where the <span class="process-math">\(*\)</span>’s represent any real numbers (not necessairly the same).</div>
-</div> <div class="para logical" id="act-identify-solution-spaces-5-1-2"><ol class="decimal" id="act-identify-solution-spaces-5-1-2-1">
-<li id="act-identify-solution-spaces-5-1-2-1-1"><div class="para" id="act-identify-solution-spaces-5-1-2-1-1-1">What kind of system does this represent (number of equations, number of variables)?</div></li>
-<li id="act-identify-solution-spaces-5-1-2-1-2"><div class="para" id="act-identify-solution-spaces-5-1-2-1-2-1">Given what you have discovered thus far, do you think this system has exactly one, infinitely many, or no solutions?  Explain your reasoning.  Would it depend on the specific <span class="process-math">\(*\)</span> values?</div></li>
-<li id="act-identify-solution-spaces-5-1-2-1-3"><div class="para logical" id="act-identify-solution-spaces-5-1-2-1-3-1">
-<div class="para">Suppose we now get specific and the matrix we have is row equivalent to the augmented matrix</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\left[
-\begin{array}{cccc|c}
-1 \amp 3 \amp 0 \amp 2 \amp -5 \\
-0 \amp 0 \amp 1 \amp -1 \amp 2 \\
-0 \amp 0 \amp 0 \amp 0 \amp 0
-\end{array}
-\right]
-\end{equation*}
-</div>
-<div class="para">do you think this system has exactly one, infinitely many, or no solutions?  Explain your reasoning.  If there is exactly one solution, give it.  If there are infinitley many solutions, provide a way to generate all of them.  If there are no solutions, provide a justification.  Let the first column represent <span class="process-math">\(x_1\text{,}\)</span> the second represent <span class="process-math">\(x_2\text{,}\)</span> etc. in your description.</div>
-</div></li>
-</ol></div></article></article></div></section><section class="subsection" id="reduced-row-echelon"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="space"> </span><span class="title">Reduced Row Echelon Form</span>
-</h3>
-<section class="introduction" id="reduced-row-echelon-2"><div class="para" id="reduced-row-echelon-2-1">Recall that in <a href="sec22-solving-systems.html#stripping-variables" class="internal" title="Subsection 2.2.2: Augmented Matrices and Stripping Away Variable Names">Subsection 2.2.2</a>, we focused on getting an augmented matrix into <em class="emphasis">upper triangular form</em>.  In particular, toward the end of this process, we tried to make back-solving easier by making sure that the coefficient of the lead position (variable) in each row was 1 and that the rows toward the bottom had successively more zeros moving from left to right. We refer to this structure of the matrix as <dfn class="terminology">row echelon form</dfn> and give the following definition to explicitly describe what we mean.</div>
-<div class="para" id="reduced-row-echelon-2-2"><article class="definition definition-like" id="def-row-echelon-form"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Row Echelon Form.</span>
-</h4>
-<div class="para logical" id="def-row-echelon-form-2-1">
-<div class="para">A matrix is in <dfn class="terminology">row echelon form</dfn> if it meets the following three criteria.</div>
-<ul class="disc" id="def-row-echelon-form-2-1-2">
-<li id="def-row-echelon-form-2-1-2-1">
-<div class="para" id="def-row-echelon-form-2-1-2-1-1"><dfn class="terminology">Zeros at the Bottom</dfn></div>
-<div class="para" id="def-row-echelon-form-2-1-2-1-2">If the matrix has any rows that consist of all zeros, these rows appear at the bottom of the matrix.</div>
-</li>
-<li id="def-row-echelon-form-2-1-2-2">
-<div class="para" id="def-row-echelon-form-2-1-2-2-1"><dfn class="terminology">Leading Entries Are 1</dfn></div>
-<div class="para" id="def-row-echelon-form-2-1-2-2-2">The first non-zero entry in each non-zero row (aka the "lead entry") is a 1. These leading entries are also called <dfn class="terminology">pivots</dfn>.</div>
-</li>
-<li id="def-row-echelon-form-2-1-2-3">
-<div class="para" id="def-row-echelon-form-2-1-2-3-1"><dfn class="terminology">Staggered Leads</dfn></div>
-<div class="para" id="def-row-echelon-form-2-1-2-3-2">If we choose any two successive rows starting from the top, the lead entry of the lower row is to the right of the lead entry of the higher row. This creates a "staggered"  or "stairstep" pattern.</div>
-</li>
-</ul>
-</div></article></div></section><div class="para" id="reduced-row-echelon-3">In the previous activities, we tried to get matrices into row echelon form so that we can more easily back-solve, but you may have noticed that after a matrix is in <em class="emphasis">row echelon form</em>, there can still be further reductions that could be done.  This next activity examines ways this might be done and some limitations to this process.</div>
-<div class="para" id="reduced-row-echelon-4"><article class="activity project-like" id="act-matrix-reduce-rref"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.7</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="act-matrix-reduce-rref-1"><div class="para logical" id="act-matrix-reduce-rref-1-1">
-<div class="para">Consider a system of equations whose augmented matrix is row equivalent to</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\left[
-\begin{array}{cccc|c}
-1 \amp 4 \amp 2 \amp -3 \amp 1 \\
-0 \amp 0 \amp 1 \amp -1 \amp 3 \\
-0 \amp 0 \amp 0 \amp 0 \amp 0
-\end{array}
-\right]
-\end{equation*}
-</div>
-</div></div>
-<article class="task exercise-like" id="act-matrix-reduce-rref-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="act-matrix-reduce-rref-2-1-1">This system has an infinite number of solutions.  Suppose we want to generate solutions to this system.  Describe a process for generating the solutions.  What variables are "free" to be used to generate the other variables?</div></article><article class="task exercise-like" id="act-matrix-reduce-rref-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="act-matrix-reduce-rref-3-1-1">Since the first and second columns contain zeros in the last two rows, we cannot multiply the second or thrid rows by a scalar and add them to the first row to place zeros in either of the first two positions of the first row (we are stuck with the 1 and 4 in those positions).  However, the second row has a 1 and -1 in the third and fourth position, respectively.  This means we could use the second row to further reduce the third or fourth positions in first row to zero.  This would make back-solving even easier when the time comes.</div> <div class="para" id="act-matrix-reduce-rref-3-1-2">Using row operations with row 2, try to reduce this matrix further to place a zero in the first row at the third position.  Explain your process.</div></article><article class="task exercise-like" id="act-matrix-reduce-rref-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="act-matrix-reduce-rref-4-1-1">Using row operations with row 2, try to reduce the matrix from part (b) further to place a zero in the first row at the fourth position.  Explain your process.  Describe any issues you encounter.</div></article><article class="task exercise-like" id="act-matrix-reduce-rref-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="act-matrix-reduce-rref-5-1-1">Can you reduce the original matrix to have zeros in the first row in both the third and fourth positions?</div></article></article></div>
-<div class="para" id="reduced-row-echelon-5">The dilemma we encountered in <a href="sec22-solving-systems.html#act-matrix-reduce-rref" class="xref" data-knowl="./knowl/xref/act-matrix-reduce-rref.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 2.2.7">Activity 2.2.7</a> raises an interesting question.  How far can we reduce a matrix before further manipulation with row operations begins to screw up entries we have already reduced to zero entries?  This question prompts us to refine our idea of <dfn class="terminology">row echelon form</dfn> leading to a definition of what we call <dfn class="terminology">reduced row echelon form</dfn> by adding one additional criteria to our <dfn class="terminology">row echelon form</dfn> definition (<a href="sec22-solving-systems.html#def-row-echelon-form" class="xref" data-knowl="./knowl/xref/def-row-echelon-form.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.2.11: Row Echelon Form">Definition 2.2.11</a>).</div>
-<div class="para" id="reduced-row-echelon-6"><article class="definition definition-like" id="def-reduced-row-echelon-form"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.12</span><span class="period">.</span><span class="space"> </span><span class="title">Reduced Row Echelon Form.</span>
-</h4>
-<div class="para logical" id="def-reduced-row-echelon-form-2-1">
-<div class="para">A matrix is in <dfn class="terminology">reduced row echelon form</dfn> if it meets the following four criteria.</div>
-<ul class="disc" id="def-reduced-row-echelon-form-2-1-2">
-<li id="def-reduced-row-echelon-form-2-1-2-1">
-<div class="para" id="def-reduced-row-echelon-form-2-1-2-1-1"><dfn class="terminology">Zeros at the Bottom</dfn></div>
-<div class="para" id="def-reduced-row-echelon-form-2-1-2-1-2">If the matrix has any rows that consist of all zeros, these rows appear at the bottom of the matrix.</div>
-</li>
-<li id="def-reduced-row-echelon-form-2-1-2-2">
-<div class="para" id="def-reduced-row-echelon-form-2-1-2-2-1"><dfn class="terminology">Leading Entries Are 1</dfn></div>
-<div class="para" id="def-reduced-row-echelon-form-2-1-2-2-2">The first nonzero entry in each nonzero row (aka the "lead entry") is a 1. These leading entries are also called <dfn class="terminology">pivots</dfn>.</div>
-</li>
-<li id="def-reduced-row-echelon-form-2-1-2-3">
-<div class="para" id="def-reduced-row-echelon-form-2-1-2-3-1"><dfn class="terminology">Staggered Leads</dfn></div>
-<div class="para" id="def-reduced-row-echelon-form-2-1-2-3-2">If we choose any two successive rows starting from the top, the lead entry of the lower row is to the right of the lead entry of the higher row. This creates a "staggered"  or "stairstep" pattern.</div>
-</li>
-<li id="def-reduced-row-echelon-form-2-1-2-4">
-<div class="para" id="def-reduced-row-echelon-form-2-1-2-4-1"><dfn class="terminology">Lead Entry Sole Non-zero Column Entry</dfn></div>
-<div class="para" id="def-reduced-row-echelon-form-2-1-2-4-2">The lead entries are the only nonzero entries in their respective columns.</div>
-</li>
-</ul>
-</div></article></div>
-<div class="para" id="reduced-row-echelon-7"><article class="activity project-like" id="reduced-row-echelon-7-1"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.8</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="reduced-row-echelon-7-1-1"><div class="para" id="reduced-row-echelon-7-1-1-1">Consider the following augmented matrices.  Place them in <dfn class="terminology">row reduced echelon form (rref)</dfn> using basic row operations if they are not already in <dfn class="terminology">rref</dfn>.  After they have been reduced, describe the solution space in each case.</div></div>
-<article class="task exercise-like" id="reduced-row-echelon-7-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="reduced-row-echelon-7-1-2-1-1"></div></article><article class="task exercise-like" id="reduced-row-echelon-7-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="reduced-row-echelon-7-1-3-1-1"></div></article><article class="task exercise-like" id="reduced-row-echelon-7-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="reduced-row-echelon-7-1-4-1-1"></div></article><article class="task exercise-like" id="reduced-row-echelon-7-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="reduced-row-echelon-7-1-5-1-1">Send a spy from your group to another group to compare your group’s rref form for each case.  Note anything you discover.</div></article></article></div>
-<div class="para" id="reduced-row-echelon-8"><article class="theorem theorem-like" id="thm-uniqueness-rref"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.2.13</span><span class="period">.</span><span class="space"> </span><span class="title">Uniqueness of RREF Matrix.</span>
-</h4>
-<div class="para" id="thm-uniqueness-rref-2-1">For any given matrix, <span class="process-math">\(A\text{,}\)</span> its <dfn class="terminology">reduced row echelon form</dfn> matrix is unique.</div></article></div></section></section></div>
+<div class="para" id="stripping-variables-31">Now that we have converted a system of equations to augmented matrix form and then used the process of Gaussian elimination to reduce the system and find solutions, we might ask the question, will we always be able to reduce the matrix to a nice upper triangular form where back-solving to obtain a unique solution is possible?  As you will recall from <a href="sec21-gridding-space.html#linear-comb-project" class="xref" data-knowl="./knowl/xref/linear-comb-project.html" data-reveal-label="Reveal" data-close-label="Close" title="Project 2.1.2: Linear Combinations and Spanning">Project 2.1.2</a>, not all linear combinations of vectors (and thus systems) end with a unique solution.  This means that it will not always be able to find a unique solution to a given system of equations and thus get a nice upper triangular matrix.  In the next section, we will examine how we can describe the set of solutions for linear systems to determine whether or not the solution(s) is (are) unique, infinite, or non-existent by simplying looking at a reduced version of the matrix.</div></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec21-gridding-space.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec23-applications.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec21-gridding-space.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec23-solution-spaces-rref.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
