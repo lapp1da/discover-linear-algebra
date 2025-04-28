@@ -755,7 +755,10 @@ we get the total revenue for each company organized as an ordered triple (since 
       "shop and scan" app.  Below is a video illustrating this process.  
   </p>
   <p>
-    -----------INSERT VIDEO HERE--------------
+    <figure xml:id="linear-transformation-video">
+      <video youtube="mzqYk0K7FMA"/>
+      <caption>The Produce Aisle: Concept of Linear Transformation</caption>
+    </figure>
   </p>
   <p>
     So what are the characteristics of this type of transformation?  Consider the case from the video where 
