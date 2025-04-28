@@ -8,6 +8,7 @@
     <title>Discovering Linear Algebra</title>
     <subtitle>An Active Learning Approach</subtitle>
 
+
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
