@@ -99,15 +99,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.16';
+eBookConfig.runestone_version = '7.6.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.a0c870bab402ccbf.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97de40e034b535c5.css">
+<script src="_static/prefix-runtime.33e494184ef307b3.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f7a03b209751032d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.541c9106f2c605b9.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
@@ -632,7 +632,8 @@ r_1\\r_2\\r_3\end{bmatrix}
 </h3>
 <div class="para" id="sec-Transformations-Vectors-2">Now that we have defined what it means to multiply a matrix and a vector, we can go back to the concept that motivated it, namely, the desire to move between an input vector and an output vector.  In a way, we are looking to <em class="emphasis">transform</em> one type of vector into another type of vector.  When we think of our example of Hooke’s Law as <em class="emphasis">transforming</em> stretch or compression into force, we note that this happens in our daily lives and we are not often even aware it is there.</div>
 <div class="para" id="sec-Transformations-Vectors-3">Consider a trip to the grocery store.  In the produce aisle, we take zucchini and place them on a scale.  In turn, the scale returns a weight (force) in pounds (if you are in the USA) or mass in kilograms (practically anywhere else in the world).  Inside the scale, there is a spring that is being compressed or stretched.  This value is then <em class="emphasis">transformed</em> into a value of weight or mass using Hooke’s Law.  In fact, it is more likely the case that you are more familiar with a transformation in form of cost instead of weight or mass as most digital scales today allow us to scan the scale’s output barcode registering a cost in our "shop and scan" app.  Below is a video illustrating this process.</div>
-<div class="para" id="sec-Transformations-Vectors-4">-----------INSERT VIDEO HERE--------------</div>
+<div class="para" id="sec-Transformations-Vectors-4"><figure class="figure figure-like" id="linear-transformation-video"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/mzqYk0K7FMA?&amp;modestbranding=1&amp;rel=0" id="linear-transformation-video-1"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.5<span class="period">.</span></span><span class="space"> </span>The Produce Aisle: Concept of Linear Transformation</figcaption></figure></div>
 <div class="para logical" id="sec-Transformations-Vectors-5">
 <div class="para">So what are the characteristics of this type of transformation?  Consider the case from the video where we saw that the doubling the force (or mass) corresponded in the doubling of the stretch.  Similarly, tripling the force would triple the stretch.  In general, this means that any multiple of stretch will correspond to the same multiple of force (or mass or cost) depending on the output we desire for the transformation.  We can see this from the basic algebra from Hooke’s Law.</div>
 <div class="displaymath process-math">
@@ -665,7 +666,7 @@ F\left(x+y\right)=k\left(x+y\right)=kx+ky=F\left(x\right)+F\left(y\right)
 \end{bmatrix}\mathbf{x}\text{.}\)</span> Define this transformation in your CAS and then define <span class="process-math">\(\mathbf{v}=\begin{bmatrix} -2\\1\\0\end{bmatrix}\)</span> and <span class="process-math">\(\mathbf{w}=\begin{bmatrix} 3\\2\\-2\end{bmatrix}\text{.}\)</span>
 </div>
 <div class="para" id="sec-Transformations-Vectors-8-1-1-2"><figure class="figure figure-like" id=""><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/images/lineartransformation-act-1-1-3.png" class="contained" alt="Defining on TI-Nspire CX II CAS"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.5<span class="period">.</span></span><span class="space"> </span>Defining Transformation on TI-Nspire CX II CAS</figcaption></figure></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.1.6<span class="period">.</span></span><span class="space"> </span>Defining Transformation on TI-Nspire CX II CAS</figcaption></figure></div>
 </div>
 <article class="task exercise-like" id="sec-Transformations-Vectors-8-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="sec-Transformations-Vectors-8-1-2-1-1">Compute <span class="process-math">\(T\left(\mathbf{v}\right)\)</span> and <span class="process-math">\(T\left(\mathbf{w}\right)\)</span> and add them.</div></article><article class="task exercise-like" id="sec-Transformations-Vectors-8-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
@@ -675,7 +676,7 @@ F\left(x+y\right)=k\left(x+y\right)=kx+ky=F\left(x\right)+F\left(y\right)
 <div class="para" id="sec-Transformations-Vectors-8-1-6-1-1">Using, <span class="process-math">\(c\text{,}\)</span> to represent any real number, find expressions for <span class="process-math">\(T\left(c\cdot \mathbf{x}\right)\)</span> and <span class="process-math">\(c\cdot T\left(\mathbf{x}\right)\text{.}\)</span>  Does your observation from part (c) hold for all vectors in <span class="process-math">\(\mathbb{R}^3\text{?}\)</span>  Explain.</div></article><article class="task exercise-like" id="sec-Transformations-Vectors-8-1-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
 <div class="para" id="sec-Transformations-Vectors-8-1-7-1-1">Given how we defined matrix-vector multiplication out of linear combiinations, come up with an argument for why all such matrix transformations <em class="emphasis">must</em> be <span class="process-math">\(\mathbf{linear}\)</span> <span class="process-math">\(\mathbf{transformations}\)</span> preserving both scalar multiplication and vector addition.</div></article></article></div>
 <div class="para" id="sec-Transformations-Vectors-9"><article class="definition definition-like" id="def-linear-mapping"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">Linear Transformation.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Linear Transformation.</span>
 </h4>
 <div class="para logical" id="def-linear-mapping-2-1">
 <div class="para">Suppose <span class="process-math">\(T\)</span> is a mapping between <span class="process-math">\(\mathbb{R}^n\)</span> and <span class="process-math">\(\mathbb{R}^m\text{,}\)</span> <span class="process-math">\(T: \mathbb{R}^n\rightarrow \mathbb{R}^m\)</span> (<span class="process-math">\(n\)</span> and <span class="process-math">\(m\)</span> need not be distinct) such that both scalar multiplication and vector addition are preserved.</div>
@@ -731,7 +732,7 @@ p_1\\p_2\\p_3\\p_4
 <div class="para" id="sec-Transformations-Vectors-11-1-4-1-1">To see if preservation of vector addition holds in general for this particular matrix, create two vectors on your CAS , <span class="process-math">\(\mathbf{p}=\begin{bmatrix} p_1\\p_2\\p_3\\p_4\end{bmatrix}\)</span> and <span class="process-math">\(\mathbf{q}=\begin{bmatrix} q_1\\q_2\\q_3\\q_4\end{bmatrix}\text{.}\)</span>  Using your CAS, find expressions for <span class="process-math">\(T\left(\mathbf{p}+\mathbf{q}\right)\)</span> and <span class="process-math">\(T\left(\mathbf{p}\right)+T\left(\mathbf{q}\right)\text{.}\)</span>  Is vector addition preserved for any two vectors in <span class="process-math">\(\mathbb{R}^4\text{?}\)</span>  Explain.</div></article></article></div>
 <div class="para" id="sec-Transformations-Vectors-12">
 <article class="lemma theorem-like" id="lem-"><h4 class="heading">
-<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">1.1.7</span><span class="period">.</span>
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">1.1.8</span><span class="period">.</span>
 </h4>
 <div class="para" id="lem--1-1">If <span class="process-math">\(T\)</span> is a linear transformation, then it must map the zero vector from the domain to the zero vector in the range.  In other words, <span class="process-math">\(T\left(\mathbf{0}_D\right)=\mathbf{0}_R\text{.}\)</span>
 </div></article><details id="lem--2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="lem--2-1">Suppose <span class="process-math">\(T:\mathbb{R}^n \rightarrow \mathbb{R}^m\)</span> is a linear transformation and <span class="process-math">\(\mathbf{v} \in \mathbb{R}^n\text{.}\)</span>  Well since <span class="process-math">\(-\mathbf{v} \in \mathbb{R}^n\text{,}\)</span> we know that <span class="process-math">\(T\left(\mathbf{0}\right)=T\left(\mathbf{v}+\mathbf{-v}\right)\text{.}\)</span>  Since vector addition is preserved, we get that this is equal to <span class="process-math">\(T\left(\mathbf{v}\right)+T\left(\mathbf{-v}\right)\text{.}\)</span> Again, as a linear transformation, we know that scalar multiplication is also preserved and so <span class="process-math">\(T\left(\mathbf{-v}\right)=-T\left(\mathbf{v}\right)\)</span> and thus <span class="process-math">\(T\left(\mathbf{v}\right)+T\left(\mathbf{-v}\right)=T\left(\mathbf{v}\right)+ 
