@@ -706,9 +706,9 @@
     is possible?  As you will recall from <xref ref="linear-comb-project" />, not all linear combinations of 
     vectors (and thus systems) end with a unique solution.  This means that it will not always be able to find 
     a unique solution to a given system of equations and thus get a nice upper triangular matrix.  In the next 
-    section, we will examine how we can describe the set of solutions for linear systems to determine whether 
-    or not the solution(s) is (are) unique, infinite, or non-existent by simplying looking at a reduced 
-    version of the matrix.
+    section, we will examine how we can use the form of a matrix for a the set of solutions for linear systems 
+    to determine whether or not the solution(s) is (are) unique, infinite, or non-existent by simplying looking 
+    at a reduced version of the matrix.
   </p>
   
 
