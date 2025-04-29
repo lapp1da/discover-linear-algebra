@@ -631,9 +631,13 @@
       <introduction>
         <p>
           Consider the following augmented matrices.  Place them in <term>reduced row echelon form (rref)</term> 
-          using basic row operations if they are not already in <term>rref</term>.  After they have been 
-          reduced, describe the solution space in each case.  If the solution space is nonempty, describe its 
-          geometric nature as well.
+          using basic row operations if they are not already in <term>rref</term>.  Again, be sure to indicate 
+          your process at each stage by using notation such as 
+          <m>\overset{5R_1+R_3 \rightarrow R_3}{\longrightarrow}</m> or 
+          <m>\overset{R_1 \leftrightarrow R_3}{\longrightarrow}</m>.  Feel free to use technology (e.g. 
+          <m>\mathbf{mRowAdd}</m> command) to perform the arithmetic, but make sure to show your stages in the 
+          reduction process.  After they have been reduced, describe the solution space in each case.  If the 
+          solution space is nonempty, describe its geometric nature as well.
         </p>
       </introduction>
       <task>
