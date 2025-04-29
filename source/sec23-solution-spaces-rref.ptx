@@ -285,6 +285,23 @@
     </p>
   </proposition>
 
+  <p>
+    As we begin to charaterize the solutions to a system of equations, we are really attempting to "describe" 
+    the set in terms of some sort of visual regularity where the solutions (or points) live.  For example, in 
+    the previous activities, we could see geometrically for a 3D system that we could have a single <em>point</em> 
+    (solution) where all three planes intersect (i.e. solves all three equations at once).  We could also 
+    have the situation where all three planes intersect in a <em>line</em> giving infinitely many points or 
+    solutions to the system.  For the 3D system, we can have still another type of situation yielding 
+    infinitely many solutions.  What if all three equations form planes that are literally on top of each other?  
+    This would mean that any point in that 2-dimensional plane would be a solution (not just along a single line).  
+    Since there are also infinitely many points in a plane this would fall into category 2 of 
+    <xref ref="possible-solution-types" />, but be a slightly different scenario than a line.  Since we want to 
+    distinguish among these possibilities and describe where these solutions "live", we decide to call this 
+    world where solutions exist as their <term>solution space</term>.  For the type of system in 
+    <xref ref="system-solve-no-solutions"/>, we noted that there are no places where all three planes intersect 
+    and so the space that describes this set of solutions is <term>empty</term>.
+  </p>
+
   
   <p>
     <definition xml:id="def-solution-space">
@@ -296,7 +313,7 @@
           of equations the <term>solution space</term>.  Note that in our examples of 3 equations in 3 variables, 
           these 3-tuples were physically represented as points in 3-dimensional space.  The 
           <term>solution space</term> could be simply a single point or possibly an infinite number of points 
-          forming a line or other geometric object (in 3D, what might this object be?).
+          forming a line or other geometric object (in 3D, a plane).
         </p>
       </statement>
     </definition>
