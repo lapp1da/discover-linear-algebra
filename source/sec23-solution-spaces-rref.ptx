@@ -13,11 +13,11 @@
     <title>Matrices and Solution Spaces</title>
   <introduction>
     <p>
-      In the last subsection, it seemed that when we had a system of 3 equations and 3 unknowns, the solution was 
+      In the last section, it seemed that when we had a system of 3 equations and 3 unknowns, the solution was 
       always unique.  Note that we have already seen, uniqueness is not always guaranteed (see 
       <xref ref="linear-comb-project" />).  So how does the reduced version of the augmented matrix give us 
       clues as to the nature of the solution(s)?  Let's investigate this here from both a numerical and 
-      graphical point of view.
+      geometric point of view.
     </p>
   </introduction>
   <p>
@@ -64,7 +64,8 @@
   <task>
     <statement>
       <p>
-        What does the last row tell you about choices for <m>x_1</m>, <m>x_2</m>, and <m>x_3</m>?
+        What does the last row tell you about choices for <m>x_1</m>, <m>x_2</m>, and <m>x_3</m> when it comes to 
+        the equation represented by that row?
       </p>
     </statement>
   </task>
@@ -239,7 +240,7 @@
   
   <p>
     <definition xml:id="def-solution">
-      <title>Solution of Linear System</title>
+      <title>Solution of a Linear System</title>
       
       <statement>
         <p>
@@ -262,7 +263,8 @@
     <title>Solutions to Systems of Linear Equations</title>
     
     <p>
-      Given a set of linear equations, there are only the following possibilities for solutions to the system:
+      Given a set of linear equations, there are only the following three possibilities for solutions to the 
+      system:
       <ol>
       <li>
         <p>
@@ -282,6 +284,7 @@
     </ol>
     </p>
   </proposition>
+
   
   <p>
     <definition xml:id="def-solution-space">
