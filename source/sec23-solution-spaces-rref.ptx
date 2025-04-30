@@ -538,7 +538,7 @@
             Since the first and second columns contain zeros in the last two rows, we cannot multiply the 
             second or thrid rows by a scalar and add them to the first row to place zeros in either of the 
             first two positions of the first row (we are stuck with the 1 and 4 in those positions).  However, 
-            the second row has a 1 and -1 in the third and fourth position, respectively.  This means we could 
+            the second row has a 1 and -1 in the third and fourth positions, respectively.  This means we could 
             use the second row to further reduce the third or fourth positions in first row to zero.  This would 
             make back-solving even easier when the time comes.
           </p>
@@ -625,6 +625,24 @@
       </statement>
     </definition>
   </p>
+
+  <p>
+    From a visual sense, a matrix that is in reduced row echelon form would look something like
+    <me>
+      \left[
+      \begin{array}{ccccc}
+      1 \amp 0 \amp * \amp 0 \amp * \\
+      0 \amp 1 \amp * \amp 0 \amp * \\
+      0 \amp 0 \amp 0 \amp 1 \amp * \\
+      0 \amp 0 \amp 0 \amp 0 \amp 0
+     \end{array}
+    \right]
+    </me>
+    where the *'s could be any real numbers.  Notice that the pivots are staggered and the lead entries of 1 in 
+    each row are always to the right of the lead entries of the rows above them.  In addition, all entries 
+    in the column above and below a pivot are always zero.
+  </p>
+
   
   <p>
     <activity>
