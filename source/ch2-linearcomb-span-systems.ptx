@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<chapter xml:id="ch2-linearcomb-span-bases" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Linear Combinations, Spanning, and Bases</title>
+<chapter xml:id="ch2-linearcomb-span-systems" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Linear Combinations, Spanning, and Systems of Equations</title>
 
   <introduction>
     <p>
@@ -20,7 +20,7 @@
   </introduction>
 
   <!-- include sections -->
-  <xi:include href="sec21-gridding-space.ptx" />
+  <xi:include href="sec21-linearcomb-reaching-space.ptx" />
   <xi:include href="sec22-solving-systems.ptx" />
   <xi:include href="sec23-solution-spaces-rref.ptx" />
   <xi:include href="sec24-solution-spaces-pivots.ptx" />

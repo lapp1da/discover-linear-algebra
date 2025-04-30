@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec21-gridding-space" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Gridding and Reaching in Space</title>
+<section xml:id="sec21-linearcomb-reaching-space" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Linear Combinations and Reaching in Space</title>
 <introduction>
   <p>
     In this section we will look at how a space can be described by many different types of 

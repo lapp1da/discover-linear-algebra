@@ -14,7 +14,7 @@
 
     <!-- Include chapters -->
     <xi:include href="./ch1-coord-vectors-linearcomb.ptx" />
-    <xi:include href="./ch2-linearcomb-span-bases.ptx" />
+    <xi:include href="./ch2-linearcomb-span-systems.ptx" />
 
 
     <!-- Include backmatter -->
