@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec24-solution-spaces-pivots" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Describing Solution Spaces and Pivotal Influence</title>
+<introduction>
+  <p>
+    In this section we use the reduced row echelon form and the location of pivots to describe the solution 
+    spaces for systems of equations.  
+  </p>
+</introduction>
+  
+  <subsection xml:id="consistent-systems">
+    <title>Consistent and Inconsistent Systems</title>
+    
+  <p>
+    
+  
+  </p>
+  
+  
+</subsection>
+
+<subsection xml:id="pivots-consistency-uniqueness">
+  <title>Pivots, Consistency, and Uniqueness</title>
+  <p>
+    
+  </p>
+  
+  
+</subsection>
+
+
+
+
+</section>
