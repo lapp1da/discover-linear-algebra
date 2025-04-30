@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch3-bases-gridding-invertibility" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Bases, Invertibility, and Gridding of Space</title>
+
+  <introduction>
+    <p>
+      As we have seen, there are ways we can describe a location in space whether it is viewed as a point or 
+      a vector.  We have also seen how we can interpret these ideas through the lens of "different worlds" 
+      where the representation has physical meaning to constructs from our everyday lives.  In this chapter, 
+      we will look at these ideas from a more geometric perspective.  In particular, we will examine how we 
+      can express the same geometric properties (or physical realities) using different types of coordinates 
+      and vectors and still arrive at the same conclusions about the objects they are representing.  For 
+      example, in a base-ten numeration system, the collection of symbols, <m>12</m>, means twelve 
+      (one bundle of ten and two left over).  However, if we use, say base seven, we would express this as, 
+      <m>15_{seven}</m>, meaning one bundle of seven with five left over.  No matter how we express it, 
+      twelve is still twelve.  This same idea can be extended to how we describe the space we want to use 
+      within a mathematical world.
+    </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec31-gridding-space.ptx" />
+  
+
+</chapter>

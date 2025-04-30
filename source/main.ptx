@@ -15,6 +15,7 @@
     <!-- Include chapters -->
     <xi:include href="./ch1-coord-vectors-linearcomb.ptx" />
     <xi:include href="./ch2-linearcomb-span-systems.ptx" />
+    <xi:include href="./ch3-bases-gridding-invertibility.ptx" />
 
 
     <!-- Include backmatter -->
