@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec31-gridding-space" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Applications for Systems of Linear Equations</title>
+  <title>Bases and the Way We Grid Space</title>
 <introduction>
   <p>
     In this section we look at how we can grid space in many different ways and how we can move between these 
@@ -9,8 +9,8 @@
   </p>
 </introduction>
   
-  <subsection xml:id="bases-gridding-space">
-    <title>Bases and Gridding a Space</title>
+  <subsection xml:id="bases-spanning">
+    <title>Bases: Minimal Spanning Sets</title>
     
   <p>
     
