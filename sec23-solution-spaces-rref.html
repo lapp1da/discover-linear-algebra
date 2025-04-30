@@ -125,7 +125,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec22-solving-systems.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch2-linearcomb-span-bases.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec23-applications.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec22-solving-systems.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch2-linearcomb-span-bases.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec24-solution-spaces-pivots.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -183,11 +183,18 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec23-applications.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Applications for Systems of Linear Equations</span></a></div>
+<div class="toc-title-box"><a href="sec24-solution-spaces-pivots.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Describing Solution Spaces and Pivotal Influence</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec23-applications.html#forming-systems" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Forming Systems as Matrices</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec23-applications.html#multiple-representations" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Viewing Systems with Multiple Representations</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec23-applications.html#row-reducing" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Row Reducing Matrices to Find Solutions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec24-solution-spaces-pivots.html#consistent-systems" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Consistent and Inconsistent Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec24-solution-spaces-pivots.html#pivots-consistency-uniqueness" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Pivots, Consistency, and Uniqueness</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec25-applications.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Applications for Systems of Linear Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec25-applications.html#forming-systems" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Forming Systems as Matrices</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec25-applications.html#multiple-representations" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Viewing Systems with Multiple Representations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec25-applications.html#row-reducing" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Row Reducing Matrices to Find Solutions</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -396,7 +403,7 @@ x_1 - 3x_2 + 2x_3 =-1 \\
 </div></div>
 <article class="task exercise-like" id="act-matrix-reduce-rref-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="act-matrix-reduce-rref-2-1-1">This system has an infinite number of solutions.  Suppose we want to generate solutions to this system.  Describe a process for generating the solutions.  What variables are "free" to be used to generate the other variables?</div></article><article class="task exercise-like" id="act-matrix-reduce-rref-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="act-matrix-reduce-rref-3-1-1">Since the first and second columns contain zeros in the last two rows, we cannot multiply the second or thrid rows by a scalar and add them to the first row to place zeros in either of the first two positions of the first row (we are stuck with the 1 and 4 in those positions).  However, the second row has a 1 and -1 in the third and fourth position, respectively.  This means we could use the second row to further reduce the third or fourth positions in first row to zero.  This would make back-solving even easier when the time comes.</div> <div class="para" id="act-matrix-reduce-rref-3-1-2">Using row operations with row 2, try to reduce this matrix further to place a zero in the first row at the third position.  Explain your process.</div></article><article class="task exercise-like" id="act-matrix-reduce-rref-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="act-matrix-reduce-rref-3-1-1">Since the first and second columns contain zeros in the last two rows, we cannot multiply the second or thrid rows by a scalar and add them to the first row to place zeros in either of the first two positions of the first row (we are stuck with the 1 and 4 in those positions).  However, the second row has a 1 and -1 in the third and fourth positions, respectively.  This means we could use the second row to further reduce the third or fourth positions in first row to zero.  This would make back-solving even easier when the time comes.</div> <div class="para" id="act-matrix-reduce-rref-3-1-2">Using row operations with row 2, try to reduce this matrix further to place a zero in the first row at the third position.  Explain your process.</div></article><article class="task exercise-like" id="act-matrix-reduce-rref-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="act-matrix-reduce-rref-4-1-1">Using row operations with row 2, try to reduce the matrix from part (b) further to place a zero in the first row at the fourth position.  Explain your process.  Describe any issues you encounter.</div></article><article class="task exercise-like" id="act-matrix-reduce-rref-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="act-matrix-reduce-rref-5-1-1">Can you reduce the original matrix to have zeros in the first row in both the third and fourth positions?</div></article></article></div>
 <div class="para" id="reduced-row-echelon-5">The dilemma we encountered in <a href="sec23-solution-spaces-rref.html#act-matrix-reduce-rref" class="xref" data-knowl="./knowl/xref/act-matrix-reduce-rref.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 2.3.4">Activity 2.3.4</a> raises an interesting question.  How far can we reduce a matrix before further manipulation with row operations begins to screw up entries we have already reduced to zero entries?  This question prompts us to refine our idea of <dfn class="terminology">row echelon form</dfn> leading to a definition of what we call <dfn class="terminology">reduced row echelon form</dfn> by adding one additional criteria to our <dfn class="terminology">row echelon form</dfn> definition (<a href="sec23-solution-spaces-rref.html#def-row-echelon-form" class="xref" data-knowl="./knowl/xref/def-row-echelon-form.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.3.6: Row Echelon Form">Definition 2.3.6</a>).</div>
@@ -424,38 +431,54 @@ x_1 - 3x_2 + 2x_3 =-1 \\
 </li>
 </ul>
 </div></article></div>
-<div class="para" id="reduced-row-echelon-7"><article class="activity project-like" id="reduced-row-echelon-7-1"><h4 class="heading">
+<div class="para logical" id="reduced-row-echelon-7">
+<div class="para">From a visual sense, a matrix that is in reduced row echelon form would look something like</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left[
+\begin{array}{ccccc}
+1 \amp 0 \amp * \amp 0 \amp * \\
+0 \amp 1 \amp * \amp 0 \amp * \\
+0 \amp 0 \amp 0 \amp 1 \amp * \\
+0 \amp 0 \amp 0 \amp 0 \amp 0
+\end{array}
+\right]
+\end{equation*}
+</div>
+<div class="para">where the *’s could be any real numbers.  Notice that the pivots are staggered and the lead entries of 1 in each row are always to the right of the lead entries of the rows above them.  In addition, all entries in the column above and below a pivot are always zero.</div>
+</div>
+<div class="para" id="reduced-row-echelon-8"><article class="activity project-like" id="reduced-row-echelon-8-1"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.5</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="reduced-row-echelon-7-1-1"><div class="para" id="reduced-row-echelon-7-1-1-1">Consider the following augmented matrices.  Place them in <dfn class="terminology">reduced row echelon form (rref)</dfn> using basic row operations if they are not already in <dfn class="terminology">rref</dfn>.  Again, be sure to indicate your process at each stage by using notation such as <span class="process-math">\(\overset{5R_1+R_3 \rightarrow R_3}{\longrightarrow}\)</span> or <span class="process-math">\(\overset{R_1 \leftrightarrow R_3}{\longrightarrow}\text{.}\)</span>  Feel free to use technology (e.g. <span class="process-math">\(\mathbf{mRowAdd}\)</span> command) to perform the arithmetic, but make sure to show your stages in the reduction process.  After they have been reduced, describe the solution space in each case.  If the solution space is nonempty, describe its geometric nature as well.</div></div>
-<article class="task exercise-like" id="reduced-row-echelon-7-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="reduced-row-echelon-7-1-2-1-1"><span class="process-math">\(\left[
+<div class="introduction" id="reduced-row-echelon-8-1-1"><div class="para" id="reduced-row-echelon-8-1-1-1">Consider the following augmented matrices.  Place them in <dfn class="terminology">reduced row echelon form (rref)</dfn> using basic row operations if they are not already in <dfn class="terminology">rref</dfn>.  Again, be sure to indicate your process at each stage by using notation such as <span class="process-math">\(\overset{5R_1+R_3 \rightarrow R_3}{\longrightarrow}\)</span> or <span class="process-math">\(\overset{R_1 \leftrightarrow R_3}{\longrightarrow}\text{.}\)</span>  Feel free to use technology (e.g. <span class="process-math">\(\mathbf{mRowAdd}\)</span> command) to perform the arithmetic, but make sure to show your stages in the reduction process.  After they have been reduced, describe the solution space in each case.  If the solution space is nonempty, describe its geometric nature as well.</div></div>
+<article class="task exercise-like" id="reduced-row-echelon-8-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="reduced-row-echelon-8-1-2-1-1"><span class="process-math">\(\left[
 \begin{array}{ccc|c}
 3 \amp 0 \amp 6 \amp -9 \\
 0 \amp 1 \amp 4 \amp 2
 \end{array}
-\right]\)</span></div></article><article class="task exercise-like" id="reduced-row-echelon-7-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="reduced-row-echelon-7-1-3-1-1"><span class="process-math">\(\left[
+\right]\)</span></div></article><article class="task exercise-like" id="reduced-row-echelon-8-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="reduced-row-echelon-8-1-3-1-1"><span class="process-math">\(\left[
 \begin{array}{ccc|c}
 1 \amp 1 \amp 1 \amp 6 \\
 2 \amp -1 \amp 1 \amp 3 \\
 1 \amp 2 \amp -1 \amp 2
 \end{array}
-\right]\)</span></div></article><article class="task exercise-like" id="reduced-row-echelon-7-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="reduced-row-echelon-7-1-4-1-1"><span class="process-math">\(\left[
+\right]\)</span></div></article><article class="task exercise-like" id="reduced-row-echelon-8-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="reduced-row-echelon-8-1-4-1-1"><span class="process-math">\(\left[
 \begin{array}{ccc|c}
 2 \amp 0 \amp -4 \amp 8 \\
 -3 \amp 0 \amp 6 \amp -12 \\
 1 \amp 0 \amp -2 \amp 4
 \end{array}
-\right]\)</span></div></article><article class="task exercise-like" id="reduced-row-echelon-7-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="reduced-row-echelon-7-1-5-1-1">Send a spy from your group to another group to compare your group’s rref form for each case.  Note anything you discover.</div></article></article></div>
-<div class="para" id="reduced-row-echelon-8"><article class="theorem theorem-like" id="thm-uniqueness-rref"><h4 class="heading">
+\right]\)</span></div></article><article class="task exercise-like" id="reduced-row-echelon-8-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="reduced-row-echelon-8-1-5-1-1">Send a spy from your group to another group to compare your group’s rref form for each case.  Note anything you discover.</div></article></article></div>
+<div class="para" id="reduced-row-echelon-9"><article class="theorem theorem-like" id="thm-uniqueness-rref"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.8</span><span class="period">.</span><span class="space"> </span><span class="title">Uniqueness of RREF Matrix.</span>
 </h4>
 <div class="para" id="thm-uniqueness-rref-2-1">For any given matrix, <span class="process-math">\(A\text{,}\)</span> its <dfn class="terminology">reduced row echelon form</dfn> matrix is unique.</div></article></div></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec22-solving-systems.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec23-applications.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec22-solving-systems.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec24-solution-spaces-pivots.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
