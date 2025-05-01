@@ -65,6 +65,21 @@
      </sidebyside>
    </p>
 
+   <p>
+    In the "standard" or Cartesian grid system shown in <xref ref="fly-standard-grid-revisit" />, the linear 
+    combination of vectors to reach the fly was <m>-\mathbf{e}_1 + 4\mathbf{e}_2</m>.  While the linear 
+    combination of vectors from the <xref ref="fly-vectors-grid-revisit" /> grid system was 
+    <m>-2\mathbf{v}_1 + 3\mathbf{v}_2</m>.  Assuming that each of these systems give unique linear 
+    combinations of their respective vectors to reach any vector in <m>\mathbb{R}^2</m>, we could represent 
+    the fly's location in two different ways.  In the "standard" set of vectors, 
+    <m>\left\{\mathbf{e}_1, \mathbf{e}_2 \right\}</m>, the coordinates would be <m>\left(-1,4\right)</m>.  On 
+    the other hand, using the set, <m>\left\{\mathbf{v}_1, \mathbf{v}_2 \right\}</m>, the coordinates 
+    would be <m>\left(-2,3\right)</m>.  Note that if we listed the vectors in different orders in the set of 
+    vectors, say <m>\left\{\mathbf{e}_2, \mathbf{e}_1 \right\}</m> or 
+    <m>\left\{\mathbf{v}_2, \mathbf{v}_1 \right\}</m>, we would need to reverse the order the coordinates are 
+    given in the <em>ordered pairs</em>.  After all, they are called <em><term>ordered</term> pairs</em>.
+   </p>
+
   
   
 </subsection>
