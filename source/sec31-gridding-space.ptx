@@ -5,16 +5,41 @@
 <introduction>
   <p>
     In this section we look at how we can grid space in many different ways and how we can move between these 
-    gridding systems.  
+    gridding systems.  Recall from <xref ref="descartes-fly" />, we used two different gridding systems 
+    to describe the location of a fly on the ceiling.
   </p>
+  <p>
+    <sidebyside width="45%"> 
+    <figure xml:id="carter-caves-revisited">
+     <caption>Carter Caves State Park: Revisited</caption>
+     <image source="images/ccsp-ceiling.png">
+     <shortdescription>Descartes Fly</shortdescription>
+    </image>
+    </figure>
+    <figure xml:id="descartes-fly-revisited">
+     <caption>Descartes' Fly: Revisited</caption>
+     <image source="images/descarte-fly-2-1.png">
+     <shortdescription>Descartes Fly</shortdescription>
+    </image>
+    </figure>
+    </sidebyside>
+   </p>
+
+   <p>
+    You will also recall that in <xref ref="linear-comb-project" /> we explored how many vectors we needed for 
+    linear combinations of these vectors to describe a location in <m>\mathbb{R}^2</m>.  In particular, we found 
+    that if we had three or more vectors that were linearly indepndent in pairs, we did not need them all.  We 
+    only needed two linearly independent vectors to be able to describe any location in <m>\mathbb{R}^2</m> 
+    with a linear combination of them.
+   </p>
 </introduction>
   
   <subsection xml:id="bases-spanning">
     <title>Bases: Minimal Spanning Sets</title>
+
     
   <p>
     
-  
   </p>
   
   

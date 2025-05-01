@@ -13,19 +13,19 @@
     fly walking on the ceiling.  He wondered how he might describe the position of the fly and decided that he 
     could measure the distance from the corner of the ceiling in one direction and then the distance along a 
     perpendicular direction to uniquely locate the fly (much like the grid system you can see in the image of my 
-    hotel room ceiling at Carter Caves, <xref ref="carter-caves"/>).  This was the beginning of the Cartesian (or rectangular) 
+    hotel room ceiling at Carter Caves, <xref ref="carter-caves-intro"/>).  This was the beginning of the Cartesian (or rectangular) 
     coordinate system.  However, this is not the only way we could uniquely locate the fly.
   </p>
 
   <p>
-   <sidebyside width="35%"> 
-   <figure xml:id="carter-caves">
+   <sidebyside width="45%"> 
+   <figure xml:id="carter-caves-intro">
     <caption>Carter Caves State Park</caption>
     <image source="images/ccsp-ceiling.png">
     <shortdescription>Descartes Fly</shortdescription>
    </image>
    </figure>
-   <figure xml:id="">
+   <figure xml:id="descartes-fly-intro">
     <caption>Descartes' Fly</caption>
     <image source="images/descarte-fly-2-1.png">
     <shortdescription>Descartes Fly</shortdescription>
@@ -296,7 +296,7 @@
     combinations of <m>\mathbf{v}</m> and <m>\mathbf{w}</m> by <m>Span\left\{\mathbf{v},\mathbf{w}\right\}</m>.
   </p>
   <p>
-    <m>\mathbf{2.}</m> <m>\mathbf{Using}</m> <m>\mathbf{Two}</m> <m>\mathbf{Different}</m> <m>\mathbf{Vectors}</m>
+    <m>\mathbf{2.}</m> <m>\mathbf{Using}</m> <m>\mathbf{Another}</m> <m>\mathbf{Two}</m> <m>\mathbf{Vectors}</m>
   </p>
   <p>
     Choose two new vectors to use for vectors  <m>\mathbf{v}</m> and <m>\mathbf{w}</m> redefining them on 
