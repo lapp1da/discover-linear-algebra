@@ -5,7 +5,7 @@
 <introduction>
   <p>
     In this section we look at how we can grid space in many different ways and how we can move between these 
-    gridding systems.  Recall from <xref ref="descartes-fly" />, we used two different gridding systems 
+    gridding systems.  Recall from <xref ref="act-descartes-fly" />, we used two different gridding systems 
     to describe the location of a fly on the ceiling.
   </p>
   <p>
@@ -36,11 +36,35 @@
   
   <subsection xml:id="bases-spanning">
     <title>Bases: Minimal Spanning Sets</title>
-
-    
   <p>
-    
+    At this point, we want to explore how different ways of gridding a space can have different advantages and 
+    disadvantages.  From <xref ref="act-descartes-fly" />, we had saw each of two grid systems as well as these 
+    superimposed on each other.
   </p>
+
+  <p>
+    <sidebyside width="30%">
+
+    <figure xml:id="fly-standard-grid-revisit">
+      <image source="images/fly-grids-3-1.png">
+      <caption>Fly and Grid</caption>
+     </image>
+     </figure>
+
+     <figure xml:id="fly-vectors-grid-revisit">
+      <image source="images/fly-grids-2-1.png">
+        <caption>Fly and Grid</caption>
+      </image>
+      </figure>
+
+     <figure xml:id="fly-grids-both-revisit">
+      <image source="images/fly-grids-5-1.png">
+      <caption>Fly and Both Grids</caption>
+     </image>
+     </figure>
+     </sidebyside>
+   </p>
+
   
   
 </subsection>

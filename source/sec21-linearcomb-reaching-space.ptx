@@ -38,7 +38,7 @@
     <title>Linear Combinations and Spanning</title>
     
   <p>
-    <activity xml:id="descartes-fly">
+    <activity xml:id="act-descartes-fly">
   <introduction>
     <p>
       Suppose you are Descartes staring at the fly on the ceiling.  At first, all you see is the fly sitting 
