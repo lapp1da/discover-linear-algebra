@@ -571,6 +571,18 @@
         expressed as a linear combination of other vectors in the set.  Otherwise, the set of vectors is called 
         <term>linearly independent</term>.
       </p>
+      <p>
+        Put another way, a set of vectors, <m>\left\{\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_k\right\}</m>, 
+        in <m>\mathbb{R}^n</m> is <term>linearly independent</term> if the equation
+        <me>
+          c_1\mathbf{v}_1+c_2\mathbf{v}_2+\cdots+c_k\mathbf{v}_k=\mathbf{0}
+        </me>
+        has only the trivial solution where all of the <m>c_i=0</m>.  Note that if some of the <m>c_i\neq0</m>, 
+        then one of those terms could be isolated on one side of the equation and that vector could be shown to 
+        be a linear combination of the others.
+      </p>
+      <p>
+      </p>
     </statement>
   </definition>
   <p>
@@ -579,6 +591,24 @@
     combination of other vectors (we don't have "other" vectors).  Therefore, we will consider this situation 
     as falling into the "otherwise" category and state that a set of exactly one nonzero vector is a 
     <term>linearly independent</term> set.
+  </p>
+
+  <p>
+    <theorem xml:id="thm-linearly-dependent-sets">
+      <statement>
+        <p>
+          A set of two or more vectors, <m>\left\{\mathbf{v}_1, \ldots, \mathbf{v}_k\right\}</m>, is linearly 
+          dependent if and only if at least one of the vectors in the set is a linear combination of the other 
+          vectors in the set.  
+          <p>
+            <term>Caution</term>: This is not saying that all of the vectors in the set must be a linear 
+            combination of the others.  Just that there exists at least one vector in the set that is a linear 
+            combination of the others.
+          </p>
+        </p>
+      </statement>
+    </theorem>
+    
   </p>
 
 </subsection>
