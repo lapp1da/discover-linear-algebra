@@ -36,7 +36,7 @@
 </me>
     In the matrices above, the columns could represent the numbers of each of four products being ordered 
     and the rows could represent the three different companies placing the orders (see the table of orders 
-    for this situation given in Table 1.1.1).
+    for this situation given in <xref ref="product-orders" />).
   </p>
   <p> 
     We also define a <em>vector</em> as matrix with a single column such as 
