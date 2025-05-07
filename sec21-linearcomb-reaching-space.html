@@ -99,14 +99,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.6.1';
+eBookConfig.runestone_version = '7.6.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.c7804631fa963734.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f7a03b209751032d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.11f2df1b38a61a3f.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f7a03b209751032d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.541c9106f2c605b9.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
@@ -379,12 +379,26 @@ Part 2 Items
 <article class="definition definition-like" id="def-linear-dependent"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.10</span><span class="period">.</span>
 </h4>
-<div class="para" id="def-linear-dependent-1-1">A set of vectors is <dfn class="terminology">linearly dependent</dfn> if one of the vectors can be expressed as a linear combination of other vectors in the set.  Otherwise, the set of vectors is called <dfn class="terminology">linearly independent</dfn>.</div></article><div class="para" id="sec21-linearcomb-reaching-space-4-7">Now you may have a question about what to do with a set of vectors containing only one nonzero vector? Based on our definition, we can’t really say that one of the vectors can be expressed as a linear combination of other vectors (we don’t have "other" vectors).  Therefore, we will consider this situation as falling into the "otherwise" category and state that a set of exactly one nonzero vector is a <dfn class="terminology">linearly independent</dfn> set.</div></section><section class="subsection" id="subsec-existence-spanning"><h3 class="heading hide-type">
+<div class="para" id="def-linear-dependent-1-1">A set of vectors is <dfn class="terminology">linearly dependent</dfn> if one of the vectors can be expressed as a linear combination of other vectors in the set.  Otherwise, the set of vectors is called <dfn class="terminology">linearly independent</dfn>.</div> <div class="para logical" id="def-linear-dependent-1-2">
+<div class="para">Put another way, a set of vectors, <span class="process-math">\(\left\{\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_k\right\}\text{,}\)</span> in <span class="process-math">\(\mathbb{R}^n\)</span> is <dfn class="terminology">linearly independent</dfn> if the equation</div>
+<div class="displaymath process-math">
+\begin{equation*}
+c_1\mathbf{v}_1+c_2\mathbf{v}_2+\cdots+c_k\mathbf{v}_k=\mathbf{0}
+\end{equation*}
+</div>
+<div class="para">has only the trivial solution where all of the <span class="process-math">\(c_i=0\text{.}\)</span>  Note that if some of the <span class="process-math">\(c_i\neq0\text{,}\)</span> then one of those terms could be isolated on one side of the equation and that vector could be shown to be a linear combination of the others.</div>
+</div> <div class="para" id="def-linear-dependent-1-3"></div></article><div class="para" id="sec21-linearcomb-reaching-space-4-7">Now you may have a question about what to do with a set of vectors containing only one nonzero vector? Based on our definition, we can’t really say that one of the vectors can be expressed as a linear combination of other vectors (we don’t have "other" vectors).  Therefore, we will consider this situation as falling into the "otherwise" category and state that a set of exactly one nonzero vector is a <dfn class="terminology">linearly independent</dfn> set.</div>
+<div class="para" id="sec21-linearcomb-reaching-space-4-8"><article class="theorem theorem-like" id="thm-linearly-dependent-sets"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.11</span><span class="period">.</span>
+</h4>
+<div class="para" id="thm-linearly-dependent-sets-1-1">A set of two or more vectors, <span class="process-math">\(\left\{\mathbf{v}_1, \ldots, \mathbf{v}_k\right\}\text{,}\)</span> is linearly dependent if and only if at least one of the vectors in the set is a linear combination of the other vectors in the set. <div class="para" id="thm-linearly-dependent-sets-1-1-2">
+<dfn class="terminology">Caution</dfn>: This is not saying that all of the vectors in the set must be a linear combination of the others.  Just that there exists at least one vector in the set that is a linear combination of the others.</div>
+</div></article></div></section><section class="subsection" id="subsec-existence-spanning"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="space"> </span><span class="title">Spanning and Existence of Linear Combinations</span>
 </h3>
 <div class="para" id="subsec-existence-spanning-2">As we saw earlier in <a href="sec21-linearcomb-reaching-space.html#linear-comb-project" class="xref" data-knowl="./knowl/xref/linear-comb-project.html" data-reveal-label="Reveal" data-close-label="Close" title="Project 2.1.2: Linear Combinations and Spanning">Project 2.1.2</a>, we had two main questions to consider.  The first was whether or not a vector could be reached using a linear combination of vectors?  The second was that, if a vector could be reached, was the linear combination used to get there unique?  A caveat to this second question is, if the linear combinations are not unique, how many are there?  Are there a finite number of them?  Are there an infinite number of them?  These are questions that will require us to consider ways of finding the linear combinations (or at least a way to describe or characterize them in the case of an infinite number).  To begin, let’s first summarize what we have discovered thus far.</div>
 <div class="para" id="subsec-existence-spanning-3"><article class="definition definition-like" id="def-span"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.11</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.12</span><span class="period">.</span>
 </h4>
 <div class="para" id="def-span-1-1">The <dfn class="terminology">Span</dfn> of a set of vectors, <span class="process-math">\(\mathbf{v}_1\text{,}\)</span> <span class="process-math">\(\mathbf{v}_2\text{,}\)</span> <span class="process-math">\(\mathbf{v}_3\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(\mathbf{v}_n\)</span> is the set of all linear combinations that can be reached by these vectors, and denoted by, <span class="process-math">\(Span \left\{ \mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3, \ldots, \mathbf{v}_n \right\}\text{.}\)</span>
 </div></article></div>

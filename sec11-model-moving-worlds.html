@@ -99,14 +99,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.6.1';
+eBookConfig.runestone_version = '7.6.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.c7804631fa963734.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f7a03b209751032d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.11f2df1b38a61a3f.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.f7a03b209751032d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.541c9106f2c605b9.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
@@ -217,7 +217,7 @@ eBookConfig.enable_chatcodes =  false;
 <section class="introduction" id="sec11-model-moving-worlds-2"><div class="para" id="sec11-model-moving-worlds-2-1">In this section we will look at linear algebra as a way to encode information and operate on it allowing us to move between different sets of information.  To this end, we will define how <em class="emphasis">matrices</em> and <em class="emphasis">vectors</em> are operated on with binary operations like addition and multiplication.  While multiplication of matrices may seem weird at first, you will see that it is defined as it is for convenience in manipulating data and transforming different types of values into other computed values based on them.  We begin by considering a case where we want to move between a pricing scheme and the revenue it generates for three different companies with three different sets of orders of our products.</div>
 <div class="para logical" id="sec11-model-moving-worlds-2-2">
 <div class="para">To accomplish this, we will use constructs created to deal with objects that contain multiple entries. In the scenario we are using where companies place orders for products, we want to encode the numerical values for the orders organizing them according to the product and company placing the order.  Here just want to reduce the information to an array of values and so we define a <em class="emphasis">matrix</em> as an array of values (or objects) consisting of rows and columns.  We typically contain these values with brackets or parentheses like:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/product-orders.html">
 \begin{equation*}
 \begin{bmatrix}
 14\amp 9\amp 34\amp 41\\
@@ -232,7 +232,7 @@ eBookConfig.enable_chatcodes =  false;
 \end{pmatrix}
 \end{equation*}
 </div>
-<div class="para">In the matrices above, the columns could represent the numbers of each of four products being ordered and the rows could represent the three different companies placing the orders (see the table of orders for this situation given in Table 1.1.1).</div>
+<div class="para">In the matrices above, the columns could represent the numbers of each of four products being ordered and the rows could represent the three different companies placing the orders (see the table of orders for this situation given in <a href="sec11-model-moving-worlds.html#product-orders" class="xref" data-knowl="./knowl/xref/product-orders.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 1.1.3: Product Orders">Table 1.1.3</a>).</div>
 </div>
 <div class="para" id="sec11-model-moving-worlds-2-3">We also define a <em class="emphasis">vector</em> as matrix with a single column such as <span class="process-math">\(\mathbf{v}=\begin{bmatrix}
 2\\0\\-3
