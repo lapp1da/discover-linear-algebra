@@ -5,15 +5,90 @@
 <introduction>
   <p>
     In this section we use the reduced row echelon form and the location of pivots to describe the solution 
-    spaces for systems of equations.  
+    spaces for systems of equations.  These locations of pivots will also be "pivotal" for determining the 
+    vectors that are essential for spanning a space.
   </p>
 </introduction>
   
   <subsection xml:id="consistent-systems">
     <title>Consistent and Inconsistent Systems</title>
     
-  <p>
-    
+    <p>
+    When looking to determine whether a system of equations is consistent or inconsistent, it would be nice to 
+    have a simple way to examine its corresponding matrix and know the type of system we have.  To explore this 
+    question, consider the following activity.
+    </p>
+
+    <p>
+      <activity xml:id="act-rref-consistent">
+        <task>
+          <statement>
+            <p>
+              Consider the following augmented matrices
+            </p> 
+            <p>
+              <me>
+              \left[
+              \begin{array}{ccc|c}
+              5 \amp 2 \amp -2 \amp 16 \\
+              2 \amp 1 \amp 0 \amp 4 \\
+              -2 \amp -1 \amp 1 \amp -7 \\
+              -2 \amp -1 \amp 0 \amp -4
+             \end{array}
+            \right]
+
+              \left[
+              \begin{array}{ccc|c}
+              1 \amp 0 \amp 2 \amp 3 \\
+              0 \amp 1 \amp -1 \amp 0 \\
+              2 \amp 0 \amp 4 \amp 6 \\
+              1 \amp 1 \amp 1 \amp 3
+             \end{array}
+            \right]
+
+              \left[
+              \begin{array}{ccc|c}
+              1 \amp 0 \amp 2 \amp 0 \\
+              0 \amp 1 \amp -1 \amp 0 \\
+              1 \amp 1 \amp 1 \amp 1 \\
+              2 \amp 1 \amp 3 \amp 1
+             \end{array}
+            \right]
+            </me>
+            </p>
+            <p>
+              Place these in reduced row echelon form and locate the pivots of each matrix.  Use your 
+              <m>\mathbf{rref}</m> command on your CAS for this.  Determine if the system of equations 
+              represented by these matrices are consistent or inconsistent.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Notice that each of the reduced row echelon forms of these matrices has a row consisting of all 
+              zeros.  Does the presence of an all zero row influence whether or not the system is consistent 
+              or inconsistent?  Explain your reasoning.
+            </p>
+          </statement>
+        </task>
+
+        <task>
+          <statement>
+            <p>
+              In looking at the reduced row echelon form of the three matrices, are there any forms that lead 
+              you to believe that system is inconsistent?  Place your observations into a conjecture for 
+              using the pivot positions of the reduced row echelon form of an augmented matrix as a means of 
+              determining that a system is inconsistent.
+            </p>
+          </statement>
+        </task>
+      </activity>
+    </p>
+    <p>
+    The nature of solutions we noticed in <xref ref="prop-possible-solution-types"/> has a direct connection to 
+    the pivot locations from the reduced row echelon form of the augmented matrix created for the system of 
+    equations we are trying to solve.
   
   </p>
   

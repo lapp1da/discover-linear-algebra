@@ -644,7 +644,7 @@
         Let us consider vectors in <m>\mathbb{R}^2</m> and whether or not we can reach them?  From 
         <xref ref="linear-comb-project"/>, if we had exactly 2 vectors that did not fall along the same line, 
         we could reach any vector in <m>\mathbb{R}^2</m>.  Once we added a third vector, we noticed that there 
-        could be more than one way to reach a given vector using linear combinations of the vectors, bu how 
+        could be more than one way to reach a given vector using linear combinations of the vectors, but how 
         many different ways could we do this?  In the earlier exploration, you found several, but we need to 
         consider how many there might be.
       </p>
@@ -730,7 +730,7 @@
   So far we have been exploring sets of vectors in <m>\mathbb{R}^2</m>.  You can imagine how this process 
   becomes more complex as we add higher dimension vectors like vectors from <m>\mathbb{R}^3</m>, 
   <m>\mathbb{R}^4, \ldots</m>.  The question this leads us to is how do we more easily find the scalars for 
-  the linear combinations we desire?  In the next section, we will look at ways we have found these scalars 
+  the linear combinations we desire?  In the next few sections, we will look at ways we have found these scalars 
   in the past from our high school experience and see how matrices can help us more efficiently find them.  
   In addition, we will look at how matrices can help us categorize sets of vectors as being 
   <term>linearly dependent</term> or <term>linearly independent</term> and which vectors of a set are the 

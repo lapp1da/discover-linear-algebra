@@ -259,7 +259,7 @@
     to the nature of these solutions.
   </p>
   
-  <proposition xml:id="possible-solution-types">
+  <proposition xml:id="prop-possible-solution-types">
     <title>Solutions to Systems of Linear Equations</title>
     
     <p>
@@ -295,7 +295,7 @@
     infinitely many solutions.  What if all three equations form planes that are literally on top of each other?  
     This would mean that any point in that 2-dimensional plane would be a solution (not just along a single line).  
     Since there are also infinitely many points in a plane this would fall into category 2 of 
-    <xref ref="possible-solution-types" />, but be a slightly different scenario than a line.
+    <xref ref="prop-possible-solution-types" />, but be a slightly different scenario than a line.
   </p>
   
   <p>
@@ -315,7 +315,8 @@
       
       <statement>
         <p>
-          We call the set of all sets, <m>\left(s_1, s_2, s_3, \ldots, s_n\right)</m>, that satisify the system 
+          We call the set of all sets, <m>\left\{s_1, s_2, s_3, \ldots, s_n\right\}</m>, or put another way, 
+          points, <m>\left(s_1, s_2, s_3, \ldots, s_n\right)</m>, that satisify the system 
           of equations the <term>solution space</term>.  Note that in our examples of 3 equations in 3 variables, 
           these 3-tuples were physically represented as points in 3-dimensional space.  The 
           <term>solution space</term> could be simply a single point or possibly an infinite number of points 
@@ -510,7 +511,8 @@
     <activity xml:id="act-matrix-reduce-rref">
       <introduction>
         <p>
-          Consider a system of equations whose augmented matrix is row equivalent to 
+          Consider a system of equations whose augmented matrix is row equivalent to (note this is in row echelon 
+          form)
           <me>
             \left[
             \begin{array}{cccc|c}
@@ -645,7 +647,7 @@
 
   
   <p>
-    <activity>
+    <activity xml:id="act-uniqueness-rref">
       <introduction>
         <p>
           Consider the following augmented matrices.  Place them in <term>reduced row echelon form (rref)</term> 
@@ -714,6 +716,14 @@
         </statement>
       </task>
     </activity>
+  </p>
+
+  <p>
+    When your spy in part (d) of <xref ref="act-uniqueness-rref"/> came back from looking at the results of 
+    reduced row echelon forms from the other groups, you may have been surprised that they were all the same.  
+    This leads us to a remarkable theorem regarding the reduced row echelon form (rref) of any matrix.  Your 
+    observation of the uniqueness of the rref will play an important role in finding vectors that are 
+    "essential" for a set to have in order to span a space and which ones are "redundant".
   </p>
   
   <p>
