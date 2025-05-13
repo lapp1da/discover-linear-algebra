@@ -178,7 +178,7 @@
         </interactive>
       </figure>
       
-        <exercise label="none">
+        <exercise label="no">
         
         <title>Instructions</title>
         <task>
@@ -192,7 +192,7 @@
           to use three vectors instead of two.  To add the third vector, simply click the "three vectors" checkbox.
         </p>
         </task>
-        </exercise>
+      </exercise>
     </p>
     <p>
       <sidebyside width="45%">
@@ -219,7 +219,7 @@
       </p>
   </introduction>
   <exercise>
-  <title>Part 1 Items</title>
+  <title>Part 1 Subquestions</title>
   <task>
     <statement>
      
@@ -319,7 +319,7 @@
     </p>
   </introduction>
 <exercise>
-<title>Part 2 Items</title>
+<title>Part 2 Subquestions</title>
 
 <task>
   <statement>
@@ -381,7 +381,7 @@
     </p>
  </introduction>
  <exercise>
- <title>Part 3 Items</title>
+ <title>Part 3 Subquestions</title>
  
   <task>
     <statement>

@@ -140,6 +140,7 @@
         exercise-divisional="no"
         exercise-worksheet="no"
         exercise-readingquestion="no"
+        instruct="yes"
       />-->
 
     <!-- Specify the style of the html by giving names to      -->
