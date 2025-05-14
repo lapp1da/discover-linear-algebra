@@ -734,18 +734,46 @@
     always be the case?  Consider the following theorem.
 </p>
 
-
-
+<p>
+  <theorem xml:id="thm-uniqueness-independent-linear-comb">
+    <statement>
+      <p>
+        Given a linearly independent set of vectors, <m>\left\{\mathbf{v}_1, \ldots, \mathbf{v}_k\right\}</m>, 
+        and any vector, <m>\mathbf{w} \in Span\left\{\mathbf{v}_1, \ldots, \mathbf{v}_k\right\}</m>, then the 
+        scalars, <m>c_1, c_2, \ldots, c_k</m>, needed to reach <m>\mathbf{w}</m> are unique.
+      </p>
+    </statement>
+    <proof>
+      <p>
+        Suppose we have a linearly independent set of vectors, 
+        <m>\left\{\mathbf{v}_1, \ldots, \mathbf{v}_k\right\}</m>, and any vector, 
+        <m>\mathbf{w} \in Span\left\{\mathbf{v}_1, \ldots, \mathbf{v}_k\right\}</m>.  Further, suppose we also have  
+        <m>c_1, c_2, \ldots, c_k</m>, such that 
+        <m>c_1\mathbf{v}_1+c_2\mathbf{v}_2+ \cdots +c_k\mathbf{v}_k=\mathbf{w}</m>.  If <m>c_1, c_2, \ldots, c_k</m> 
+        are not unique, then there exists another set of scalars, <m>a_1, a_2, \ldots, a_k</m>, such that 
+        <m>a_1\mathbf{v}_1+a_2\mathbf{v}_2+ \cdots +a_k\mathbf{v}_k=\mathbf{w}</m>.  Subtracting these equations, we 
+        get <m>\left(c_1-a_1\right)\mathbf{v}_1+\left(c_2-a_2\right)\mathbf{v}_2+ \cdots 
+        +\left(c_k-a_k\right)\mathbf{v}_k=\mathbf{0}</m>.  Since 
+        <m>\left\{\mathbf{v}_1, \ldots, \mathbf{v}_k\right\}</m> are linearly independent, this means that 
+        <m>c_1-a_1=0</m>, <m>c_2-a_2=0, \ldots, c_k-a_k=0 \Rightarrow c_1=a_1, c_2=a_2, c_k=a_k</m>.  In 
+        otherwords, the scalars are all equal and thus unique.
+      </p>
+    </proof>
+  </theorem>
+</p>
 
 <p>
   So far we have been exploring sets of vectors in <m>\mathbb{R}^2</m>.  You can imagine how this process 
   becomes more complex as we add higher dimension vectors like vectors from <m>\mathbb{R}^3</m>, 
-  <m>\mathbb{R}^4, \ldots</m>.  The question this leads us to is how do we more easily find the scalars for 
-  the linear combinations we desire?  In the next few sections, we will look at ways we have found these scalars 
-  in the past from our high school experience and see how matrices can help us more efficiently find them.  
-  In addition, we will look at how matrices can help us categorize sets of vectors as being 
-  <term>linearly dependent</term> or <term>linearly independent</term> and which vectors of a set are the 
-  necessary ones and which ones we can do without.
+  <m>\mathbb{R}^4, \ldots</m>.  <xref ref="thm-uniqueness-independent-linear-comb"/> shows that it doesn't 
+  matter how many dimensions we have for a linearly independent set of vectors, the scalars that yield a 
+  specific vector in the span of the vectors is unique.  The question this leads us to is how do we more 
+  easily find (or generate) the scalars for the linear combinations we desire, be they unique as in the case 
+  of linearly independent vectors or infinite in the case of linearly dependent vectors?  In the next few 
+  sections, we will look at ways we have found these scalars in the past from our high school experience and see 
+  how matrices can help us more efficiently find them.  In addition, we will look at how matrices can help us 
+  categorize sets of vectors as being <term>linearly dependent</term> or <term>linearly independent</term> and 
+  which vectors of a set are the necessary ones and which ones we can do without.
 </p>
 
 </subsection>
