@@ -102,6 +102,110 @@
     equations we are trying to solve.
   
   </p>
+
+  <p>
+    <activity xml:id="act-generate-solutions">
+      <introduction>
+        <p>
+          Consider one of the matrices from <xref ref="act-rref-consistent"/>.
+          <me>
+            \left[
+              \begin{array}{ccc|c}
+              1 \amp 0 \amp 2 \amp 3 \\
+              0 \amp 1 \amp -1 \amp 0 \\
+              2 \amp 0 \amp 4 \amp 6 \\
+              1 \amp 1 \amp 1 \amp 3
+             \end{array}
+            \right]
+          </me>
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Use the reduced row echelon form you found in <xref ref="act-rref-consistent"/> to express <m>x_1</m> 
+            and <m>x_2</m> in terms of <m>x_3</m>.  Note that <m>x_3</m> here is a free variable.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Use what you found in part (a) to express all solutions to the system as the sum of two vectors in 
+            <m>\mathbb{R}^3</m> where one of the vectors in the sum is fixed and the other has a scalar that can 
+            be any value.  In other words, of the form <m>\mathbf{u}+t\mathbf{w}</m> where 
+            <m>\mathbf{u}, \mathbf{w} \in \mathbb{R}^3</m> and <m>t</m> is a scalar.
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            To test your solutions, consider the linear equations as a transformation.  Choose <m>t=5</m> and 
+            on your CAS, compute 
+            <m>
+            \left[
+              \begin{array}{ccc|c}
+              1 \amp 0 \amp 2 \\
+              0 \amp 1 \amp -1 \\
+              2 \amp 0 \amp 4 \\
+              1 \amp 1 \amp 1 
+             \end{array}
+            \right]
+            \cdot \left(\mathbf{u}+5 \cdot \mathbf{w}\right)
+          </m>
+          for the vectors <m>\mathbf{u}</m> and <m>\mathbf{w}</m> you found.  Does the result match your 
+          expectation from your original augmented matrix?  Explain.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Repeat this process on your CAS by choosing <m>t=-3</m> and 
+            compute 
+            <m>
+            \left[
+              \begin{array}{ccc|c}
+              1 \amp 0 \amp 2 \\
+              0 \amp 1 \amp -1 \\
+              2 \amp 0 \amp 4 \\
+              1 \amp 1 \amp 1 
+             \end{array}
+            \right]
+            \cdot \left(\mathbf{u}-3 \cdot \mathbf{w}\right)
+          </m>
+          for the vectors <m>\mathbf{u}</m> and <m>\mathbf{w}</m> you found.  Does the result match your 
+          expectation from your original augmented matrix?  Explain.
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Repeat this process on your CAS by using simply <m>t</m> and 
+            compute 
+            <m>
+            \left[
+              \begin{array}{ccc|c}
+              1 \amp 0 \amp 2 \\
+              0 \amp 1 \amp -1 \\
+              2 \amp 0 \amp 4 \\
+              1 \amp 1 \amp 1 
+             \end{array}
+            \right]
+            \cdot \left(\mathbf{u}+t \cdot \mathbf{w}\right)
+          </m>
+          for the vectors <m>\mathbf{u}</m> and <m>\mathbf{w}</m> you found.  Does the result match your 
+          expectation from your original augmented matrix?  Explain.  How many solutions does this imply there 
+          are for the system?
+          </p>
+        </statement>
+      </task>
+    </activity>
+  </p>
   
   
 </subsection>
