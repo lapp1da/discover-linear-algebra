@@ -213,7 +213,22 @@
 <subsection xml:id="pivots-consistency-uniqueness">
   <title>Pivots, Consistency, and Uniqueness</title>
   <p>
-    
+    In <xref ref="def-reduced-row-echelon-form"/>, we alluded to the term <term>pivot</term> with respect to 
+    leading entries in the reduced row echelon form of a matrix.  Here we will expand on this idea since we want 
+    to explore connections between pivots and the solutions to systems of equations.  In particular, how might 
+    pivots help us identify free variables in a system and use them to generate the infinitely many solutions 
+    that might exist for the system?  To this end, let's formalize what we mean by a <term>pivot position</term>.
+  </p>
+
+  <p>
+    <definition xml:id="def-pivot-position">
+      <statement>
+        <p>
+          A <term>pivot position</term> for matrix, <m>A</m>, is a position of a leading entry in the 
+          reduced row echelon form of <m>A</m>.
+        </p>
+      </statement>
+    </definition>
   </p>
   
   
