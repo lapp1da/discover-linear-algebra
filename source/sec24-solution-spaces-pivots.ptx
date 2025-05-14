@@ -21,7 +21,8 @@
       <xref ref="3d-system-infinite-solution"/> and <xref ref="act-system-solve-no-solutions"/> 
       with <xref ref="3d-system-no-solution"/> where in one case you could place a point in 
       <m>\mathbb{R}^3</m> so that it existed in all three planes at once and in the other case it was not 
-      possible.
+      possible to have a point that existed in all three planes.  So when it comes to solutions to systems of 
+      equations, we deal with the two fundamental questions of <em>existence</em> and <em>uniqueness</em>.
     </p>
     <p>
     When looking to determine whether a system of equations is consistent or inconsistent, it would be nice to 
