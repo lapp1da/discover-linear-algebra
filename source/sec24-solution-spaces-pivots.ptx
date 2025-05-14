@@ -12,7 +12,17 @@
   
   <subsection xml:id="consistent-systems">
     <title>Consistent and Inconsistent Systems</title>
-    
+    <p>
+      <xref ref="prop-possible-solution-types"/> gave us three scenarios that can happen with linear systems of 
+      equations.  The first two deal with when we <em>have</em> solutions (either a unique solution or infinitely many 
+      solutions).  In the case where solutions exist, we call the system <term>consistent</term>.  In the case 
+      where there are no solutions, we say that the system is <term>inconsistent</term>.  You may recall these 
+      scenarios from <xref ref="act-system-solve-infinite-solutions"/> with 
+      <xref ref="3d-system-infinite-solution"/> and <xref ref="act-system-solve-no-solutions"/> 
+      with <xref ref="3d-system-no-solution"/> where in one case you could place a point in 
+      <m>\mathbb{R}^3</m> so that it existed in all three planes at once and in the other case it was not 
+      possible.
+    </p>
     <p>
     When looking to determine whether a system of equations is consistent or inconsistent, it would be nice to 
     have a simple way to examine its corresponding matrix and know the type of system we have.  To explore this 

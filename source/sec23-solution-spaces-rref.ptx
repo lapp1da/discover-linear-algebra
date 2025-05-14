@@ -21,7 +21,7 @@
     </p>
   </introduction>
   <p>
-    <activity xml:id="system-solve-infinite-solutions">
+    <activity xml:id="act-system-solve-infinite-solutions">
       <introduction>
     <p>
       Consider the following system of equations.
@@ -131,7 +131,7 @@
   </p>
   
   <p>
-    <activity xml:id="system-solve-no-solutions">
+    <activity xml:id="act-system-solve-no-solutions">
       <introduction>
     <p>
       Consider the following system of equations.
@@ -301,7 +301,7 @@
   <p>
     Since we want to distinguish among these possibilities and describe where these solutions "live", we 
     decide to call this world where solutions exist their <term>solution space</term>.  For the type of 
-    system in <xref ref="system-solve-no-solutions"/>, we noted that there are no places where all three planes 
+    system in <xref ref="act-system-solve-no-solutions"/>, we noted that there are no places where all three planes 
     intersect and so the space that describes this set of solutions is <term>empty</term>.  If we want to 
     allow a single equation with all coefficients, 0, <m>0x_1+0x_2+0x_3=0</m>, here any point (solution) 
     consisting of three real numbers, <m>\left(x_1,x_2,x_3\right)</m> will work and thus all of 
