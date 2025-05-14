@@ -26,7 +26,7 @@
    </p>
 
    <p>
-    You will also recall that in <xref ref="linear-comb-project" /> we explored how many vectors we needed for 
+    You will also recall that in <xref ref="proj-linear-comb-project" /> we explored how many vectors we needed for 
     linear combinations of these vectors to describe a location in <m>\mathbb{R}^2</m>.  In particular, we found 
     that if we had three or more vectors that were linearly indepndent in pairs, we did not need them all.  We 
     only needed two linearly independent vectors to be able to describe any location in <m>\mathbb{R}^2</m> 

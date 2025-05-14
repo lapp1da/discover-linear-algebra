@@ -161,7 +161,7 @@
   </p>
   
   <p>
-  <project xml:id="linear-comb-project">
+  <project xml:id="proj-linear-comb-project">
   <title>Linear Combinations and Spanning</title>
   <introduction>
     <p>
@@ -456,7 +456,7 @@
 <subsection>
   <title>Linear Independence</title>
   <p>
-    As we saw in <xref ref="linear-comb-project"/>, we had a few different situations that could occur in dealing with vectors in 
+    As we saw in <xref ref="proj-linear-comb-project"/>, we had a few different situations that could occur in dealing with vectors in 
     <m>\mathbb{R}^2</m>.  If we only have one vector, it is easily seen that we can only move along a single 
     line containing that vector by use of scalar multiples of it.  If we have exactly two vectors, we can have 
     a couple of scenarios.  The first happens when the two vectors are just scalar multiples of each other.  
@@ -475,10 +475,10 @@
     explore it with some actual vectors.
   </p>
   <p>
-    <activity>
+    <activity xml:id="act-number-vectors-needed-Rn-">
       <introduction>
         <p>
-          Based on <xref ref="linear-comb-project"/>, we noticed that if we are in <m>\mathbb{R}^2</m>, if we 
+          Based on <xref ref="proj-linear-comb-project"/>, we noticed that if we are in <m>\mathbb{R}^2</m>, if we 
           want to span the entire space, we need to have at least two vectors.  However, it was not enough to 
           have two vectors, but in addition, these two vectors could not be on the same line.  Here we will 
           explore this idea in greater detail.  Consider the set of vectors in <m>\mathbb{R}^2</m> given by 
@@ -560,7 +560,7 @@
     \left(a+c\alpha\right)\mathbf{v}_1+\left(b+c\beta\right)\mathbf{v}_2</m>.  In otherwords, a linear 
     combination using just <m>\mathbf{v}_1</m> and <m>\mathbf{v}_2</m>, meaning we only need two vectors since 
     one of the three is linearly <em>dependent</em> on the other two.  Since we can use this argument for all 
-    three vectors, this also confirms your observations from part 3 of <xref ref="linear-comb-project"/> that 
+    three vectors, this also confirms your observations from part 3 of <xref ref="proj-linear-comb-project"/> that 
     given three vectors where no two share a common line, a linear combination used to reach another vector 
     is not unique.
   </p>
@@ -617,7 +617,7 @@
   <title>Spanning and Existence of Linear Combinations</title>
 
 <p>
-  As we saw earlier in <xref ref="linear-comb-project"/>, we had two main questions to consider.  The first 
+  As we saw earlier in <xref ref="proj-linear-comb-project"/>, we had two main questions to consider.  The first 
   was whether or not a vector could be reached using a linear combination of vectors?  The second was that, 
   if a vector could be reached, was the linear combination used to get there unique?  A caveat to this second 
   question is, if the linear combinations are not unique, how many are there?  Are there a finite number of 
@@ -642,7 +642,7 @@
     <introduction>
       <p>
         Let us consider vectors in <m>\mathbb{R}^2</m> and whether or not we can reach them?  From 
-        <xref ref="linear-comb-project"/>, if we had exactly 2 vectors that did not fall along the same line, 
+        <xref ref="proj-linear-comb-project"/>, if we had exactly 2 vectors that did not fall along the same line, 
         we could reach any vector in <m>\mathbb{R}^2</m>.  Once we added a third vector, we noticed that there 
         could be more than one way to reach a given vector using linear combinations of the vectors, but how 
         many different ways could we do this?  In the earlier exploration, you found several, but we need to 
@@ -725,6 +725,17 @@
     </task>
   </activity> 
 </p>
+
+<p>
+    In <xref ref="proj-linear-comb-project"/> part 1, we explored situations where, given a linearly independent 
+    set of vectors, it appeared that we could find only one set of scalars that would reach a given vector.  In 
+    contrast, when we had more than the number of vectors needed to span the space, there were infintely many 
+    sets of scalars that would allow us to reach a given vector in the span of the set of vectors.  Will this 
+    always be the case?  Consider the following theorem.
+</p>
+
+
+
 
 <p>
   So far we have been exploring sets of vectors in <m>\mathbb{R}^2</m>.  You can imagine how this process 

@@ -703,7 +703,7 @@
     Now that we have converted a system of equations to augmented matrix form and then used the process of 
     Gaussian elimination to reduce the system and find solutions, we might ask the question, will we always be 
     able to reduce the matrix to a nice upper triangular form where back-solving to obtain a unique solution 
-    is possible?  As you will recall from <xref ref="linear-comb-project" />, not all linear combinations of 
+    is possible?  As you will recall from <xref ref="proj-linear-comb-project" />, not all linear combinations of 
     vectors (and thus systems) end with a unique solution.  This means that it will not always be able to find 
     a unique solution to a given system of equations and thus get a nice upper triangular matrix.  In the next 
     section, we will examine how we can use the form of a matrix for linear systems to determine whether or not 

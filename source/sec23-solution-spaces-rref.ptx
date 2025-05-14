@@ -15,7 +15,7 @@
     <p>
       In the last section, it seemed that when we had a system of 3 equations and 3 unknowns, the solution was 
       always unique.  Note that we have already seen, uniqueness is not always guaranteed (see 
-      <xref ref="linear-comb-project" />).  So how does the reduced version of the augmented matrix give us 
+      <xref ref="proj-linear-comb-project" />).  So how does the reduced version of the augmented matrix give us 
       clues as to the nature of the solution(s)?  Let's investigate this here from both a numerical and 
       geometric point of view.
     </p>
