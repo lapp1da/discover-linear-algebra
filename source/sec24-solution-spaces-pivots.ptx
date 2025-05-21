@@ -230,6 +230,34 @@
       </statement>
     </definition>
   </p>
+
+  <p>
+    In the study of linear algebra, a fundamental concept for understanding the structure and properties of 
+    matrices and systems of linear equations is that of pivot positions. The purpose of identifying pivot 
+    positions is to gain insight into the <term>rank</term> of a matrix, the solvability of linear systems, 
+    and the <term>basis</term> of vector spaces. We will discuss <term>basis</term> in chapter 3.  These 
+    positions are key to the process of Gaussian elimination and row reduction as we have seen, which are 
+    standard algorithms for simplifying matrices into more manageable forms.
+  </p>
+
+  <p>
+    The term "pivot" itself originates from the idea of a central or critical point around which other 
+    elements are organized or rotated. In the context of a matrix, a pivot position acts as such a point. 
+    During the process of row reduction, an algorithm used to transform a matrix into row echelon form or 
+    reduced row echelon form, we systematically eliminate entries below and/or above certain leading entries. 
+    These leading entries are precisely what we call pivots.
+  </p>
+
+  <p>
+    As defined in <xref ref="def-pivot-position" />, a pivot position in a matrix refers to the location of a 
+    leading entry (the first non-zero entry) in a row of its row echelon form. When a matrix is transformed 
+    through elementary row operations into row echelon form, the non-zero rows will each have a unique leading 
+    entry. The column containing this leading entry is then called a <term>pivot column</term>. The number of 
+    pivot positions in a matrix is equal to its <term>rank</term>, which signifies the maximum number of 
+    linearly independent rows or columns in the matrix. This concept is crucial because it directly relates 
+    to the dimension of the <term>column space</term> and <term>row space</term> of the matrix, providing 
+    essential information about the underlying linear transformations and vector spaces associated with the matrix.
+  </p>
   
   
 </subsection>
