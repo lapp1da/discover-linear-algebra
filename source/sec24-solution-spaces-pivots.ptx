@@ -243,9 +243,8 @@
   <p>
     The term "pivot" itself originates from the idea of a central or critical point around which other 
     elements are organized or rotated. In the context of a matrix, a pivot position acts as such a point. 
-    During the process of row reduction, an algorithm used to transform a matrix into row echelon form or 
-    reduced row echelon form, we systematically eliminate entries below and/or above certain leading entries. 
-    These leading entries are precisely what we call pivots.
+    During the process of row reduction, we systematically eliminate entries below and/or above certain leading 
+    entries. These leading entries are precisely what we call pivots.
   </p>
 
   <p>
