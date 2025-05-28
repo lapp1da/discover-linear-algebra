@@ -244,7 +244,13 @@
     The term "pivot" itself originates from the idea of a central or critical point around which other 
     elements are organized or rotated. In the context of a matrix, a pivot position acts as such a point. 
     During the process of row reduction, we systematically eliminate entries below and/or above certain leading 
-    entries. These leading entries are precisely what we call pivots.
+    entries. These leading entries are precisely what we call pivots.  In <xref ref="act-matrix-reduce-rref"/>, 
+    you noticed that there comes a point where your reduction is limited and you cannot affect changes to some 
+    rows without messing up zeros in other rows.  The pivot in a row will allow us to reduce all entries 
+    above and below it to zero.  Since there are only zeros to the left of a pivot, the use of that row in the 
+    row reduction process to reduce other rows will not affect the entries in the same column as those zeros for 
+    the other rows.  This gives us a way to manipulate pivot column entries while leaving other columns alone 
+    (provided those columns are the columns where there are zeros in the row being used).  
   </p>
 
   <p>
