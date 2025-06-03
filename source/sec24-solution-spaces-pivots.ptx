@@ -217,7 +217,7 @@
     leading entries in the reduced row echelon form of a matrix.  Here we will expand on this idea since we want 
     to explore connections between pivots and the solutions to systems of equations.  In particular, how might 
     pivots help us identify free variables in a system and use them to generate the infinitely many solutions 
-    that might exist for the system?  To this end, let's formalize what we mean by a <term>pivot position</term>.
+    that might exist for a system?  To this end, let's formalize what we mean by a <term>pivot position</term>.
   </p>
 
   <p>
@@ -233,24 +233,27 @@
 
   <p>
     In the study of linear algebra, a fundamental concept for understanding the structure and properties of 
-    matrices and systems of linear equations is that of pivot positions. The purpose of identifying pivot 
+    matrices and systems of linear equations is that of pivot positions. Some of the purposes of identifying pivot 
     positions is to gain insight into the <term>rank</term> of a matrix, the solvability of linear systems, 
-    and the <term>basis</term> of vector spaces. We will discuss <term>basis</term> in chapter 3.  These 
-    positions are key to the process of Gaussian elimination and row reduction as we have seen, which are 
-    standard algorithms for simplifying matrices into more manageable forms.
+    and the <term>basis</term> of vector spaces. We will discuss <term>basis</term> later in chapter 3, but 
+    for now we will examine connections to solvability of systems.  These positions are key to the process of 
+    Gaussian elimination and row reduction as we have seen, which are standard algorithms for simplifying 
+    matrices into more manageable forms.
   </p>
 
   <p>
-    The term "pivot" itself originates from the idea of a central or critical point around which other 
-    elements are organized or rotated. In the context of a matrix, a pivot position acts as such a point. 
+    The term "<em>pivot</em>" itself originates from the idea of a central or critical point around which other 
+    elements are organized or rotated. In the context of a matrix, a pivot position acts as such a central point. 
     During the process of row reduction, we systematically eliminate entries below and/or above certain leading 
     entries. These leading entries are precisely what we call pivots.  In <xref ref="act-matrix-reduce-rref"/>, 
-    you noticed that there comes a point where your reduction is limited and you cannot affect changes to some 
-    rows without messing up zeros in other rows.  The pivot in a row will allow us to reduce all entries 
-    above and below it to zero.  Since there are only zeros to the left of a pivot, the use of that row in the 
-    row reduction process to reduce other rows will not affect the entries in the same column as those zeros for 
-    the other rows.  This gives us a way to manipulate pivot column entries while leaving other columns alone 
-    (provided those columns are the columns where there are zeros in the row being used).  
+    you noticed that there comes a point where your reduction of a matrix is limited and you cannot affect 
+    changes to some rows without messing up zeros we have already placed in other rows.  The pivot in a row will 
+    allow us to reduce all entries above and below it to zero while not changing any entries that occur in columns 
+    where there are zeros to the left of the pivot position.  Since there are only zeros to the left of a pivot, 
+    the use of that pivot row in the row reduction process to reduce other rows will not affect the entries in 
+    the same column as those zeros for the other rows because we will simply be adding zero to those entries.  
+    This gives us a way to manipulate pivot column entries while leaving other columns alone (provided those 
+    columns are the columns where there are zeros in the row being used).  
   </p>
 
   <p>
@@ -262,6 +265,17 @@
     linearly independent rows or columns in the matrix. This concept is crucial because it directly relates 
     to the dimension of the <term>column space</term> and <term>row space</term> of the matrix, providing 
     essential information about the underlying linear transformations and vector spaces associated with the matrix.
+  </p>
+
+  <p>
+    The term <term>rank</term> has its origins in military formations.  In military echelon formations on the 
+    battlefield, ranks are a structured hierarchy, with various officers and enlisted personnel leading units 
+    at different levels. Echelon formation is a tactical arrangement where units are staggered diagonally, 
+    allowing for maneuverability and visibility.  Since our reduced row matrices have this staggered structure 
+    (if you ignore the presence of the zeros to the left of pivots), it makes sense why the term <term>rank</term> 
+    is used to identify how many linearly independent rows or columns as these are essentially the number of 
+    what would be the ranking officers in the battlefield formations.  The word <em>echelon</em> also comes from 
+    military terminology.
   </p>
   
   
