@@ -980,7 +980,7 @@ we get the total revenue for each company organized as an ordered triple (since 
   </activity>
   </p>
   <p>
-    <lemma xml:id="lem-">
+    <lemma xml:id="lem-zero-vector-map">
       <statement>
         <p>
           If <m>T</m> is a linear transformation, then it must map the zero vector from the domain to the 
