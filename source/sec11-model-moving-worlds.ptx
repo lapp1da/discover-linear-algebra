@@ -137,7 +137,7 @@
         <p>
           In general, we can define scalar multiplication of a vector as 
         <men>
-        c\mathbf{v} =  c\cdot \begin{bmatrix}
+        c \cdot \mathbf{v} =  c\cdot \begin{bmatrix}
         v_1\\
         v_2\\
         \vdots\\
