@@ -211,7 +211,7 @@ Combining scalar multiplication with vector addition, we get
           On the grid in <xref ref="fig-grid-vector-add"/>, plot both <m>\mathbf{v}</m> and <m>\mathbf{w}</m> 
           as directed line segments (i.e. arrows).  Also plot the results you obtained for 
           <m>\mathbf{v}+\mathbf{w}</m> and <m>\mathbf{w}+\mathbf{v}</m>.  In your groups, discuss how you might 
-          interpret movement from the origin alomg <m>\mathbf{v}</m> and <m>\mathbf{w}</m> to arrive at the 
+          interpret movement from the origin along <m>\mathbf{v}</m> and <m>\mathbf{w}</m> to arrive at the 
           location of <m>\mathbf{v}+\mathbf{w}</m> and <m>\mathbf{w}+\mathbf{v}</m>.  How is the interpretation 
           of movement different depending on whether you are using <m>\mathbf{v}+\mathbf{w}</m> or 
           <m>\mathbf{w}+\mathbf{v}</m>?  Sketch the directed movement as a combination of two vectors (arrows) 
@@ -1070,12 +1070,13 @@ we get the total revenue for each company organized as an ordered triple (since 
         <p>
           Suppose <m>T:\mathbb{R}^n \rightarrow \mathbb{R}^m</m> is a linear transformation and 
           <m>\mathbf{v} \in \mathbb{R}^n</m>.  Well since <m>-\mathbf{v} \in \mathbb{R}^n</m>, we know that 
-          <m>T\left(\mathbf{0}\right)=T\left(\mathbf{v}+\mathbf{-v}\right)</m>.  Since vector addition is 
-          preserved, we get that this is equal to <m>T\left(\mathbf{v}\right)+T\left(\mathbf{-v}\right)</m>.  
-          Again, as a linear transformation, we know that scalar multiplication is also preserved and so 
+          <m>T\left(\mathbf{0}_n\right)=T\left(\mathbf{v}+\mathbf{-v}\right)</m> where <m>\mathbf{0}_n</m> here 
+          is in <m>\mathbb{R}^n</m>.  Since vector addition is preserved, we get that this is equal to 
+          <m>T\left(\mathbf{v}\right)+T\left(\mathbf{-v}\right)</m>.  Again, as a linear transformation, 
+          we know that scalar multiplication is also preserved and so 
           <m>T\left(\mathbf{-v}\right)=-T\left(\mathbf{v}\right)</m> and thus 
           <m>T\left(\mathbf{v}\right)+T\left(\mathbf{-v}\right)=T\left(\mathbf{v}\right)+ 
-          -T\left(\mathbf{v}\right)=\mathbf{0}</m> where <m>\mathbf{0}</m> here is in <m>\mathbb{R}^m</m>.
+          -T\left(\mathbf{v}\right)=\mathbf{0}_m</m> where <m>\mathbf{0}_m</m> here is in <m>\mathbb{R}^m</m>.
         </p>
       </proof>
     </lemma>
