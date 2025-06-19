@@ -2,8 +2,30 @@
 
 <section xml:id="sec12-global-local-coords" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Global vs Local Coordinates</title>
+  <introduction>  
+  <p>
+    In this section we will look at how we can describe locations from within a small 
+    region around us and within the a larger space where our small world might exist. Believe it or not, we use 
+    this idea on a daily basis.  If you have ever written a paper that included images, your computer used 
+    "small-world" locations and placed them within a "larger-world" context.  Consider the image below in 
 
-  <p> In this section we will look at how we can describe locations from within a small 
-  region around us and within the a larger space where our small world might exist. </p>
+  </p>
+
+<p>
+   <sidebyside width="45%"> 
+   <figure xml:id="fig-3d-system-local">
+    <caption>Graphical 3D System (Locally Defined)</caption>
+    <image source="images/3dsystemimage-cover.png">
+    <shortdescription>Graphical Image of 3D System</shortdescription>
+   </image>
+   </figure>
+   <figure xml:id="fig-3d-system-on-page">
+    <caption>3D System on the Page</caption>
+    <image source="images/descarte-fly-2-1.png">
+    <shortdescription>Descartes Fly</shortdescription>
+   </image>
+   </figure>
+   </sidebyside>
+  </p>
 
 </section>
