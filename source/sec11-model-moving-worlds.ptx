@@ -183,7 +183,84 @@ Combining scalar multiplication with vector addition, we get
     between price of materials and the revenue they generate.
   </p>
 
+<p>
+  <activity xml:id="act-basic-vector-operations">
+    <title>Working with Vectors</title>
+    <introduction>
+      <p>
+        As we begin to work with vectors, we should examine how basic operations with them work both numberically 
+        and geometrically.  Here we will first look at vector addition and then scalar multiplication.
+      </p>
+    </introduction>
 
+    <task>
+      <statement>
+        <p>
+          In <xref ref="def-vector-add"/>, we defined an addition for vectors based on component-wise addition.  
+          Consider the vectors in <m>\mathbb{R}^2</m>, <m>\mathbf{v}=\begin{bmatrix} 2\\1 \end{bmatrix}</m> and 
+          <m>\mathbf{w}=\begin{bmatrix} 1\\3 \end{bmatrix}</m>.  Numerically add these two vectors in two ways, 
+          first <m>\mathbf{v}+\mathbf{w}</m> and then <m>\mathbf{w}+\mathbf{v}</m>.  Give your result in each 
+          case and describe what you notice.
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          On the grid in <xref ref="fig-grid-vector-add"/>, plot both <m>\mathbf{v}</m> and <m>\mathbf{w}</m> 
+          as directed line segments (i.e. arrows).  Also plot the results you obtained for 
+          <m>\mathbf{v}+\mathbf{w}</m> and <m>\mathbf{w}+\mathbf{v}</m>.  In your groups, discuss how you might 
+          interpret movement from the origin alomg <m>\mathbf{v}</m> and <m>\mathbf{w}</m> to arrive at the 
+          location of <m>\mathbf{v}+\mathbf{w}</m> and <m>\mathbf{w}+\mathbf{v}</m>.  How is the interpretation 
+          of movement different depending on whether you are using <m>\mathbf{v}+\mathbf{w}</m> or 
+          <m>\mathbf{w}+\mathbf{v}</m>?  Sketch the directed movement as a combination of two vectors (arrows) 
+          for each case.
+        </p>
+        <p>
+        <figure xml:id="fig-grid-vector-add">
+          <caption>Grid for Vector Addition</caption>
+          <image source="images/grid-blank-1-1.png" width="60%">
+          <shortdescription>Grid for Adding Vectors</shortdescription>
+        </image>
+        </figure>
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          In <xref ref="def-scalar-mult"/>, we defined scalar multiplication for vectors based on component-wise 
+          multiplication by the same scalar (number).  Consider the vector in <m>\mathbb{R}^2</m>, 
+          <m>\mathbf{v}=\begin{bmatrix} 2\\-1 \end{bmatrix}</m>.  Numerically multiply this vector by the 
+          scalars <m>c=-1</m>, <m>c=3</m>, and <m>c=-2</m>.  Give your result in each case.
+        </p>
+      </statement>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          On the grid in <xref ref="fig-grid-scalar-mult"/>, plot <m>\mathbf{v}</m> and <m>c \cdot \mathbf{v}</m> 
+          as directed line segments (i.e. arrows) for each value of <m>c</m>.  Describe what you notice about 
+          all of these results.
+        </p>
+        <figure xml:id="fig-grid-scalar-mult">
+          <caption>Grid for Vector Addition</caption>
+          <image source="images/grid-blank-1-1.png" width="60%">
+          <shortdescription>Grid for Adding Vectors</shortdescription>
+        </image>
+        </figure>
+        <p>
+          
+        </p>
+      </statement>
+    </task>
+    
+    
+  </activity>
+</p>
 
 </introduction>
 
@@ -233,7 +310,7 @@ Combining scalar multiplication with vector addition, we get
 </table>
        </p>
   <p>
-    <activity>
+    <activity xml:id="act-prices-vectors-revenue">
       <title >Prices, Vectors, and Revenue</title >
       <introduction>
       <p>
@@ -817,7 +894,7 @@ we get the total revenue for each company organized as an ordered triple (since 
         <m>\mathbf{w}=\begin{bmatrix} 3\\2\\-2\end{bmatrix}</m>.
       </p>
       <p>
-        <figure xml:id="">
+        <figure xml:id="defining-transformation-nspire">
           <caption>Defining Transformation on TI-Nspire CX II CAS</caption>
           <image source="images/lineartransformation-act-1-1-3.png" width="60%">
           <shortdescription>Defining on TI-Nspire CX II CAS</shortdescription>
