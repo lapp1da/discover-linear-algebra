@@ -7,7 +7,9 @@
     In this section we will look at how we can describe locations from within a small 
     region around us and within the a larger space where our small world might exist. Believe it or not, we use 
     this idea on a daily basis.  If you have ever written a paper that included images, your computer used 
-    "small-world" locations and placed them within a "larger-world" context.  Consider the image below in 
+    "small-world" locations and placed them within a "larger-world" context.  Consider the image below of a 
+    local image <xref ref="fig-3d-system-local"/> and a page of text where this image has been placed 
+    <xref ref="fig-3d-system-on-page"/> (a global coordinate system).
 
   </p>
 
@@ -17,15 +19,16 @@
     <caption>Graphical 3D System (Locally Defined)</caption>
     <image source="images/3dsystemimage-cover.png">
     <shortdescription>Graphical Image of 3D System</shortdescription>
-   </image>
+    </image>
    </figure>
    <figure xml:id="fig-3d-system-on-page">
     <caption>3D System on the Page</caption>
-    <image source="images/descarte-fly-2-1.png">
-    <shortdescription>Descartes Fly</shortdescription>
+    <image source="images/sample-of-image-insertion.png">
+    <shortdescription>Image on a Page</shortdescription>
    </image>
    </figure>
    </sidebyside>
   </p>
+</introduction>
 
 </section>
