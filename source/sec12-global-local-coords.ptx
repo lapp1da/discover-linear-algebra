@@ -29,6 +29,18 @@
    </figure>
    </sidebyside>
   </p>
+
+  <p>
+    Imagine that I am wanting to write a book (which I am) and wish to have a figure imbedded within the 
+    text that is being written.  The image is created as a series of pixels that are defined by specific 
+    colors in an array within a “local” environment where the pixels represent coordinates (or points) for 
+    each part of the image.  The image is then inserted into a much wider defined document with its own set of 
+    coordinates.  The placement of the image means that the old coordinates must be converted (or transformed) 
+    into the new coordinates that exist within the larger image (i.e. the page).  We can even wrap text around 
+    the image if we are feeling fancy.  In addition, we may also want to scale the image up or down to fit a 
+    particular format for the page.  This means that the original coordinates for the image must be 
+    transformed again.
+  </p>
 </introduction>
 
 </section>
