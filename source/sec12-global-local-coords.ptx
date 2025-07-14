@@ -39,7 +39,7 @@
     into the new coordinates that exist within the larger image (i.e. the page).  We can even wrap text around 
     the image if we are feeling fancy.  In addition, we may also want to scale the image up or down to fit a 
     particular format for the page.  This means that the original coordinates for the image must be 
-    transformed again.
+    transformed again.  So how can we use mathematics to accomplish these transformations?
   </p>
 </introduction>
 
