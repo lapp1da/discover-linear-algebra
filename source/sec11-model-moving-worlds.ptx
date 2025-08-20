@@ -5,14 +5,14 @@
   <introduction>
   
   <p>
-  In this section we will look at linear algebra as a way to encode information 
-  and operate on it allowing us to move between different sets of information.  To this end, we 
-  will define how <em>matrices</em> and <em>vectors</em> are operated on with binary operations like addition and 
-  multiplication.  While multiplication of matrices may seem weird at first, you will see that it is defined 
-  as it is for convenience in manipulating data and transforming different types of values into 
-  other computed values based on them.  We begin by considering a case where we want to move between 
-  a pricing scheme and the revenue it generates for three different companies with three different 
-  sets of orders of our products.
+    In this section we will look at linear algebra as a way to encode information 
+    and operate on it allowing us to move between different sets of information.  To this end, we 
+    will define how <em>matrices</em> and <em>vectors</em> are operated on with binary operations like addition 
+    and multiplication.  While multiplication of matrices may seem weird at first, you will see that it is defined 
+    as it is for convenience in manipulating data and transforming different types of values into 
+    other computed values based on them.  We begin by considering a case where we want to move between 
+    a pricing scheme and the revenue it generates for three different companies with three different 
+    sets of orders of our products.
   </p>
   <p>
     To accomplish this, we will use constructs created to deal with objects that contain multiple entries.  
