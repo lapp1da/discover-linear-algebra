@@ -87,7 +87,10 @@
 <subsection xml:id="inverses-bases">
   <title>Invertible Matrices and Moving Between Grid Systems</title>
   <p>
-    
+    So one question we might ask is why would we care which system we use?  At times, the ease of transforming 
+    vectors in one system may be less complicated than another.  This means that it might be desirable at times 
+    to convert to an easier grid system.  So how do we make the conversion back and forth between different 
+    systems?
   </p>
   
   
